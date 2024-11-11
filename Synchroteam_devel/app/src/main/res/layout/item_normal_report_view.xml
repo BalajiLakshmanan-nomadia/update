@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/paddingMenusTitle">
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/txt_field_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grayTextColorReportsFieldLable"
+        android:textSize="@dimen/textSizeLastSyncronizationSaveBtn"
+        fontify:font_name="@string/fontName_avenir" />
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/txt_field_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paddingMenusTitle"
+        android:textColor="@color/invoice_text_color"
+        android:textStyle="bold"
+        android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+        fontify:font_name="@string/fontName_avenir" />
+
+    <View
+        android:id="@+id/divider_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingTrackinghoursofOperationDataTv"
+        android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+        android:layout_marginTop="@dimen/paddingTopOrangeButton"
+        android:background="@drawable/dotted_line"
+        />
+</LinearLayout>

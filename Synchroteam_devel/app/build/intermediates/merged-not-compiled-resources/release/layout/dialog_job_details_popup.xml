@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/white"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/paddingTopOrangeButton"
+        app:cardPreventCornerOverlap="false">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/boxframe_serial_title_layout"
+                    android:padding="@dimen/marginReportsDetailListItem"
+                    android:singleLine="true"
+                    android:text="@string/textJobCustomerLableTv"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/startActivityTextSize"
+                    fontify:font_name="@string/fontName_avenir" />
+
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_site_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:padding="@dimen/marginReportsDetailListItem"
+
+                    android:text="@string/textSiteLable"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+                <View
+                    android:id="@+id/pop_up_site_name_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/apptheme_color"
+                    android:layout_marginLeft="@dimen/marginReportsDetailListItem"
+                    android:layout_marginRight="@dimen/marginReportsDetailListItem"
+                    />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_equipment_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:padding="@dimen/marginReportsDetailListItem"
+
+                    android:text="@string/textEquipmentLable"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+                <View
+                    android:id="@+id/pop_up_equipment_name_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/apptheme_color"
+                    android:layout_marginLeft="@dimen/marginReportsDetailListItem"
+                    android:layout_marginRight="@dimen/marginReportsDetailListItem"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/pop_up_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="left"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toStartOf="@id/pop_up_location"
+                        android:padding="@dimen/marginReportsDetailListItem"
+                        android:text="@string/textAddressLable"
+                        android:textColor="@color/invoice_text_color"
+                        android:textSize="@dimen/textSizeDaysTv"
+                        fontify:font_name="@string/fontName_avenir" />
+                    <ImageView
+                        android:id="@+id/pop_up_location"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_baseline_location_on_24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/apptheme_color"
+                    android:layout_marginLeft="@dimen/marginReportsDetailListItem"
+                    android:layout_marginRight="@dimen/marginReportsDetailListItem"
+                    />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_additional_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:padding="@dimen/marginReportsDetailListItem"
+
+                    android:text="@string/textAdditionalAddressLable"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_job_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:padding="@dimen/marginReportsDetailListItem"
+
+                    android:text="@string/textJobTypeLable"
+                    android:textColor="@color/clientNameTvCurrentJobs"
+                    android:textSize="@dimen/textSizeClientNameTextView"
+                    android:textStyle="bold"
+                    fontify:font_name="@string/fontName_hevilicaMedium"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/apptheme_color"
+                    android:layout_marginLeft="@dimen/marginReportsDetailListItem"
+                    android:layout_marginRight="@dimen/marginReportsDetailListItem"
+                    />
+
+
+
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingTop="5dp"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:text="@string/textDescriptionLable"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:padding="@dimen/marginReportsDetailListItem"
+
+                    android:text="@string/textContactLableTv"
+                    android:textColor="@color/clientNameTvCurrentJobs"
+                    android:textSize="@dimen/textSizeClientNameTextView"
+                    android:textStyle="bold"
+                    fontify:font_name="@string/fontName_hevilicaMedium"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/apptheme_color"
+                    android:layout_marginLeft="@dimen/marginReportsDetailListItem"
+                    android:layout_marginRight="@dimen/marginReportsDetailListItem"
+                    />
+
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingLeft="@dimen/marginReportsDetailListItem"
+                    android:paddingRight="@dimen/marginReportsDetailListItem"
+                    android:paddingTop="@dimen/marginReportsDetailListItem"
+                    android:text="@string/textCustomerNameLable"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    android:textStyle="bold"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/pop_up_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="left"
+                    android:paddingRight="@dimen/marginReportsDetailListItem"
+                    android:paddingLeft="@dimen/marginReportsDetailListItem"
+                    android:paddingTop="@dimen/marginReportsDetailListItem"
+                    android:text="@string/textJobNumberLableTv"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    android:textStyle="bold"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/open_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/boxframe_add_button"
+                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_done_24"
+                                android:layout_gravity="center_vertical"                                />
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txtStartJob"
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:singleLine="true"
+                                android:text="@string/textOpenLable"
+                                android:textColor="@color/job_description_bg"
+                                android:textSize="@dimen/textSizeStartTimeTv"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/txt20dp"
+                            android:layout_height="match_parent"/>
+                        <LinearLayout
+                            android:id="@+id/close_btn"
+                            android:layout_width="100dp"
+                            android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal"
+                            android:background="@drawable/boxframe_check_status"                            >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/close_icon"
+                                android:layout_gravity="center_vertical"                                />
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:layout_weight="1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:singleLine="true"
+                                android:text="@string/txt_close"                                android:textColor="@color/job_description_bg"
+                                android:textSize="@dimen/textSizeStartTimeTv"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeDark">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/actionbarColor"
+            app:popupTheme="@style/ThemeDark" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/rel_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/frame_images"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <com.synchroteam.customui.DrawingImageViewNew
+                android:id="@+id/iv_edit_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/default_text_size"
+                app:tiv_clampTextMode="textInside"
+                app:tiv_interline="@dimen/textSizeDateTv"
+                app:tiv_panEnabled="true"
+                app:tiv_rotationEnabled="true"
+                app:tiv_scaleEnabled="true" />
+
+            <LinearLayout
+                android:id="@+id/lin_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#bb000000"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <com.synchroteam.TypefaceLibrary.EditText
+                    android:id="@+id/ed_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeActionBarJobDiscription" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rel_tools"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <com.synchroteam.customui.VerticalSlideColorPicker
+                android:id="@+id/color_picker"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/marginTopMessageDetailTv"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/paddingTopOrangeButton"
+                app:borderColor="@android:color/darker_gray"
+                app:borderWidth="@dimen/paddingParentClientListItem"
+                app:colors="@array/default_colors" />
+
+            <TextView
+                android:id="@+id/tv_draw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/color_picker"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                android:gravity="center"
+                android:padding="@dimen/paddingTopOrangeButton"
+                android:text="@string/fa_paint_brush"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeDateTv" />
+
+
+            <TextView
+                android:id="@+id/tv_add_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_draw"
+                android:layout_alignTop="@+id/tv_draw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/paddingMenusTitle"
+                android:layout_toLeftOf="@+id/tv_draw"
+                android:gravity="center"
+                android:padding="@dimen/paddingTopOrangeButton"
+                android:text="@string/fa_font"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeDateTv" />
+
+
+            <TextView
+                android:id="@+id/tv_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_draw"
+                android:layout_alignTop="@+id/tv_draw"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/paddingMenusTitle"
+                android:layout_toLeftOf="@+id/tv_add_text"
+                android:gravity="center"
+                android:padding="@dimen/paddingTopOrangeButton"
+                android:text="@string/fa_undo"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeDateTv" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

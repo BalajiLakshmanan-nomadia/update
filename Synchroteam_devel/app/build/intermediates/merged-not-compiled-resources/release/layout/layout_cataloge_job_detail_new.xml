@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backHeadetTvCatalougue"
+        android:paddingBottom="@dimen/paddingTopLinearLayoutCatalougeJobDetail"
+        android:paddingLeft="@dimen/paddingLeftListViewCatalouge"
+        android:paddingRight="@dimen/paddingTopLinearLayoutCatalougeJobDetail"
+        android:paddingTop="@dimen/paddingTopLinearLayoutCatalougeJobDetail"
+        android:visibility="gone">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            style="@style/styleHeaderTvCatalouge"
+            android:gravity="center"
+            android:text="@string/txt_item_label"
+            android:textAllCaps="true"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            style="@style/styleHeaderTvCatalouge"
+            android:gravity="center"
+            android:text="@string/txt_quantity_label"
+            android:textAllCaps="true"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txtPriceLabel"
+            style="@style/styleHeaderTvCatalouge"
+            android:gravity="center"
+            android:text="@string/txt_price_label"
+            android:textAllCaps="true"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/catalougeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+</LinearLayout>

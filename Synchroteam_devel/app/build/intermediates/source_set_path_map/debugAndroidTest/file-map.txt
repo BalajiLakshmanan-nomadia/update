@@ -1,0 +1,7 @@
+com.synchroteam.synchroteam3.test.app-androidTest-0 D:\Synchro\Synchroteam_devel\app\build\generated\res\resValues\androidTest\debug
+com.synchroteam.synchroteam3.test.app-androidTest-1 D:\Synchro\Synchroteam_devel\app\build\generated\res\rs\androidTest\debug
+com.synchroteam.synchroteam3.test.app-mergeDebugAndroidTestResources-2 D:\Synchro\Synchroteam_devel\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.synchroteam.synchroteam3.test.app-mergeDebugAndroidTestResources-3 D:\Synchro\Synchroteam_devel\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.synchroteam.synchroteam3.test.app-merged_res-4 D:\Synchro\Synchroteam_devel\app\build\intermediates\merged_res\debugAndroidTest
+com.synchroteam.synchroteam3.test.app-androidTest-5 D:\Synchro\Synchroteam_devel\app\src\androidTest\res
+com.synchroteam.synchroteam3.test.app-androidTestDebug-6 D:\Synchro\Synchroteam_devel\app\src\androidTestDebug\res

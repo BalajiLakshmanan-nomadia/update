@@ -1,0 +1,412 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="lableTextSize">24sp</dimen>
+    <dimen name="paddingTopOrangeButton">20dp</dimen>
+    <dimen name="paddingBottomOrangeButton">20dp</dimen>
+    <dimen name="paddingParenLayoutLoginDomain">10dp</dimen>
+    <dimen name="marginLeftInformationTvLoginDomain">10dp</dimen>
+    <dimen name="marginTopInformationTvLoginDomain">10dp</dimen>
+    <dimen name="marginBottomTvLoginDomain">10dp</dimen>
+    <dimen name="textSizeTvNavigationDrawerTitleBarListItem">22sp</dimen>
+    <dimen name="textSizeTvNavigationDrawerListItem">20sp</dimen>
+    <dimen name="paddingTopBottomDateDetailsTextView">12dp</dimen>
+    <dimen name="textSizeTitleTvSyncroteam">25sp</dimen>
+
+    <dimen name="textSizeLableLastSync">25sp</dimen>
+    <dimen name="textSizeDataLastSync">18sp</dimen>
+
+
+    <!-- Login Syncroteam -->
+    <dimen name="textSizeEditTextLoginSyncroTeam">20sp</dimen>
+    <dimen name="tetSizeLoginBtLoginSyncroTeam">22sp</dimen>
+
+    <!-- Last Syncronization -->
+    <dimen name="textSizeLastSyncronizationLableTv">20sp</dimen>
+    <dimen name="textSizeLastSyncronizationSaveBtn">20sp</dimen>
+
+    <!-- Tracking Settings -->
+    <dimen name="textSizeTrackingSettingsLableTv">20sp</dimen>
+    <dimen name="textSizeLastSyncronizationDataTv">20sp</dimen>
+    <dimen name="textSizeStartTimeTv">20sp</dimen>
+    <dimen name="textSizeEndTimeTv">20sp</dimen>
+    <dimen name="textSizeTackingidBtnSave">20sp</dimen>
+
+
+    <!-- Navigation Drawer -->
+    <dimen name="textSizeJobsCount">18sp</dimen>
+
+    <!-- Job Detials -->
+    <dimen name="textSizeActionBarJobDiscription">20sp</dimen>
+
+    <!-- Current Jobs Screen Dimention -->
+    <dimen name="marginLeftStartTv">15dp</dimen>
+    <dimen name="marginTopStartTv">15dp</dimen>
+    <dimen name="textSizeDaysTv">22sp</dimen>
+    <dimen name="textSizeDateTv">37sp</dimen>
+    <dimen name="textSizeDateDetailsTextView">27sp</dimen>
+
+    <dimen name="textSizeTimeOrDateTextView">22sp</dimen>
+    <dimen name="textSizeStatus">22sp</dimen>
+    <dimen name="textSizeTypeStatus">22sp</dimen>
+    <dimen name="textSizeYearTextView">22sp</dimen>
+    <dimen name="textSizeStartLableTextView">22sp</dimen>
+    <dimen name="textSizeJobNameTextView">25sp</dimen>
+    <dimen name="textSizeClientNameTextView">25sp</dimen>
+    <dimen name="textSizeClientLableTextView">25sp</dimen>
+    <dimen name="textSizePriorityLableTextView">25sp</dimen>
+    <dimen name="startActivityTextSize">27sp</dimen>
+
+    <!-- Messages Screen -->
+    <dimen name="marginLeftMessageTv">18dp</dimen>
+    <dimen name="marginTopMessageTv">18dp</dimen>
+    <dimen name="marginRightArrowIv">18dp</dimen>
+    <dimen name="marginTopMessageDetailTv">18dp</dimen>
+    <dimen name="textSizeMessageDiscription">18sp</dimen>
+    <dimen name="textSizeMessageTitle">20sp</dimen>
+
+
+    <!-- Discription Job Detials -->
+    <dimen name="textSizeTitleTvDiscriptionJobDetails">20sp</dimen>
+    <dimen name="textSizeDataTvDiscriptionJobDetails">20sp</dimen>
+    <!-- Reports JobDetail -->
+    <dimen name="textSizeCustomerDisReportsJobDetails">20sp</dimen>
+
+    <!-- Catalougue ListItem -->
+    <dimen name="textSizeCatalougeCategoryListItem">20sp</dimen>
+    <dimen name="textSizeCatalougeItemNameListItem">20sp</dimen>
+    <dimen name="textSizeCatalougeQantityListItem">20sp</dimen>
+    <dimen name="textSizeCatalougeBillListItem">20sp</dimen>
+    <dimen name="textSizeCatalougeAddItem">20sp</dimen>
+    <dimen name="textSizeCatalougeTotalData">20sp</dimen>
+    <dimen name="textSizeCatalougeSustomerSignatureLable">20sp</dimen>
+
+    <!-- Reports JobDetail -->
+    <dimen name="widthSignatureIv">250dp</dimen>
+    <dimen name="heightSignatureIv">100dp</dimen>
+    <dimen name="textSizeLableModifyCancleTvEnterDataDialog">20sp</dimen>
+
+    <!-- Reschedule -->
+    <dimen name="textSizeLableTvReschedule">40sp</dimen>
+    <dimen name="textSizeDataTvReschedule">44sp</dimen>
+
+    <!-- Reports Details -->
+    <dimen name="textSizelableTvReportsDetails">20sp</dimen>
+    <dimen name="textSizeDataTvReportsDetails">18sp</dimen>
+
+    <!-- New Job -->
+    <dimen name="textSizeLableTvNewJob">15sp</dimen>
+
+    <!-- Items List -->
+    <dimen name="textSizeItemsTvitems">20sp</dimen>
+    <dimen name="textSizeCategoryTvitems">20sp</dimen>
+
+
+    <!-- Reports List -->
+    <dimen name="textSizeTabsReports">15sp</dimen>
+    <dimen name="textSizelablesReports">20sp</dimen>
+    <dimen name="textSizeReportsListOfValues">25sp</dimen>
+
+    <dimen name="textSizeDataReports">20sp</dimen>
+
+    <!-- Legal Information -->
+    <dimen name="textSizeLableTvLegalInformation">20sp</dimen>
+    <dimen name="textSizeDataTvLegalInformation">18sp</dimen>
+
+    <!-- Catalouge Information -->
+    <dimen name="textSizeHeaderTvCatalouge">20sp</dimen>
+
+    <!-- Dialog Domain Login Screen -->
+    <dimen name="textSizeHeaderTvDomainDialog">30sp</dimen>
+    <dimen name="textSizeLableTvMultiTextDialog">20sp</dimen>
+
+    <dimen name="textSizeDataTvDomainDialog">28sp</dimen>
+    <dimen name="textSizeLableBtnDomainDialog">30sp</dimen>
+    <!-- New Jobs -->
+    <dimen name="textSizeLableMandatoryFields">20sp</dimen>
+    <dimen name="textSizeLableClientFields">20sp</dimen>
+
+    <!-- New Jobs Client List -->
+    <dimen name="textSizeLableClientList">20sp</dimen>
+    <dimen name="textSizeDataClientList">14sp</dimen>
+    <dimen name="textSizeCancelTvClientList">20sp</dimen>
+
+
+    <!-- Attachment Dialog -->
+    <dimen name="textSizeAddAttachmentTitle">20sp</dimen>
+    <dimen name="textSizeAddAttachmentImageTitle">30sp</dimen>
+    <dimen name="textSizeCancelTextSize">20sp</dimen>
+
+
+    <!-- Signature Dialog  -->
+    <dimen name="textSizeSignaureDialogLables">20sp</dimen>
+
+    <!-- Days Dislog Tracking -->
+    <dimen name="textSizeDaysTrackingSettings">20sp</dimen>
+
+    <!-- Dialog Photo  -->
+    <dimen name="textSizeDilogPhotoEditText">20sp</dimen>
+
+    <!-- CustomFieldVal -->
+    <dimen name="textSizeCustomFieldValTextView">20sp</dimen>
+    <dimen name="textSizeCustomFieldDataTextView">18sp</dimen>
+    <!--Item Autocomplete Text view  -->
+    <dimen name="textSizeItemAutoCompleteclientNameTv">20sp</dimen>
+
+    <!-- Replan if enter  -->
+    <dimen name="textSizeRepDateReplanIfEnter">25sp</dimen>
+    <dimen name="textSizeRepHeurDebReplanIfEnter">25sp</dimen>
+    <dimen name="textSizeRepHeurFinReplanIfEnter">25sp</dimen>
+
+
+    <!-- Calander TextSize -->
+    <dimen name="textSizeCalanderMonth">30sp</dimen>
+    <dimen name="textSizeCalanderDate">20sp</dimen>
+    <dimen name="strokeSizeCalander">3dp</dimen>
+
+    <!-- Unavabilities  -->
+    <dimen name="textSizeDateAndTimeUnavability">20dp</dimen>
+    <dimen name="textSizeDiscriptionUnavability">18dp</dimen>
+
+    <!-- Non WihteLabled Changes Plz do not change this
+
+      -->
+
+    <dimen name="paddingTableRowConfig_Hour_tracking">36dp</dimen>
+    <dimen name="paddingMenusTitle">10dp</dimen>
+    <dimen name="paddingGeneralMenusTitle">3dp</dimen>
+    <!-- increase the padding size in left menu slide for nexus 7 -->
+    <dimen name="paddingMenusParent">7dp</dimen>
+    <dimen name="layoutWidthNavigationDrawer">400dp</dimen>
+    <dimen name="paddingDilogPhotoParent">20dp</dimen>
+
+    <dimen name="widthParentDrawSignature">500dp</dimen>
+    <dimen name="heightCadreSignatureDrawSignature">500dp</dimen>
+    <dimen name="widthParentAddAttachment">500dp</dimen>
+    <dimen name="paddingAddAttachmentTableLayout">15dp</dimen>
+    <dimen name="marginAddAttachmentTableLayout">20dp</dimen>
+
+    <dimen name="paddingAddAttachmentCancelBtn">15dp</dimen>
+
+    <dimen name="widthAttachMentListItemImageView">150dp</dimen>
+
+    <dimen name="heightAttachMentListItemImageView">150dp</dimen>
+    <dimen name="paddingTopLinearLayoutCatalougeJobDetail">12dp</dimen>
+
+    <dimen name="heightCatalougeItemParentLayout">370dp</dimen>
+    <dimen name="marginLeftCatalougeItemRemoveImageIcon">10dp</dimen>
+    <dimen name="paddingCatalougeItemRemoveImageIcon">15dp</dimen>
+    <dimen name="paddingCatalougeItemRemoveData">15dp</dimen>
+    <dimen name="paddingCategoryItem">15dp</dimen>
+    <dimen name="marginLeftCategoryItem">25dp</dimen>
+
+    <dimen name="paddingParentClientListItem">6dp</dimen>
+
+    <dimen name="widthCurrentJobListItemstripColorIv">10dp</dimen>
+
+    <dimen name="heightCurrentJobListItemstripColorIv">130dp</dimen>
+    <dimen name="hwightCurrentJobJobTimeStatusRl">130dp</dimen>
+
+    <dimen name="hwightCurrentJobSecRelativeLAyout">130dp</dimen>
+
+    <dimen name="paddingCurrentJobListItemjobPriorityTv">3dp</dimen>
+    <dimen name="marginLeftclientNameTv">5dp</dimen>
+    <dimen name="paddingParentDataTypeConform">7dp</dimen>
+    <dimen name="paddingParentDataTypeDate">10dp</dimen>
+
+    <dimen name="paddingParentDataTypeHour">10dp</dimen>
+    <dimen name="paddingParentDataTypeNote">10dp</dimen>
+    <dimen name="widthDeadlinrExccededJobListItemstripColorIv">10dp</dimen>
+    <dimen name="heightDeadlinrExccededJobListItemstripColorIv">130dp</dimen>
+    <dimen name="heightDeadlinrExccededJobListItemjobTimeStatusRl">130dp</dimen>
+    <dimen name="heightDeadlinrExccededJobListItemRelativeLayout">130dp</dimen>
+    <dimen name="paddingDeadlineExccedeJobsListItemjobPriorityTv">4dp</dimen>
+    <dimen name="paddingDiscriptionJobDetailcontainers">15dp</dimen>
+    <dimen name="paddingDiscriptionJobDetailjobInformationIv">20dp</dimen>
+    <dimen name="paddingDiscriptionJobDetailclientDetailIv">20dp</dimen>
+
+    <dimen name="marginTopDiscriptionJobDetailDatas">5dp</dimen>
+    <dimen name="marginRightDiscriptionJobDetailmessageIconIv">40dp</dimen>
+    <dimen name="heightFooterCatalougeListItemaddItemContainer">100dp</dimen>
+    <dimen name="paddingFooterCatalougeListItemaddItemTv">15dp</dimen>
+    <dimen name="paddingFooterCatalougeListItemtotalTv">20dp</dimen>
+    <dimen name="paddingFooterCatalougeListRelativelayout">20dp</dimen>
+    <dimen name="paddingFooterCatalougeListLinearLayout">10dp</dimen>
+    <dimen name="heightFooterCatalougeListcustomerSignatureDataTv">100dp</dimen>
+    <dimen name="widthFooterCatalougeListcustomerSignatureDataTv">110dp</dimen>
+    <dimen name="paddingItemsMainListItemRelativeLayout">20dp</dimen>
+    <dimen name="marginRightItemsMainListItemExpandCollapseIcon">28dp</dimen>
+    <dimen name="paddingItemsSubListItemTv">20dp</dimen>
+    <dimen name="paddingItemsSubListItemIv">20dp</dimen>
+    <dimen name="marginBottomJobDetailtimerTv">20dp</dimen>
+    <dimen name="paddingJobDetailtimerTv">3dp</dimen>
+    <dimen name="textSizeJobDetailtimerTv">20sp</dimen>
+
+    <dimen name="paddingLastSyncronizationLinearLayout">20dp</dimen>
+    <dimen name="marginTopLastSyncronizationSaveButton">50dp</dimen>
+    <dimen name="paddingLastSyncronizationSaveButton">20dp</dimen>
+    <dimen name="paddingLegalInformationLinearLayout">10dp</dimen>
+    <dimen name="marginBottomLegalInformationLinearLayout">20dp</dimen>
+
+    <dimen name="paddingLoginDomainDialogLinearLayout">20dp</dimen>
+    <dimen name="paddingLoginDomainDialogTextView">15dp</dimen>
+    <dimen name="paddingLoginDomainDialogButton">15dp</dimen>
+    <dimen name="paddingMessageListItemarrowUpDownTv">30dp</dimen>
+    <dimen name="paddingBottomMessageListItemMessageDetailsTv">10dp</dimen>
+    <dimen name="paddingNewJobsLinearLayout">10dp</dimen>
+    <dimen name="paddingNewJobsTextView">10dp</dimen>
+    <dimen name="marginRightNewJobsmapAddressIcon">20dp</dimen>
+    <dimen name="marginLeftNewJobstextView1">20dp</dimen>
+    <dimen name="marginLeftNewJobsLinearLayout">40dp</dimen>
+    <dimen name="marginRightNewJobsLinearLayout">40dp</dimen>
+    <dimen name="marginLeftNewJobsTextView6">40dp</dimen>
+    <dimen name="heightNewJobClientDialogRelativelayout">800dp</dimen>
+    <dimen name="paddingNewJobClientDialogsearchContanerClientList">20dp</dimen>
+    <dimen name="paddingNewJobClientDialogsearchsearchViewEt">6dp</dimen>
+    <dimen name="marginLeftNewJobClientDialogCancelTv">10dp</dimen>
+    <dimen name="widthNewSigantureFactureLinearLayout">500dp</dimen>
+    <dimen name="marginReportsDetailListItem">20dp</dimen>
+    <dimen name="paddingReportsTextTabsReports">24dp</dimen>
+    <dimen name="heightReportsall_repots_tab_selector">8dp</dimen>
+    <dimen name="heightReportsbydate_repots_tab_selector">8dp</dimen>
+    <dimen name="marginReportsCategoryListItem">20dp</dimen>
+    <dimen name="paddingReportsDetailRelativeLayout">10dp</dimen>
+    <dimen name="marginLeftReportsDetailTitleReportsDetailsTv">10dp</dimen>
+    <dimen name="marginRightReportsDetailTitleReportsDetailsTv">10dp</dimen>
+    <dimen name="paddingReportsDetailTableLayout">10dp</dimen>
+    <dimen name="paddingReportsDetailLinearLayout">20dp</dimen>
+    <dimen name="paddingReportsDetailListView">30dp</dimen>
+    <dimen name="widthReportsListItemstripColorIv">10dp</dimen>
+    <dimen name="heightReportsListItemstripColorIv">130dp</dimen>
+    <dimen name="heightReportsListItemJobTimeStatusRl">130dp</dimen>
+    <dimen name="heightReportsListItemRelativeLayout">130dp</dimen>
+    <dimen name="paddingResceduleLinearLayout">20dp</dimen>
+    <dimen name="marginTopResceduledateDataTvRescedule">20dp</dimen>
+    <dimen name="paddingSyncroTeamLoginRelativeLayout">8dp</dimen>
+    <dimen name="marginTopSyncroTeamLoginLinearLayout">90dp</dimen>
+    <dimen name="marginBottomSyncroTeamLoginFloatLabelLayout">12dp</dimen>
+    <dimen name="marginBottomSyncroTeamLogindomainLoginEt">7dp</dimen>
+    <dimen name="paddingRightBottomSyncroTeamLogindomainLoginEt">35dp</dimen>
+    <dimen name="marginTopSyncroteamLoginuserEditText">18dp</dimen>
+    <dimen name="marginTopSyncroteamLoginloginBt">30dp</dimen>
+    <dimen name="marginTopSyncroteamLoginimageView1">80dp</dimen>
+    <dimen name="paddingSyncroTeamBaseActivityiconNavigationDrawer">15dp</dimen>
+    <dimen name="marginLeftSyncroTeamBaseActivityiconNavigationDrawer">3dp</dimen>
+    <dimen name="marginLeftSyncroTeamBaseActivitytitleCurrentScreen">12dp</dimen>
+    <dimen name="paddingSyncroTeamBaseActivityaddJobBtn">12dp</dimen>
+    <dimen name="marginRightSyncroTeamBaseActivityaddJobBtn">35dp</dimen>
+    <dimen name="paddingRightSyncroTeamBaseActivitysyncroniseJobBtn">15dp</dimen>
+    <dimen name="marginRightSyncroTeamBaseActivityyncroniseJobBtn">15dp</dimen>
+    <dimen name="widthToCOmeJobListstripColorIv">10dp</dimen>
+    <dimen name="heightToCOmeJobListstripColorIv">130dp</dimen>
+    <dimen name="heightToCOmeJobListjobTimeStatusRl">130dp</dimen>
+    <dimen name="heightToCOmeJobListRelativeLayout">130dp</dimen>
+    <dimen name="paddinToCOmeJobListjobPriorityTv">4dp</dimen>
+    <dimen name="paddinTrackingLinearLayout">10dp</dimen>
+    <dimen name="paddinTrackingLinearLayout2">20dp</dimen>
+    <dimen name="paddingTrackinghoursofOperationDataTv">2dp</dimen>
+    <dimen name="marginTopTrackingidBtnSave">50dp</dimen>
+    <dimen name="paddingTrackingidBtnSave">20dp</dimen>
+    <dimen name="paddingReportsJobDetailRelativeLayout">20dp</dimen>
+
+    <dimen name="paddingLeftReportsJobDetailRelativeLayout">5dp</dimen>
+    <dimen name="paddingReportsJobDetailarrowButtonAttachIv">5dp</dimen>
+    <dimen name="marginRIghtReportsJobDetailarrowButtonAttachIv">0dp</dimen>
+    <dimen name="marginRIghtReportsJobDetailaddAttachmentIconIv">42dp</dimen>
+    <dimen name="paddingReportsJobDetailLinearLayout">10dp</dimen>
+    <dimen name="widthReportsJobDetailcustomerSignatureDataTv">110dp</dimen>
+    <dimen name="widthReportsJobDetailcustomerSignatureDataTvNew">250dp</dimen>
+    <dimen name="heightReportsJobDetailcustomerSignatureDataTv">100dp</dimen>
+    <dimen name="heightCustomFIeldValParent">110dp</dimen>
+    <dimen name="frameUnavailabilityWidth">140dp</dimen>
+    <dimen name="marginLeftCutomFiledvalcustom">20dp</dimen>
+    <dimen name="marginTopCutomFiledvalcustom">15dp</dimen>
+    <dimen name="paddingCustomFieldparent">4dp</dimen>
+    <dimen name="drawablePaddingCustomFieldtitleTextTv">4dp</dimen>
+    <dimen name="marginLeftreplanifEnterParent">40dp</dimen>
+    <dimen name="marginRightreplanifEnterParent">40dp</dimen>
+    <dimen name="paddingItemAutoCompleteclientNameTv">10dp</dimen>
+    <dimen name="widhtReplanIfEnterrepDate">480dp</dimen>
+    <dimen name="widhtReplanIfEnterrepHeurDeb">240dp</dimen>
+    <dimen name="widhtReplanIfEnterrepHeurFin">240dp</dimen>
+    <dimen name="paddingParentConfigHourTracking">20dp</dimen>
+    <dimen name="marginLeftTextViewConfigHourTracking">6dp</dimen>
+    <dimen name="marginarrowBtnUpDownStartTimeConfigHourTracking">10dp</dimen>
+    <dimen name="paddingBottomTextVeiwDialogPhoto">20dp</dimen>
+    <dimen name="paddingTextViewAddAttachment">15dp</dimen>
+    <dimen name="marginLinearLayoutCatalougeItemListView">4dp</dimen>
+    <dimen name="marginTopitemNameDataTvCatalougeItemListView">10dp</dimen>
+    <dimen name="drawablePaddingTextViewNavigatinDrawer">2dp</dimen>
+    <dimen name="paddingmapTargetCorporationIconNewJobs">5dp</dimen>
+    <dimen name="paddingheurDebutConfigHourTracking">20dp</dimen>
+    <dimen name="heightSpinnerNewJob">85dp</dimen>
+    <dimen name="heightTextView">200dp</dimen>
+    <dimen name="dimenMarginClientDialog">14dp</dimen>
+    <!-- dimen to be copied in andother folder -->
+    <dimen name="paddingTopDiscriptionItem">15dp</dimen>
+    <dimen name="paddingBottomDiscriptionItem">10dp</dimen>
+    <dimen name="paddingLeftCurrentJobWeekRibbonStrip">18dp</dimen>
+    <dimen name="paddingRightCurrentJobWeekRibbonStrip">18dp</dimen>
+    <dimen name="paddingLeftListViewCatalouge">25dp</dimen>
+    <dimen name="paddingCalanderImagesContainer">15dp</dimen>
+
+    <dimen name="paddingRelativeLayout1UnavabilityListItem">15dp</dimen>
+    <dimen name="paddingTextViewUnavabilityListItem">7dp</dimen>
+    <!-- V3.3 -->
+    <dimen name="textSizelablesReportsStatus">25sp</dimen>
+
+    <dimen name="sizeWidthItemImageReports">90dp</dimen>
+    <dimen name="sizeHeightItemImageReports">90dp</dimen>
+    <dimen name="paddingReports">14dp</dimen>
+    <dimen name="heightMultiDialogContainer">350dp</dimen>
+
+
+    <!-- V3.4 Dimentions not need to be changed -->
+
+    <dimen name="paddingCleintSectionNearestClient">15dp</dimen>
+
+    <!-- ...................................................NEW CHANGES............................................ -->
+    <!-- Discription Job Detials -->
+    <dimen name="textSizeTitleTvDiscriptionJobDetailsNew">20sp</dimen>
+
+    <!-- Floating action button values -->
+    <dimen name="fab_size_normal">96dp</dimen>
+    <dimen name="fab_size_mini">62dp</dimen>
+    <dimen name="fab_icon_size">40dp</dimen>
+    <dimen name="fab_plus_icon_size">24dp</dimen>
+    <dimen name="fab_plus_icon_stroke">5dp</dimen>
+    <dimen name="fab_shadow_offset">5dp</dimen>
+    <dimen name="fab_shadow_radius">14dp</dimen>
+    <dimen name="fab_stroke_width">4dp</dimen>
+    <dimen name="fab_actions_spacing">28dp</dimen>
+    <dimen name="fab_labels_margin">14dp</dimen>
+
+    <dimen name="negative_margin_10">-20dp</dimen>
+    <dimen name="negative_margin_20">-40dp</dimen>
+
+    <!--For Dialog ClockInOut-->
+    <dimen name="dialog_clock_in_out_width">450dp</dimen>
+    <dimen name="dialog_clock_in_out_card_min_height">200dp</dimen>
+    <dimen name="dialog_clock_in_out_cancel_height">50dp</dimen>
+    <dimen name="dialog_title_size">30sp</dimen>
+    <dimen name="dialog_back_btn_size">50sp</dimen>
+
+    <string name="dialog_start_activity_height">0.65</string>
+    <dimen name="activity_dialog_min_height">400dp</dimen>
+
+    <!--clock in/out icon size-->
+    <dimen name="txt_clock_in_out">40sp</dimen>
+
+    <!--Invoice page-->
+    <dimen name="txt_invoice_label">10sp</dimen>
+    <dimen name="txt_invoice_height">20sp</dimen>
+    <dimen name="txt_margin_label_left">25dp</dimen>
+    <dimen name="txt_padding_invoice">8dp</dimen>
+    <dimen name="txt_invoice_label_padding">20dp</dimen>
+    <dimen name="dividerHeightJobSchedule">40dp</dimen>
+
+    <dimen name="txt_tab_size_label">8sp</dimen>
+
+</resources>

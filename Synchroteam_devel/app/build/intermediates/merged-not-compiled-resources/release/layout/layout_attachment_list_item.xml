@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lin_attachment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+        android:background="@drawable/boxframe_textview_layout"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingContainerClientsection">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/clientNameLableTv"
+                style="@style/styleHeadingsTextViewJobDiscription"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <TextView
+                android:id="@+id/viewAttachmentInBrowser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/paddingAddAttachmentTableLayout"
+                android:text="@string/fa_download"
+                android:textColor="@color/actionbarColor"
+                android:textSize="@dimen/textSizeDataTvDiscriptionJobDetails" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

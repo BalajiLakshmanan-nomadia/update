@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fontify="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_serial_title_layout"
+        android:gravity="center"
+        android:padding="@dimen/paddingMenusTitle"
+        android:text="@string/txt_sorting"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeDaysTv"
+        fontify:font_name="@string/fontName_hevelicaLight"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_unavailability_title_layout"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/paddingTopOrangeButton"
+        android:paddingRight="@dimen/paddingTopOrangeButton"
+        android:weightSum="8">
+
+        <ListView
+            android:id="@+id/lv_sorting_options"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:paddingTop="@dimen/paddingTopOrangeButton"
+            >
+        </ListView>
+
+        <!-- Close Button container -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/paddingTopOrangeButton"
+            android:paddingRight="@dimen/paddingTopOrangeButton">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txtConfirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/boxframe_add_button"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingTopOrangeButton"
+                android:paddingRight="@dimen/paddingTopOrangeButton"
+                android:singleLine="true"
+                android:text="@string/txt_confirm"
+                android:textColor="@color/job_description_bg"
+                android:textSize="@dimen/textSizeStartTimeTv"
+                fontify:font_name="@string/fontName_hevelicaLight"/>
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txtClose"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:layout_weight="1"
+                android:background="@drawable/boxframe_cancel_button"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingTopOrangeButton"
+                android:paddingRight="@dimen/paddingTopOrangeButton"
+                android:singleLine="true"
+                android:text="@string/textCancelLable"
+                android:textColor="@color/job_description_bg"
+                android:textSize="@dimen/textSizeStartTimeTv"
+                fontify:font_name="@string/fontName_hevelicaLight"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

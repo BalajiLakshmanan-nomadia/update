@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiTransparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/widthNewSigantureFactureLinearLayout"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/categoryNameTv"
+            style="@style/styleDomainDialogHeaderLogin"
+            android:gravity="center"
+            android:padding="@dimen/paddingLoginDomainDialogTextView"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/heightMultiDialogContainer"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/containerViews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical" >
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/info"
+                style="@style/styleMultipleDataDialogLable"
+                android:background="@android:color/background_light"
+              
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+            <com.synchroteam.TypefaceLibrary.EditText style="@style/styleMultipleDataDialogData" />
+        </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/cancelTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/textCancelLable"
+                android:textSize="@dimen/textSizeLableModifyCancleTvEnterDataDialog"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/backgoundBorderColor" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/modifytv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/modifier"
+                android:textSize="@dimen/textSizeLableModifyCancleTvEnterDataDialog"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

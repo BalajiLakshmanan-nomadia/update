@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/semiTransparent"
+    android:padding="@dimen/paddingLoginDomainDialogLinearLayout"
+    android:orientation="vertical" >
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        style="@style/styleDomainDialogHeaderLogin"
+        android:gravity="center"
+        android:padding="@dimen/paddingLoginDomainDialogTextView"
+        android:text="@string/textLableTitleBarWipeAllDetails"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        style="@style/styleDoaminDIalogText"
+        android:padding="@dimen/paddingLoginDomainDialogTextView"
+        android:text="@string/txt_confirm"
+        android:background="@color/backMessaeTvWipeAllDetailDialog"
+        android:textColor="@color/textMessageWipeAllDetailDialog"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgoundBorderColor"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <com.synchroteam.TypefaceLibrary.Button
+        android:id="@+id/yesBtn"
+        style="@style/styleConfirmButtonWipeAllDetailsText"
+        android:layout_weight="1"
+        android:background="@color/backYesTvWipeAllDetailDialog"
+        android:padding="@dimen/paddingLoginDomainDialogButton"
+        android:text="@string/textYesLable" />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/backgoundBorderColor"
+        />
+    <com.synchroteam.TypefaceLibrary.Button
+        android:id="@+id/noBtn"
+        android:layout_weight="1"
+        style="@style/styleConfirmButtonWipeAllDetailsText"
+        android:padding="@dimen/paddingLoginDomainDialogButton"
+        android:background="@color/backNoTvWipeAllDetailDialog"
+        android:text="@string/textNoLable" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:padding="@dimen/paddingMenusTitle">
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/txt_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/textSizeDilogPhotoEditText"
+        fontify:font_name="@string/fontName_avenir" />
+
+    <com.synchroteam.TypefaceLibrary.EditText
+        android:id="@+id/ed_data"
+        style="@style/styleMultipleDataDialogDataNew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="true"
+        android:layout_below="@+id/txt_item_name"
+        android:layout_toLeftOf="@+id/txtBarcodeIcon"
+        android:layout_toStartOf="@+id/txtBarcodeIcon"
+        android:gravity="bottom"
+        android:imeOptions="actionNext"
+        android:inputType="textMultiLine"
+        android:maxLength="512"
+        android:maxLines="2"
+        fontify:font_name="@string/fontName_avenir" />
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+
+    <TextView
+        android:id="@+id/txtBarcodeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/barcode_drawable"
+        android:text="@string/fa_barcode"
+        android:textColor="@color/actionbarColor"
+        android:textSize="@dimen/textSizeDateTv" />
+
+</RelativeLayout>

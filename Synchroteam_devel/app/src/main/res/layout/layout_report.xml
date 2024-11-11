@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundAppScreens"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rd_Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_calander_current_jobs"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.synchroteam.TypefaceLibrary.Button
+                android:id="@+id/tab_reports_without_date"
+                style="@style/styleTextTabsReports"
+
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/textAllLableTv"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/all_repots_tab_selector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightReportsall_repots_tab_selector"
+                android:background="@color/colorOrangeTabBarReportsSelected" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.synchroteam.TypefaceLibrary.Button
+                android:id="@+id/tab_reports_with_date"
+                style="@style/styleTextTabsReports"
+                android:layout_weight="1"
+                android:text="@string/textByDateLableTv"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/bydate_repots_tab_selector"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightReportsbydate_repots_tab_selector"
+                android:background="@color/colorOrangeTabBarReportsSelected"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pagerReports"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rd_Group" />
+
+</RelativeLayout>

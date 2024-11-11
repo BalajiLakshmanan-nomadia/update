@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/job_description_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingMenusTitle"
+    android:weightSum="9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/unavailabilityListView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/boxframe_textview_layout"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="@dimen/paddingMenusTitle">
+
+                <ImageView
+                    android:id="@+id/imgStartIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:src="@drawable/ic_datetime" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtStartDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:textColor="@color/unavailability_description_color"
+                    android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtStartTimE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:hint="@string/textFromDateLable"
+                    android:textColor="@color/unavailability_description_color"
+                    android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:layout_weight="1"
+            android:background="@drawable/boxframe_textview_layout"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:padding="@dimen/paddingMenusTitle">
+
+                <ImageView
+                    android:id="@+id/imgEndIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:src="@drawable/ic_datetime2" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtEndDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:textColor="@color/unavailability_description_color"
+                    android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:hint="@string/textToDateLable"
+                    android:textColor="@color/unavailability_description_color"
+                    android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.synchroteam.TypefaceLibrary.EditText
+        android:id="@+id/edtIssueDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/paddingMenusTitle"
+        android:layout_weight="4"
+        android:background="@drawable/boxframe_unavailability_description"
+        android:gravity="top"
+        android:maxLength="512"
+        android:padding="@dimen/paddingTopOrangeButton"
+        android:textColor="@color/issue_description_color"
+        android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+        fontify:font_name="@string/fontName_avenir" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txtCreate"
+            android:layout_width="@dimen/heightCatalougeItemParentLayout"
+            android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+            android:background="@drawable/boxframe_textview_layout"
+            android:gravity="center"
+            android:paddingLeft="@dimen/paddingTopOrangeButton"
+            android:paddingRight="@dimen/paddingTopOrangeButton"
+            android:singleLine="true"
+            android:text="@string/textOkLableNewJob"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSizeStartTimeTv"
+            fontify:font_name="@string/fontName_avenir" />
+    </RelativeLayout>
+
+</LinearLayout>

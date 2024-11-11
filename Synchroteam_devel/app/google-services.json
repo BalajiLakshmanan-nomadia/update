@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "410176848523",
+    "firebase_url": "https://api-project-410176848523.firebaseio.com",
+    "project_id": "api-project-410176848523",
+    "storage_bucket": "api-project-410176848523.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410176848523:android:6866a09101ed5f95",
+        "android_client_info": {
+          "package_name": "com.synchroteam.synchroteam2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410176848523-3if594o33q25g2u3nb2hmqhfihd7e70h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2GArmYq_3PGp19tgnmmD9LhVQ2hJygks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410176848523-3if594o33q25g2u3nb2hmqhfihd7e70h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "410176848523-hetmuvf9levuepckt610p81u62si91qd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.synchroteam.synchroteam2"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410176848523:android:93d8ccefe1506076464a8e",
+        "android_client_info": {
+          "package_name": "com.synchroteam.synchroteam3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "410176848523-3if594o33q25g2u3nb2hmqhfihd7e70h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2GArmYq_3PGp19tgnmmD9LhVQ2hJygks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "410176848523-3if594o33q25g2u3nb2hmqhfihd7e70h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "410176848523-hetmuvf9levuepckt610p81u62si91qd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.synchroteam.synchroteam2"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

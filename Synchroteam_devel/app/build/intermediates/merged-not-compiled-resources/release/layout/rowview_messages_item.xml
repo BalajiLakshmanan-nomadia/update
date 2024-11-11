@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/paddingTopOrangeButton"
+    android:paddingRight="@dimen/paddingTopOrangeButton"
+    android:paddingTop="@dimen/paddingTopOrangeButton"
+    app:cardCornerRadius="@dimen/paddingGeneralMenusTitle"
+    app:cardElevation="@dimen/paddingMenusTitle"
+    app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/lin_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/paddingTopOrangeButton"
+            android:paddingRight="@dimen/paddingTopOrangeButton">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/tv_msg_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeftMessageTv"
+                android:layout_marginTop="@dimen/marginTopMessageTv"
+                android:layout_toLeftOf="@+id/arrowUpDownTv"
+                android:textSize="@dimen/textSizeMessageTitle"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/tv_msg_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeftMessageTv"
+                android:layout_marginTop="@dimen/marginTopMessageDetailTv"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/paddingBottomMessageListItemMessageDetailsTv"
+                android:singleLine="false"
+                android:textColor="@color/messageDiscriptionTvMessages"
+                android:textSize="@dimen/textSizeMessageDiscription"
+                fontify:font_name="@string/fontName_avenir" />
+        </LinearLayout>
+</androidx.cardview.widget.CardView>

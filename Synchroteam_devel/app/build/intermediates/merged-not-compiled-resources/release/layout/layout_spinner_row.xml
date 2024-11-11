@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.synchroteam.TypefaceLibrary.TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/txtSpinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/paddingMenusTitle"
+    android:text="@string/txt_comp_tax_lbl"
+    android:textColor="@color/invoice_text_color"
+    android:textColorHint="@color/invoice_hint_color"
+    android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+    fontify:font_name="@string/fontName_avenir">
+
+</com.synchroteam.TypefaceLibrary.TextView>

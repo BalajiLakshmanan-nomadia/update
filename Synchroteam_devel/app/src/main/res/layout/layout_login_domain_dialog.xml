@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiTransparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingLoginDomainDialogLinearLayout">
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        style="@style/styleDomainDialogHeaderLogin"
+        android:gravity="center"
+        android:padding="@dimen/paddingLoginDomainDialogTextView"
+        android:text="@string/textInformationlable"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        style="@style/styleDoaminDIalogText"
+        android:autoLink="web"
+        android:padding="@dimen/paddingLoginDomainDialogTextView"
+        android:text="@string/textDomainInformation"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navigationdrawerlist_dividerline" />
+
+    <com.synchroteam.TypefaceLibrary.Button
+        android:id="@+id/okButton"
+        style="@style/styleOkButtonDomainDialogText"
+        android:padding="@dimen/paddingLoginDomainDialogButton"
+        android:text="@string/textOkLable"
+        android:textAllCaps="true" />
+
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textVersionNameLabelTv"
+        style="@style/styleDataTvLegalInformation"
+        android:layout_marginBottom="@dimen/marginBottomLegalInformationLinearLayout"
+        android:layout_marginTop="@dimen/marginBottomLegalInformationLinearLayout"
+        android:padding="@dimen/paddingLegalInformationLinearLayout"
+        android:text="@string/txt_version" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBottomLegalInformationLinearLayout"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingLegalInformationLinearLayout">
+
+        <TextView
+            android:id="@+id/txt_support_lable"
+            style="@style/styleLableTvLegalInformation"
+            android:text="@string/txt_support"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/txt_hotline_mob"
+            style="@style/styleDataTvLegalInformation"
+            android:autoLink="phone"
+            android:text="@string/txt_support_content" />
+
+        <TextView
+            android:id="@+id/txt_hotline_email_lable"
+            style="@style/styleDataTvLegalInformation"
+            android:autoLink="phone"
+            android:text="@string/txt_email_us" />
+
+        <TextView
+            android:id="@+id/txt_hotline_email"
+            style="@style/styleDataTvLegalInformation"
+            android:autoLink="email"
+            android:text="@string/txt_support_mail" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBottomLegalInformationLinearLayout"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingLegalInformationLinearLayout">
+
+        <TextView
+            style="@style/styleLableTvLegalInformation"
+            android:text="@string/txt_europe"
+            android:textAllCaps="true" />
+
+        <TextView
+            style="@style/styleDataTvLegalInformation"
+            android:layout_width="wrap_content"
+            android:autoLink="web"
+            android:text="@string/txt_europe_address" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBottomLegalInformationLinearLayout"
+        android:orientation="vertical"
+        android:padding="@dimen/paddingLegalInformationLinearLayout">
+
+        <TextView
+            style="@style/styleLableTvLegalInformation"
+            android:text="@string/txt_americas"
+            android:textAllCaps="true" />
+
+        <TextView
+            style="@style/styleDataTvLegalInformation"
+            android:layout_width="wrap_content"
+            android:autoLink="web"
+            android:text="@string/txt_americas_address" />
+    </LinearLayout>
+
+</LinearLayout>

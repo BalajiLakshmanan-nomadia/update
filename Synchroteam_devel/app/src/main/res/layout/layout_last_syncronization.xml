@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingLastSyncronizationLinearLayout">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/textPushAutosync"
+            android:textColor="@color/textLableSyncronizationSettings"
+            android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <ImageButton
+            android:id="@+id/onOffLastSyncronization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/traking_off_btn" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/celldivider" />
+
+    <RadioGroup
+        android:id="@+id/rdoGrpSync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingLastSyncronizationLinearLayout">
+
+        <com.synchroteam.TypefaceLibrary.RadioButton
+            android:id="@+id/rdoBtnPushSync"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:text="@string/txt_push_sync"
+            android:textColor="@color/textLableSyncronizationSettings"
+            android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.RadioButton
+            android:id="@+id/rdoBtnAutoSync"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:text="@string/txt_auto_sync"
+            android:textColor="@color/textLableSyncronizationSettings"
+            android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/celldivider" />
+
+    <LinearLayout
+        android:id="@+id/linPeriodicity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingLastSyncronizationLinearLayout">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".98"
+            android:gravity="center_vertical"
+            android:text="@string/textPridocityLableTv"
+            android:textColor="@color/textLableSyncronizationSettings"
+            android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.EditText
+            android:id="@+id/dataPreiodTv"
+            style="@style/EditTextAppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/textLableSyncronizationSettings"
+            android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPeriodictyDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/celldivider" />
+
+    <com.synchroteam.TypefaceLibrary.Button
+        android:id="@+id/saveButton"
+        style="@style/styleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/marginTopLastSyncronizationSaveButton"
+        android:padding="@dimen/paddingLastSyncronizationSaveButton"
+        android:text="@string/modifier"
+        android:textAllCaps="true"
+        android:textSize="@dimen/textSizeLastSyncronizationSaveBtn"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+</LinearLayout>

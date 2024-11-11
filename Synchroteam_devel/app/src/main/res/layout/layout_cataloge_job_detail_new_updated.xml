@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/job_description_bg"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/job_description_bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backHeadetTvCatalougue"
+                android:paddingBottom="@dimen/paddingTopLinearLayoutCatalougeJobDetail"
+                android:paddingLeft="@dimen/paddingLeftListViewCatalouge"
+                android:paddingRight="@dimen/paddingTopLinearLayoutCatalougeJobDetail"
+                android:paddingTop="@dimen/paddingTopLinearLayoutCatalougeJobDetail"
+                android:visibility="gone">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleHeaderTvCatalouge"
+                    android:gravity="center"
+                    android:text="@string/txt_item_label"
+                    android:textAllCaps="true"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleHeaderTvCatalouge"
+                    android:gravity="center"
+                    android:text="@string/txt_quantity_label"
+                    android:textAllCaps="true"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtPriceLabel"
+                    style="@style/styleHeaderTvCatalouge"
+                    android:gravity="center"
+                    android:text="@string/txt_price_label"
+                    android:textAllCaps="true"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+            </LinearLayout>
+
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/addItemContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightFooterCatalougeListItemaddItemContainer"
+                android:layout_marginTop="@dimen/padding_small"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/addcell"
+                android:drawablePadding="@dimen/paddingFooterCatalougeListItemaddItemTv"
+                android:gravity="left|center"
+                android:paddingBottom="@dimen/paddingFooterCatalougeListItemaddItemTv"
+                android:paddingLeft="@dimen/paddingTopLinearLayoutCatalougeJobDetail"
+                android:paddingRight="@dimen/paddingFooterCatalougeListItemaddItemTv"
+                android:paddingTop="@dimen/paddingFooterCatalougeListItemaddItemTv"
+                android:text="@string/textAddItem"
+                android:textAllCaps="true"
+                android:textColor="@color/textAddItemCatalougeListItem"
+                android:textSize="@dimen/textSizeCatalougeAddItem"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/catalougeList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/takeBackSerializedPart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightFooterCatalougeListItemaddItemContainer"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/take_back"
+                android:drawablePadding="@dimen/paddingFooterCatalougeListItemaddItemTv"
+                android:gravity="left|center"
+                android:paddingBottom="@dimen/paddingFooterCatalougeListItemaddItemTv"
+                android:paddingLeft="@dimen/paddingTopLinearLayoutCatalougeJobDetail"
+                android:paddingRight="@dimen/paddingFooterCatalougeListItemaddItemTv"
+                android:paddingTop="@dimen/paddingFooterCatalougeListItemaddItemTv"
+                android:text="@string/txt_take_back_serialized_part"
+                android:textAllCaps="true"
+                android:textColor="@color/textAddItemCatalougeListItem"
+                android:textSize="@dimen/textSizeCatalougeAddItem"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/takeBackSeializedPartList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:visibility="visible" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_normal"
+                android:layout_marginTop="@dimen/padding_normal"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/totalTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:padding="@dimen/paddingFooterCatalougeListItemtotalTv"
+                    android:textColor="@color/textTotalData"
+                    android:textSize="@dimen/textSizeCatalougeTotalData"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/paddingFooterCatalougeListRelativelayout">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/customerSignature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/containerSignature"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/textCustomerSignatureLableTv"
+                        android:textColor="@color/textCustomerSignatureLableCatalouge"
+                        android:textSize="@dimen/textSizeCatalougeSustomerSignatureLable"
+                        fontify:font_name="@string/fontName_hevelicaLight" />
+
+                    <LinearLayout
+                        android:id="@+id/containerSignature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/customerSignatureDataTv"
+                            android:layout_width="@dimen/widthFooterCatalougeListcustomerSignatureDataTv"
+                            android:layout_height="@dimen/heightFooterCatalougeListcustomerSignatureDataTv"
+                            android:scaleType="centerInside" />
+
+                        <ImageView
+                            android:id="@+id/mySignatureIconIv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:src="@drawable/signature_icon" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

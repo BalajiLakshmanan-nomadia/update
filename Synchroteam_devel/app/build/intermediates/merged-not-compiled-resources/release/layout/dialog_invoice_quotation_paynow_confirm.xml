@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@color/actionbarColor"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_credit_card"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/fa_credit_card"
+            android:textColor="@android:color/white"
+            android:textSize="45sp"
+            fontify:font_name="@string/fontName_fontAwesome" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_label_balance"
+            android:textColor="@color/caldroid_black"
+            android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/laytxtedtview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:padding="5dp">
+
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text=""
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.EditText
+                    android:id="@+id/editTxtBalance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:digits=".0123456789"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxWidth="140dp"
+                    android:minWidth="@dimen/widhtReplanIfEnterrepHeurFin"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </FrameLayout>
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txtEditIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="14dp"
+                android:layout_marginRight="14dp"
+                android:gravity="center"
+                android:padding="9dp"
+                android:text="@string/fa_pencil"
+                android:textColor="@color/red"
+                android:textSize="@dimen/textSizeLableBtnDomainDialog" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/btn_cancel_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/marginLeftCategoryItem"
+            android:background="@color/backgroundCurrentDate"
+            android:text="@string/textCancelLable"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTitleTvSyncroteam"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/btn_confirm_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/marginLeftCategoryItem"
+            android:layout_marginStart="@dimen/marginLeftCategoryItem"
+            android:background="@color/pay_now_green"
+            android:text="@string/txt_confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeTitleTvSyncroteam"
+            fontify:font_name="@string/fontName_avenir" />
+
+    </LinearLayout>
+
+</LinearLayout>

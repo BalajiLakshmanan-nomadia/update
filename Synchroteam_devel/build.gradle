@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.6.0'
+    repositories {
+        mavenCentral()
+        google()  // Google's Maven repository
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.2.0'
+
+        classpath 'com.google.gms:google-services:4.3.13'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()  // Google's Maven repository
+        jcenter()
+    }
+
+
+  //  project.configurations.all {
+  //      resolutionStrategy {
+  //          force 'androidx.work:work-runtime:2.7.1'
+  //      }
+  //  }
+
+}

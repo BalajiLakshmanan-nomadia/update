@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="msg_error_photo">No photo selected</string>
+    <string name="msg_succes_ajout">Job added successfully</string>
+    <string name="gps_lancer">Geolocation launch please wait...</string>
+    <string name="gps_succes">Geolocation successfully complete</string>
+    <string name="gps_error">The address could not be determined</string>
+    <string name="gps_delai">Time Out</string>
+    <string name="liste">Choose Item From List</string>
+    <string name="textAddressLable">Address</string>
+    <string name="textJobCompletedLableTv">Job Complete</string>
+    <string name="textContactLableTv">Contact</string>
+    <string name="textDescriptionLable">Description</string>
+    <string name="textStartLable">Start</string>
+    <string name="textUserName">Username</string>
+    <string name="textPassword">Password</string>
+    <string name="text_domainSmall">Domain</string>
+    <string name="textJobReportLable">Report Template</string>
+    <string name="textNoLable">No</string>
+    <string name="textComplaintLable">Compliant</string>
+    <string name="textNotComplaintLable">Not Compliant</string>
+    <string name="textOkLable">OK</string>
+    <string name="textYesLable">Yes</string>
+    <string name="textJobManagerLableTv">Job Manager</string>
+    <string name="textJobPhoneLableTv">Phone</string>
+    <string name="ask_synch_msg">Would you like to synchronise your data?</string>
+    <string name="textCancelLable">Cancel</string>
+    <string name="lundi">Monday</string>
+    <string name="mardi">Tuesday</string>
+    <string name="mercredi">Wednesday</string>
+    <string name="jeudi">Thursday</string>
+    <string name="vendredi">Friday</string>
+    <string name="samedi">Saturday</string>
+    <string name="dimanche">Sunday</string>
+    <string name="textRescedule">Reschedule</string>
+    <string name="textDecline">Decline</string>
+    <string name="replanification">Rescheduling</string>
+    <string name="textJobNumberLableTv">Number</string>
+    <string name="textDomainInformation">Only fill the subdomain of Synchroteam. For example \"acme\" if your Synchroteam account is \n \"https://acme.synchroteam.com\"</string>
+    <string name="textInformationlable">Information</string>
+    <string name="textJobCustomerLableTv">Customer</string>
+    <string name="textJobTechnicianLableTv">Technician</string>
+    <string name="button_wipeAllDetails">Wipe All Data</string>
+    <string name="textFinishLableTv">Finished</string>
+    <string name="textToastPleaseStartJob">Start Job first</string>
+    <!--<string name="textCurrentJobLable">Current Jobs</string>-->
+    <string name="textCurrentJobLable">Today\'s Jobs</string>
+    <string name="textToComeLable">Upcoming</string>
+    <string name="textDedlineExceededLable">Late</string>
+    <string name="textReportsLable">Reports</string>
+    <string name="textCalanderlable">Calendar</string>
+    <string name="textMessagesLable">Messages</string>
+    <string name="textLastSyncronization">Last Sync</string>
+    <string name="textTrackingLableTvTracking">Tracking</string>
+    <string name="textLogout">Logout</string>
+    <string name="textSystemOptions">System Options</string>
+    <string name="button_login">Login</string>
+    <string name="textAveragePriorityTv">Normal</string>
+    <string name="textLowPriorityTv">Low</string>
+    <string name="textHighPriorityTv">High</string>
+    <string name="textAddItem">Add Item</string>
+    <string name="textPridocityLableTv">Periodicity(min)</string>
+    <string name="textFrequencLableTv">Frequency(m)</string>
+    <string name="textDaysOfOperationLableTv">Days of Operation</string>
+    <string name="textHoursOfOperationLableTv">Hours of Operation</string>
+    <string name="textAllLableTv">All</string>
+    <string name="textByDateLableTv">By Date</string>
+    <string name="textTabsReports">Report</string>
+    <string name="textTabsCatalouge">Invoicing</string>
+    <!-- Replace ATTACHMENT to ATTACHMENTS -->
+    <string name="textAttachmentLableTv">Attachments</string>
+    <string name="msg_synch_error_3">A new version of Synchroteam.com is available. Please upgrade the application on your Smartphone</string>
+    <string name="msg_synch_error_2">You can’t use multiple devices on the same account</string>
+    <string name="textEndLableTv">End</string>
+    <string name="textAddAttachmentLable">Add Attachment</string>
+    <string name="textCustomerSignatureLableTv">Customer Signature</string>
+    <string name="textMySignatureLableTv">My Signature</string>
+    <string name="textSiteLable">Site</string>
+    <string name="textEquipmentLable">Equipment</string>
+    <string name="textJobTypeLable">Job Type</string>
+    <string name="textAdditionalAddressLable">Additional Address</string>
+    <string name="planning">Schedule</string>
+    <string name="textStartTimeLable">Start Time</string>
+    <string name="textEndTimeLable">End Time</string>
+    <string name="textMeetingLable">Meeting</string>
+    <string name="msg_date_manquante">Enter date and time for scheduling a job</string>
+    <string name="msg_confirm_plannif">You have not input a job date.The request will be sent to a manager for scheduling.</string>
+    <string name="msg_saisie_oblig">Complete all Mandatory fields</string>
+    <string name="msg_error_description">Please fill the description</string>
+    <string name="textNewJobEndConfirmation">Quit without saving?</string>
+    <string name="textSyncronizationTv">Synchronization</string>
+    <string name="textEnableLocationServiceText">Turn On Location Services to Allow Synchroteam to Determine Your Location.</string>
+    <string name="textNewtworkNorAvaliable">No network Coverage, Offline mode.</string>
+    <string name="itemsTopBarLable">Items</string>
+    <string name="textOkLableNewJob">Create</string>
+    <string name="textNewJobLableTv">New Job</string>
+    <string name="timeMeeting">Meeting Time</string>
+    <!-- Replace NEARBY CLIENT to NEARBY CLIENTS -->
+    <string name="textNearestClientNewJob">Nearby Customers</string>
+    <string name="textAlertLable">Alert</string>
+    <string name="textValueLessThanMinimumValue">Enter more than 10 minutes</string>
+    <string name="ok">Set</string>
+    <!--    <string name="msg_synch_error_4">You must use a technician profile account to synchronize</string>-->
+    <string name="msg_synch_error_4">Only Technicians can Synchronize the mobile App</string>
+    <string name="msg_synch_ok">Synchronization ended</string>
+    <string name="msg_synch_error">Synchronization failure</string>
+    <string name="reset">Reset</string>
+    <string name="msg_synch">Synchronization in progress...</string>
+    <string name="textDateSmallLable">Date</string>
+    <string name="textDateStartDate">Start Date</string>
+    <string name="textDateEndDate">End Date</string>
+    <string name="msg_chargement">Loading the application...</string>
+    <string name="msg_error_login">Username incorrect</string>
+    <string name="msg_error_pwd">Password incorrect</string>
+    <string name="msg_error_auth">Authentication error</string>
+    <string name="intervention">Job</string>
+    <string name="naviguer_par">Browse by</string>
+    <string name="non_renseigne">Not Verified</string>
+    <string name="modifier">Save</string>
+    <string name="textSignature">Signature</string>
+    <string name="textClear">Clear</string>
+    <string name="textCopyIcon">Duplication</string>
+    <string name="enterComment">Add Comment</string>
+    <string name="textResolved">Resolved</string>
+    <string name="texUnavabilitiesLables">Activities</string>
+    <string name="textStarted">Started</string>
+    <string name="textSuspended">Suspended</string>
+    <string name="textScheduled">Scheduled</string>
+    <string name="textCompleted">Completed</string>
+    <string name="textEnableLocationService">Do you want to activate location services?</string>
+    <string name="textEmptyTimeInterval">Empty Time Interval</string>
+    <string name="textCharcterTimeInterval">Time Interval should be digit only</string>
+    <string name="textJobMobileLableTv">Mobile</string>
+    <string name="textHoursOfOperationDataTv">Select Hours</string>
+    <string name="textDaysOfOperationDataTv">Configure</string>
+    <string name="textLegalInformationLable">Legal Information</string>
+    <!-- Replace synchroteam to Synchroteam -->
+    <string name="addQuantity">Enter Quantity</string>
+    <string name="textAdditionalInformationTitleBar">Additional Information</string>
+    <string name="textSelectTime">Select Time</string>
+    <string name="textLableTitleBarWipeAllDetails">Warning</string>
+    <string name="textNoJobAvaliable">No Job Available</string>
+    <string name="textWaitLable">Wait</string>
+    <string name="textClientFetchDialog">Wait while we fetch data from database</string>
+    <string name="textClientNotFetchedDialog">Customers does not exist</string>
+    <string name="textSiteNotFetchedDialog">Sites Does Not exits</string>
+    <string name="textEquipmentNotFetchedDialog">Equipment does not exist</string>
+    <string name="textNearestClientNotFetchedDialog">Nearby Customer does not exists</string>
+    <string name="textProgressDialogFetchNearestClient">Fetching data</string>
+    <string name="textDistanceNearestClient">Distance</string>
+    <string name="textEnableLocationServiceTracking">Enable Location Services</string>
+    <string name="textDontAllowTracking">Do not Allow</string>
+    <string name="textFetchJob">Fetching Jobs</string>
+    <string name="textSaving">Saving</string>
+    <string name="textPleaseWaitLable">Please Wait</string>
+    <string name="textFetchingLocation">Fetching Location</string>
+    <string name="titleBrowserSelection">Open With</string>
+    <string name="msg_error">Error occurred</string>
+    <string name="chargement">Loading</string>
+    <string name="dialogInfoPleaseSelectBothDates">Select Both dates</string>
+    <string name="exist">Exist</string>
+    <string name="notExist">Not exist</string>
+    <string name="textSavingAddJobData">Adding the Job</string>
+
+    <!-- V 3.3 New Strings -->
+    <string name="textNoneLable">None</string>
+
+    <!-- V3.4 New Strings -->
+    <string name="sorryLable">Sorry</string>
+    <string name="locationNotAvaliableLable">Location Not Available</string>
+
+    <!-- resolved google doc item 141 -->
+    <string name="textSiteListingLable">Site List</string>
+    <string name="textEquipmentListingLable">Equipment List</string>
+    <!-- resolved google doc item 141 -->
+
+    <!-- resolved google doc item 141 -->
+    <string name="addJobLable">Add Job</string>
+    <!-- resolved google doc item 141 -->
+
+    <string name="textJobEmailLableTv">Email</string>
+    <string name="textNearestSitesNewJob">Nearby Sites</string>
+    <string name="textDuplicateLableTv">Duplicate Job</string>
+
+    <!-- V3.5 strings -->
+    <string name="textCustomerNameLable">Customer Name</string>
+    <string name="textTechnicianNameLable">Technician Name</string>
+    <string name="textCommentLableTv">Comments</string>
+    <string name="msg_date">Enter date first for scheduling a job</string>
+    <string name="msg_meeting_date">Enter meeting date first for scheduling a job</string>
+    <string name="msg_endtime">Enter start time first for scheduling a job</string>
+    <string name="msg_endDate">Enter date End for scheduling a job</string>
+    <string name="textNoJobCreate">You can not create job for the day</string>
+    <string name="textPleaseSelectDays">Select atleast one day</string>
+    <string name="textPleaseEnterPreodicity">Enter a valid periodicity</string>
+    <string name="textPleaseEnterFrequency">Enter a valid frequency</string>
+    <string name="textPleaseEnterCorrectValue">Enter the correct value.</string>
+    <string name="textEnableGoogleMap">Enable Google Map</string>
+    <string name="textEnableGoogleMapText">Synchroteam Would like to Access Google Maps App please enable it</string>
+
+    <!-- V3.6 strings -->
+    <!-- values used in layout_attachment_list_client_detail -->
+    <string name="txtNoAttachment">No attachments added</string>
+
+    <!-- values used in layout_datatype_listofvalues -->
+    <string name="textUnresolved">Unresolved</string>
+
+    <!-- Values used in custom dialog unavailability -->
+    <string name="txt_close">Close</string>
+
+    <!-- Values used in layout_current_jobs -->
+    <string name="txt_start_activity">Start Activity</string>
+
+    <!-- Values used in layout_unavailabilities -->
+    <string name="txt_add_unavailability">Add Activity</string>
+    <string name="stop_unavailability">Stop</string>
+
+    <!-- Values used in layout update unavailability -->
+    <string name="txt_update">Update</string>
+    <string name="txt_localize">Click to localize</string>
+
+    <!-- Values used in layout invoice quotation fragment -->
+    <string name="txt_empty_invoice">You have no invoice or quotation</string>
+    <string name="txt_add_invoice_lbl">Add Invoice</string>
+    <string name="txt_add">Add</string>
+    <string name="txt_subtotal">Subtotal</string>
+    <string name="txt_tax_label">Tax</string>
+    <string name="txt_total_label">Total</string>
+    <string name="txt_item_label">Item</string>
+    <string name="txt_qty_label">Qty</string>
+    <string name="txt_unit_price_label">Unit Price</string>
+    <string name="txt_discount_label">Add Discount</string> //v53 text Discount changes into Add Discount
+    <string name="txt_label_invoice">Invoice</string>
+    <string name="txt_label_quotation">Quotation</string>
+    <string name="txt_label_balance">Balance</string>
+
+    <!-- new toast strings -->
+    <string name="barcode_non_numeric">Barcode contains Non-Numeric values</string>
+    <string name="higher_to_date">Finish date should not be less then start date</string>
+    <string name="select_type">Select Activity Type</string>
+    <string name="enter_start_date">Enter the Start date</string>
+    <string name="enter_end_date">Enter the End date</string>
+    <string name="unavailability_added">Successfully added</string>
+    <string name="unavailability_stopped">Successfully stopped</string>
+
+    <!-- new actionbar titles -->
+    <string name="txt_activity">Activity</string>
+    <string name="update_unavailability_title">Update Activity</string>
+    <string name="schedule_title">Schedule It</string>
+
+    <!-- string values for date time picker -->
+    <string name="set_date">Set date</string>
+    <string name="set_time">Set time</string>
+
+    <!-- string values in login screen -->
+    <string name="text_enter_all_values">Enter all the values</string>
+
+    <!-- string values in job details screen -->
+    <string name="textDurationLableTv">Duration</string>
+
+    <!-- string values for schedule unavailability -->
+    <string name="textFromDateLable">From Date and Time</string>
+    <string name="textToDateLable">To Date and Time</string>
+
+    <!-- string values for invoice quotation -->
+    <string name="txt_ack_msg">Done</string>
+    <string name="txt_empty_desc">Check the Item</string>
+    <string name="txt_empty_price">Check the Price</string>
+    <string name="txt_add_quotation_lbl">Add Quotation</string>
+    <string name="txt_update_item">Update Item</string>
+
+    <!-- string values for inventory -->
+    <string name="txt_parts_service_label">Parts / Services</string>
+    <string name="txt_serializable">Serializable</string>
+    <string name="txt_non_serializable">Non serializable</string>
+    <string name="txt_inventory_label">Inventory</string>
+    <string name="txt_ref_label">Ref</string>
+    <string name="txt_cat_label">Cat</string>
+    <string name="txt_name_label">Part</string>
+
+    <!-- string values used in single inventory item -->
+    <string name="txt_restock_label">Restock</string>
+    <string name="txt_return_label">Return</string>
+    <string name="txt_send_to_label">Send to</string>
+    <string name="txt_take_from_label">Take from</string>
+    <string name="txt_depot_label">Depot</string>
+    <string name="txt_action_label">Action</string>
+    <string name="header_text">Pending Request</string>
+    <string name="txt_price_label">Price</string>
+    <string name="txt_search_hint">Search</string>
+    <string name="txt_transfer">Transfer</string>
+    <string name="txt_request">Request</string>
+    <string name="txt_select_one_depot">Select the depot</string>
+    <string name="txt_from_label">From</string>
+    <string name="txt_validate_qty">Check the Quantity</string>
+    <string name="txt_validate_serial_no">Check the Serial Number</string>
+    <string name="txt_confirm">Confirm</string>
+    <string name="txt_no_parts">No parts available</string>
+
+    <!-- string values used in login screen -->
+    <string name="txtMoreInfo"><u>More info</u></string>
+
+    <!-- string values used for debug mode -->
+    <string name="txt_debug_enabled">Debug enabled</string>
+    <string name="txt_debug_disabled">Debug disabled</string>
+
+    <!-- String values for parts & service -->
+    <string name="txt_filtered_by">Filtered by</string>
+
+    <!-- string values for job details class -->
+    <string name="txt_stop_job">Stop this Job?</string>
+
+    <!-- String values for parts & service list item -->
+    <string name="txt_quantity_label">Quantity</string>
+
+    <!-- String values for sync settings page -->
+    <string name="txt_push_sync">Push Sync</string>
+    <string name="txt_auto_sync">Auto Sync</string>
+    <string name="textPushAutosync">Enable</string>
+
+    <!--String values for All jobs-->
+    <string name="textAllJobLable">All Jobs</string>
+    <string name="txt_sorting">Sorting</string>
+    <string name="txt_job_number">Job number</string>
+    <string name="alert_job_number">Enter the Job Number</string>
+
+    <string name="txt_no_sorting">Sort by none</string>
+    <string name="txt_date_sorting">Sort by date</string>
+    <string name="txt_customer_sorting">Sort by customer</string>
+    <string name="txt_site_sorting">Sort by site</string>
+    <string name="txt_equipment_sorting">Sort by equipment</string>
+    <string name="txt_nearby_sorting">Sort nearby</string>
+    <string name="txt_nearby_job_sorting">Sort nearby job</string>
+    <string name="txt_town_sorting">Sort by town</string>
+
+    <string name="txt_jobno_mismatch">Job number mismatched</string>
+    <string name="no_jobs_were_found">No jobs were found</string>
+    <string name="add_shared_block">Add Shared Block</string>
+
+    <!--String values for new legal information-->
+    <string name="txt_version">Version</string>
+    <string name="txt_support">Support Hotline</string>
+    <string name="txt_email_us">Email us</string>
+    <string name="txt_urgent">Urgent</string>
+
+    <!--string values for time to update dialog-->
+    <string name="dialog_update_title">It\'s Time To Update</string>
+    <string name="dialog_update_content">To continue using the Synchroteam App, you\'ll have to update now.</string>
+
+    <!--string values for tracking screen-->
+    <string name="txt_data_saved">Data Saved Successfully</string>
+    <string name="txt_stock">Stock</string>
+
+    <!--String values for shared block-->
+    <string name="txt_shared_block">Shared Blocks</string>
+    <string name="txt_delete_shared_block">Are you sure you want to delete this block?</string>
+
+    <!--Transaction result dialog strings-->
+    <string name="txt_success">Success</string>
+    <string name="txt_failure">Failed</string>
+    <string name="txt_payment_confirmed">Payment confirmed</string>
+
+    <!--credit card strings-->
+    <string name="pay_now">Pay Now</string>
+    <string name="txt_card_details">Card Details</string>
+    <string name="txt_payment">Payment</string>
+    <string name="txt_payable_amount">Payable Amount</string>
+    <string name="card_holder">Card Holder</string>
+    <string name="name_on_card">Customer Name</string>
+
+    <string name="enter_valid_card">Enter a valid card</string>
+    <string name="enter_valid_email">Enter a valid email</string>
+
+    <!--clock in out dialog strings-->
+    <string name="txt_clock_in">Clock In</string>
+    <string name="txt_clock_out">Clock Out</string>
+    <string name="txt_travel">Travel</string>
+    <string name="txt_trip">Trip</string>
+    <string name="txt_pause">Pause</string>
+    <string name="txt_finish">Finish</string>
+    <string name="txt_resume">Resume</string>
+    <string name="txt_no_activity">No Activity</string>
+    <string name="txt_you_have_been_inactive">You have been inactive too long</string>
+    <string name="txt_you_have_been_clocked_out">You have been Clocked Out</string>
+    <!--<string name="tt_start">Start</string>-->
+    <string name="txt_activity_type">Activity Type</string>
+    <string name="txt_to">To</string>
+    <string name="txt_optional">Optional</string>
+
+    <!--new synch failure message-->
+    <string name="msg_synch_error_new">The last synchronization has failed. The data was not saved on the server.</string>
+    <string name="msg_sync_error_4003">Your account is expired, please contact your Manager.</string>
+
+    <!--For start activity-->
+
+    <!--<string name="txt_dialog_activity_start">START</string>-->
+
+    <string name="interventions">Jobs</string>
+    <string name="error_invalid_phone">Invalid Phone Number</string>
+
+    <string name="hours_label">Hour(s)</string>
+    <string name="minutes_label">Minute(s)</string>
+    <string name="txt_report_not_complete">Cannot finish, Job Report not complete.</string>
+    <string name="txt_Activity_in_progress">In Progress</string>
+
+    <!--49 Strings-->
+    <string name="txt_take_back_serialized_part">Take Back Serialized Part</string>
+    <string name="txt_found">Found</string>
+    <string name="txt_not_found">Not Found</string>
+    <string name="txt_needs_repair">Needs Repair</string>
+    <string name="txt_obselete">Obsolete</string>
+    <string name="txt_check">Check</string>
+    <string name="txt_scan">Scan</string>
+    <string name="txt_label_part_removed">Part Removed</string>
+    <string name="txt_category_label">Category</string>
+    <string name="txt_category_part_search">Please select the correct Category and Part below</string>
+
+    <!--removed-->
+    <!--<string name="txt_serial_no_hint">Serial Numbers</string>-->
+    <!--Added-->
+
+    <string name="txt_serial_no_label">Serial Number</string>
+    <string name="txt_serial_nos_label">Serial Numbers</string>
+
+    <!--For Notification strings-->
+    <string name="notification_text_travel">For Distance Calculation</string>
+    <string name="notification_text_tracking">Tracking Activated</string>
+    <string name="notification_sub_text_tracking">Click to Configure</string>
+
+
+    <!--For Runtime Permission strings-->
+    <string name="str_location_permission">Location permission is required</string>
+    <string name="str_phone_permission">Phone permission is required</string>
+    <string name="str_camera_permission">Camera permission is required</string>
+    <string name="str_storage_permission">External storage permission is required</string>
+    <string name="notification_permission">If Notification permission is denied no more Notification will be received? </string>
+
+    <!--for version 51-->
+    <string name="addStartJobLable">Start Job</string>
+    <string name="jobReportLable">Job Report</string>
+    <string name="textTabParts">Parts</string>
+    <string name="textJobPoolLable">Job Pool</string>
+    <string name="textPrefDateLable">Pref</string>
+    <string name="textPrefTimeLable">Pref Slot</string>
+    <string name="txt_priority_sorting">Sort by priority</string>
+    <string name="txt_validate_label">Validate</string>
+    <string name="msg_reserve_job_pool_error">Job not available for schedule.Try later.</string>
+    <string name="msg_schedule_error">Error occurred while scheduling the Job.Try later.</string>
+    <string name="no_jobs_were_scheduled">No jobs are scheduled</string>
+
+
+    <string name="label_time_job_pool">At</string>
+    <string name="tokon_expiry">Authentication has expired</string>
+    <!--For version v52-->
+    <string name="textDomainName">Domain Name</string>
+    <string name="textChangePwdTitle">Change Password</string>
+    <string name="textCurrrentPwd">Current Password</string>
+    <string name="textNewPwd">New Password</string>
+    <string name="textConfirmPwd">Confirm Password</string>
+    <string name="textChangePWdButton">Change</string>
+    <string name="MsgPasswordMisMatch">Password and Confirmation Password do not match</string>
+    <string name="txt_tax_lst_label">Tax List</string>
+    <string name="txt_discount_option_label">Discount Option</string>
+    <string name="txt_ext_amt_lbl">Exact amount</string>
+    <string name="txt_perc_lbl">Percentage</string>
+    <string name="txt_sel_tax_lbl">Selected Tax</string>
+    <string name="txt_comp_tax_lbl">Compound Tax</string>
+    <string name="txt_select_tax_label">Select the Tax</string>
+    <string name="enterDescription">Add Description</string>
+    <string name="add_txt_tax_label">Add Tax</string>
+
+    <!--For version v52-->
+    <string name="txt_lbl_global">Add Global Discount</string>
+
+    <!--For version v53-->
+    <string name="txt_incident_lbl">Incident Tracking</string>
+    <string name="txt_freeze_timer_lbl">Freeze Timer</string>
+    <string name="txt_unfreeze_lbl">Unfreeze</string>
+    <string name="txt_submit_lbl">Submit</string>
+    <string name="txt_freeze_reason_lbl">Provide Reason (Mandatory)</string>
+    <string name="txt_event_lbl">Event</string>
+    <string name="txt_limit_lbl">Limit</string>
+    <string name="txt_timer_lbl">Timer</string>
+    <string name="enterReason">Add Reason</string>
+    <string name="textResolve">Resolve</string>
+    <string name="technicians_synchronize_error_msg">Only Technicians can Synchronize the mobile App</string>
+    <string name="text_convert_invoice">Convert</string>
+    <string name="text_others_lbl">Other</string>
+    <string name="text_convert_invoice_label">Convert to invoice</string>
+    <string name="txt_convert_label">Do you want to generate invoice?</string>
+
+    <string name="textClientJobType">Job Type</string>
+    <string name="textClientJobReport">Job Report</string>
+    <!--For version v55-->
+    <string name="text_save_new">Save as New</string>
+    <string name="txt_draft_lbl">Draft</string>
+
+    <!--For version v55-->
+    <string name="txt_dialling_option">Call Option</string>
+    <string name="client_error_msg">The client does not exists</string>
+
+    <!--For version v57-->
+    <string name="textOpenLable">Open</string>
+
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutJobDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundAppScreens"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/actionbarColor"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/styleActionBarTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:singleLine="true" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:id="@+id/tabIndicatorRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar">
+
+                <com.synchroteam.utils.TabPageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.synchroteam.utils.NonSwipeableViewPager
+                android:id="@+id/pagerJobDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_start_job"
+                android:layout_below="@+id/tabIndicatorRel">
+
+            </com.synchroteam.utils.NonSwipeableViewPager>
+
+            <RelativeLayout
+                android:id="@+id/layout_start_job"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sizeHeightItemImageReports"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/start_activity_bg">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_clock_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/red_color"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/paddingTableRowConfig_Hour_tracking"
+                    android:paddingRight="@dimen/paddingTableRowConfig_Hour_tracking"
+                    android:singleLine="true"
+                    android:text="@string/fa_clock_o"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txt_clock_in_out"
+                    android:textStyle="bold"
+                    fontify:font_name="@string/fontName_fontAwesome" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/txt_clock_mode"
+                    android:gravity="center">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txt_stopview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/fa_stop"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSizeDateTv"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        fontify:font_name="@string/fontName_fontAwesome" />
+
+                    <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                        android:id="@+id/txtJobStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/textStartLable"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSizeReportsListOfValues"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

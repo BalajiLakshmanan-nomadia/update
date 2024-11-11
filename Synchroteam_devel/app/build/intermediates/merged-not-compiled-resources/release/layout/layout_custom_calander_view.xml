@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calandertextview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light" >
+
+    <com.synchroteam.utils.CalanderDateTextView
+        android:id="@+id/dateTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/textSizeCalanderDate"
+        android:gravity="center"
+        calandertextview:strokeWidthCalanderTextView="@dimen/strokeSizeCalander"
+         />
+
+</LinearLayout>

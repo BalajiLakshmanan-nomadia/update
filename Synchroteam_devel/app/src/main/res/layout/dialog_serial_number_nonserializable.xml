@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_serial_title_layout"
+        android:gravity="center"
+        android:padding="@dimen/paddingMenusTitle"
+        android:text="@string/txt_non_serializable"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeJobNameTextView"
+        fontify:font_name="@string/fontName_avenir" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_unavailability_title_layout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/paddingTopOrangeButton"
+            android:paddingRight="@dimen/paddingTopOrangeButton"
+            android:paddingTop="@dimen/paddingTopOrangeButton" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5" >
+
+                    <RelativeLayout
+                        android:id="@+id/relRestockLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txtRestockIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="@dimen/paddingMenusTitle"
+                            android:text="@string/fa_shopping_cart"
+                            android:textColor="@color/invoice_text_color"
+                            android:textSize="@dimen/textSizeDaysTv" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtRestockLabel"
+                            style="@style/styleInvoiceQuotationText"
+                            android:layout_alignBottom="@+id/txtRestockIcon"
+                            android:layout_alignTop="@+id/txtRestockIcon"
+                            android:layout_toEndOf="@+id/txtRestockIcon"
+                            android:layout_toRightOf="@+id/txtRestockIcon"
+                            android:text="@string/txt_restock_label"
+                            fontify:font_name="@string/fontName_avenir" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relReturnLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txtReturnIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/paddingMenusTitle"
+                            android:text="@string/fa_exchange"
+                            android:textColor="@color/invoice_text_color"
+                            android:textSize="@dimen/textSizeDaysTv" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtMovementLabel"
+                            style="@style/styleInvoiceQuotationText"
+                            android:layout_alignBottom="@+id/txtReturnIcon"
+                            android:layout_alignTop="@+id/txtReturnIcon"
+                            android:layout_toEndOf="@+id/txtReturnIcon"
+                            android:layout_toRightOf="@+id/txtReturnIcon"
+                            android:text="@string/txt_return_label"
+                            fontify:font_name="@string/fontName_avenir" />
+                    </RelativeLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="horizontal" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleInvoiceQuotationLabel"
+                        android:text="@string/txt_qty_label"
+                        fontify:font_name="@string/fontName_avenir" />
+                    
+                     <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleInvoiceQuotationLabel"
+                        android:text=":"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txt_qty_item"
+                        style="@style/styleInvoiceQuotationText"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/paddingMenusTitle"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="10,000"
+                        fontify:font_name="@string/fontName_avenir" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paddingTopOrangeButton"
+                android:orientation="horizontal" >
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text="@string/txt_depot_label"
+                    fontify:font_name="@string/fontName_avenir" />
+                
+                  <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text=":"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_depot_item"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Tracking"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Close Button container -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paddingTopOrangeButton"
+            android:padding="@dimen/paddingTopOrangeButton" >
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txtConfirm"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/boxframe_add_button"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingTopOrangeButton"
+                android:paddingRight="@dimen/paddingTopOrangeButton"
+                android:singleLine="true"
+                android:text="@string/txt_confirm"
+                android:textColor="@color/job_description_bg"
+                android:textSize="@dimen/textSizeStartTimeTv"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txtClose"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:layout_weight="1"
+                android:background="@drawable/boxframe_close_button"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingTopOrangeButton"
+                android:paddingRight="@dimen/paddingTopOrangeButton"
+                android:singleLine="true"
+                android:text="@string/textCancelLable"
+                android:textColor="@color/job_description_bg"
+                android:textSize="@dimen/textSizeStartTimeTv"
+                fontify:font_name="@string/fontName_avenir" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+        android:layout_marginTop="@dimen/marginTopInformationTvLoginDomain"
+        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+        android:background="@color/job_description_bg"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/paddingTopOrangeButton"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:id="@+id/linContainerJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxframe_textview_layout">
+
+            <RelativeLayout
+                android:id="@+id/relAttachmentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/paddingLeftReportsJobDetailRelativeLayout"
+                android:paddingRight="@dimen/paddingReportsJobDetailRelativeLayout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.1"
+                        android:gravity="left|center"
+                        android:orientation="vertical">
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtStartTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/paddingDiscriptionJobDetailcontainers"
+                            android:paddingRight="@dimen/paddingDiscriptionJobDetailcontainers"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="@dimen/textSizeDataClientList"
+                            fontify:font_name="@string/fontName_hevelicaLight" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtEndTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/paddingDiscriptionJobDetailcontainers"
+                            android:paddingTop="@dimen/paddingDiscriptionJobDetailcontainers"
+                            android:paddingRight="@dimen/paddingDiscriptionJobDetailcontainers"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="@dimen/textSizeDataClientList"
+                            fontify:font_name="@string/fontName_hevelicaLight" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/paddingDiscriptionJobDetailcontainers"
+                        android:layout_weight="2.3"
+                        android:gravity="left|center">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="@dimen/paddingMenusTitle"
+                            android:background="@color/hint_color" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/jobNameTv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+                            fontify:font_name="@string/fontName_avenir" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/paddingDiscriptionJobDetailcontainers"
+                        android:layout_weight="1.3"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="@dimen/paddingMenusTitle"
+                            android:background="@color/hint_color" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/txt_ic_lock"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="3dp"
+                                android:text="@string/fa_lock"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/textSizeDataClientList"
+                                android:visibility="visible" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/clientNameTv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/textSizeDataClientList"
+                                fontify:font_name="@string/fontName_hevelicaLight" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

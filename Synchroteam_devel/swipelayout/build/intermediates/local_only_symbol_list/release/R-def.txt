@@ -1,0 +1,12 @@
+R_DEF: Internal format may change without notice
+local
+attr? bottomEdgeSwipeOffset
+attr? clickToClose
+attr? drag_edge
+attr? leftEdgeSwipeOffset
+attr? rightEdgeSwipeOffset
+attr? show_mode
+attr? topEdgeSwipeOffset
+id lay_down
+id pull_out
+styleable SwipeLayout drag_edge leftEdgeSwipeOffset rightEdgeSwipeOffset topEdgeSwipeOffset bottomEdgeSwipeOffset show_mode clickToClose

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="color1">#085858</color>
+    <color name="color2">#1C5E55</color>
+    <color name="color3">#006C70</color>
+    <color name="color4">#2D7779</color>
+    <color name="color5">#498E91</color>
+    <color name="color6">#7AB6BC</color>
+    <color name="white">#FEFEFE</color>
+    <color name="grayDate">#A3A3A3</color>
+    <color name="grayDay">#A3A3A3</color>
+    <color name="black">#000000</color>
+    <color name="backgroundAppScreens">#5e5e5e</color>
+    <color name="transparent">#00000000</color>
+    <color name="navigationDrawerTitleTvSyncroteam">#686364</color>
+    <color name="semiTransparent">#99000000</color>
+    <color name="loginColorBacground">#eaeaea</color>
+    <color name="textColorLightBlue">#58bfd2</color>
+    <color name="textColorGreen">#10a136</color>
+    <color name="textColorBlack">#000000</color>
+    <color name="textColorOrange">#e48c24</color>
+    <!-- Current Jobs Screen -->
+    <color name="suspendedJobsBackgroundCurrentJobs">#ffe4ce</color>
+    <color name="completedOrNotStartedJobsBackgroundCurrentJobs">#ffffffff</color>
+    <color name="startedJobsBackgroundCurrentJobs">#deffe7</color>
+    <color name="dateTvBackgroundCalanderCurrentJobs">#ffa861</color>
+    <color name="orangeStripBackgroundCurrentJobs">#ffa861</color>
+    <color name="greenStripBackgroundCurrentJobs">#70c987</color>
+    <color name="blackStripBackgroundCurrentJobs">#8b8b8b</color>
+    <color name="dateDetailsTvCurrentJobs">#000000</color>
+    <color name="startTvCurrentJobs">#000000</color>
+    <color name="timeOrDateTvCurrentJobs">#000000</color>
+    <color name="yearTvCurrentJobs">#000000</color>
+    <color name="backgroundDateDetailTvCurrentJobs">#ffffffff</color>
+    <color name="jobNameTvCurrentJobs">#000000</color>
+    <color name="textHighPriorityCurrentJobs">#e64c4c</color>
+    <color name="textLowPrioriyCurrentJobs">#FF8C00</color>
+    <color name="textNormalPrioriyCurrentJobs">#669900</color>
+    <color name="mettingPriorityTvBackgroundCurrentJobs">#7f7f7f</color>
+    <color name="greyRowBackgroundCurrentJobs">#f3f3f3</color>
+    <color name="jobPriorityTvCurrentJobs">#FFFFFF</color>
+    <color name="clientLableTvCurrentJobs">#686364</color>
+    <color name="clientNameTvCurrentJobs">#000000</color>
+    <color name="colorTransparentDateTextViewUnSelected">#00000000</color>
+    <color name="colorOrangeDateTextViewSelected">#ffa861</color>
+    <!-- Messages Screen -->
+    <color name="listItemArrowDownBackgroundMessages">#f1f1f1</color>
+    <color name="listItemArrowUpBackgroundMessages">#ffffff</color>
+    <color name="messageDiscriptionTvMessages">#303030</color>
+    <color name="textMessageHIghPriority">#e64c4c</color>
+    <color name="textMessageLowPriority">#EACB5F</color>
+    <color name="textMessageAveragePriority">#70c987</color>
+
+    <!-- Last Syncronization Screen -->
+    <color name="textLableSyncronizationSettings">#000000</color>
+
+    <!-- Tracking Settings Screen -->
+    <color name="textLableTrackingSettings">#000000</color>
+    <color name="gray">#817C85</color>
+    <color name="grayFloatingTextViewLogin">#817C85</color>
+    <color name="gris2">#D3D9D8</color>
+    <color name="desable">#CCC</color>
+    <color name="orange">#E48C24</color>
+    <color name="red">#E82347</color>
+    <color name="grayNavigationDrawerTitleBarListItem">#E9E6E3</color>
+    <color name="grayNavigationDrawerListItemSelected">#ffffff</color>
+    <color name="grayNavigationDrawerListItemUnSelected">#000000</color>
+    <color name="grayNavigationDraweTitleBarListItem">#808080</color>
+    <color name="orangeTitleColor">#FFFFFF</color>
+    <color name="blackTextNavigationDrawerListItemSelected">#52504E</color>
+    <color name="blackTextNavigationDrawerListItemUnSelected">#8F8F8E</color>
+    <color name="titleBg">#444</color>
+    <color name="slide_menu_item_highlight">#534949</color>
+    <color name="textColorStartTimeDataTv">#000000</color>
+    <color name="textColorEndTimeDataTv">#000000</color>
+
+    <!-- Discription Job Details -->
+    <color name="grayTextColorTitleTvDiscriptionJobDetails">#908E8f</color>
+    <color name="blackTextColorDataTvDiscriptionJobDetails">#303030</color>
+    <color name="textLableJobTitleJobDetails">#000000</color>
+    <color name="textCustomerSignatureLableJobDetails">#454545</color>
+    <color name="textLableReschedule">#908E8F</color>
+    <color name="textDataReschedule">#000000</color>
+    <!-- Reports Job Template -->
+    <color name="grayTextColorReportsFieldLable">#908E8f</color>
+    <color name="grayTextColorReportsItemStatus">#585858</color>
+
+    <!-- Reports Details -->
+    <color name="textlableReportsDetails">#686364</color>
+    <color name="textDataReportsDetails">#303030</color>
+    <color name="textDataReportsDetailsLight">#686364</color>
+    <color name="textColorReportsCategory">#fea55f</color>
+    <color name="textColorReportsCategoryJobDetail">#E82347</color>
+
+    <!-- New Job -->
+    <color name="textLableNewJob">#e64c4c</color>
+    <color name="backManadatoryFeildTv">#E9E6E3</color>
+
+    <!-- Items List -->
+    <color name="textDataItemsTv">#000000</color>
+
+    <!-- Job Details -->
+    <color name="colorOrangeTabBarJobDetailsSelected">#e38c24</color>
+    <color name="colorWhiteTabBarJobDetailsUnSelected">#FFFFFF</color>
+
+    <!-- Reports List -->
+    <color name="colorOrangeTabBarReportsSelected">#e38c24</color>
+    <color name="colorWhiteTabBarReportsUnSelected">#FFFFFF</color>
+    <color name="colorBlueStripReportsList">#58b6ca</color>
+    <color name="colorBluejobTimeStatusRlReoprtsList">#bbe0e8</color>
+    <color name="textColorCategory">#FFFFFF</color>
+    <color name="back_with_date_selector">#f3f3f3</color>
+
+    <!-- Legal Information -->
+    <color name="textLableTvLegalInformation">#f1890f</color>
+    <color name="textDataTvLegalInformation">#3c3c3c</color>
+
+    <!-- Catalougeue -->
+    <color name="textHeadetTvCatalougue">#908e8f</color>
+    <color name="backHeadetTvCatalougue">#f3f3f3</color>
+    <color name="backListItemCatalouge">#ffffffff</color>
+    <color name="textCategoryCatalougeListItem">#2b2b2b</color>
+    <color name="textCategoryItemNameListItem">#2b2b2b</color>
+    <color name="textQantityCatalougeListItem">#e08b26</color>
+    <color name="backQantityCatalougeListItem">#ffffff</color>
+    <color name="textBillCatalougeListItem">#2b2b2b</color>
+    <color name="textAddItemCatalougeListItem">#e48c24</color>
+    <color name="textTotalData">#fe645c</color>
+    <color name="textCustomerSignatureLableCatalouge">#000000</color>
+
+    <!-- Dialog Domain Login -->
+    <color name="textHeadetTvDialogDomain">#FFFFFF</color>
+    <color name="backHeadetTvDialogDomain">#E48C24</color>
+    <color name="textDataTvDialogDomain">#575658</color>
+    <color name="backDataTvDialogDomain">#FFFFFF</color>
+    <color name="textLableOkBtnDialogDomain">#E48C24</color>
+    <color name="backOkBtnDialogDomain">#ffffffff</color>
+
+    <!-- Duplication -->
+    <color name="textDataDuplicaiton">#908e8f</color>
+
+    <!-- Reports Attachment -->
+    <color name="backReportsAttachmentListItem">#ffffffff</color>
+    <!-- New Job -->
+    <color name="textColorLableMandatoryFiled">#e64c4c</color>
+    <color name="textColorLableNonManadtoryMandatoryFiled">#908e8f</color>
+    <color name="textColorLableClient">#e64c4c</color>
+    <color name="backColorLableMandatoryFiled">#ffffff</color>
+    <color name="hintEditTextNewJob">#e64c4c</color>
+    <color name="hintEditTextNonMandatoryNewJob">#000000</color>
+    <color name="backCancelOkTvNewJob">#e9e6e3</color>
+    <color name="textCancelOkTvNewJob">#8c9397</color>
+    <color name="textColorOrangeNewJob">#E89619</color>
+
+    <!-- Add Attachment -->
+    <color name="textAddAttachmenmImageTitle">#959696</color>
+    <color name="backAddAttachmentDialog">#ffffffff</color>
+    <color name="textAddAttachmentBottomCancelButton">#808080</color>
+    <color name="backGroundDividerLine">#808080</color>
+    <color name="backLableAddAttachmentTv">#E48C24</color>
+    <color name="backAddAttachmentBottomCancelButton">#ffffffff</color>
+    <color name="textAddAttachmentFormTitle">#FFFFFF</color>
+
+    <!-- New Job Client List -->
+    <color name="backClientListNewJob">#ffffffff</color>
+    <color name="backSearchEtClientList">#ffffffff</color>
+    <color name="textCancelTvClientList">#919193</color>
+    <color name="textLableTvClientList">#000000</color>
+    <color name="textDataTvClientList">#4b4b4b</color>
+    <color name="backSearchClientList">#cac9cf</color>
+
+    <!-- Draw Signature -->
+
+    <color name="backSigantureDialog">#ffffff</color>
+    <color name="backSignatureButtonBack">#ffffff</color>
+    <color name="textSignatureButton">#8c9397</color>
+    <color name="textClearButton">#feb276</color>
+    <color name="backGroundCancelBtn">#e9e6e3</color>
+    <color name="textGrayCancelBtn">#8c9397</color>
+    <color name="backGroundOkBtn">#e9e6e3</color>
+    <color name="textGrayOkBtn">#8c9397</color>
+
+    <!-- CustomField -->
+    <color name="textGreyColorCustomField">#777</color>
+
+    <!-- Item AutoComplete -->
+    <color name="textColorBlackItemAutoCompleteTv">#000</color>
+    <!-- 28 May 2014 Need to categorise -->
+    <color name="textManadatoryFieldsReportsJobDetail">#e64c4c</color>
+
+    <!-- Login Wipe All Detail Dialog -->
+    <color name="backMessaeTvWipeAllDetailDialog">#e4e4e3</color>
+    <color name="backYesTvWipeAllDetailDialog">#e4e4e3</color>
+    <color name="backNoTvWipeAllDetailDialog">#e4e4e3</color>
+    <color name="textLAbleCOnfirmkBtnWipeAllDetailDialog">#808080</color>
+    <color name="textMessageWipeAllDetailDialog">#000000</color>
+    <color name="backgoundBorderColor">#c6c6c6</color>
+
+    <!-- Calander Color -->
+    <color name="backgroundDateOfOtherMonth">#ddd</color>
+    <color name="backgroundDateOfCurrentMonth">#ffffff</color>
+    <color name="lineColorStartedJob">#70c987</color>
+    <color name="lineColorSuspendedJob">#fea55f</color>
+    <color name="lineColorScheduledJob">#b4b4b4</color>
+    <color name="lineColorCompletedJob">#74cddf</color>
+    <color name="backgroundCurrentDate">#AAAAAA</color>
+
+
+    <!-- V3.3 -->
+    <color name="backStatusReports">#eaeaea</color>
+    <color name="textCancelOkTvDataEnterDialog">#8c9397</color>
+
+    <!-- ..................................new changes................................ -->
+    <color name="actionbarColor">#E48D24</color>
+
+    <!-- Colors used in Job description layout -->
+    <color name="job_description_bg">#F4F4F4</color>
+    <color name="job_description_text_color">#686365</color>
+    <color name="custom_details_text_box_color">#EDEDED</color>
+    <color name="line_color">#BFBFBF</color>
+    <color name="custom_details_text_color">#9E9E9E</color>
+
+    <!-- Colors used in Report layouts -->
+    <color name="txt_compliant_color">#148904</color>
+    <color name="txt_unresolved_color">#FF0000</color>
+    <color name="txt_resolved_color">#188B08</color>
+    <color name="txt_resolved_color_blue">#2574A9</color>
+    <color name="status_selector_color">#D0CECE</color>
+    <color name="text_category_title_color">#787878</color>
+
+    <!-- Colors used in Job List Layout -->
+    <color name="unavailability_title_color">#323132</color>
+    <color name="unavailability_description_color">#686365</color>
+    <color name="unavailability_start_icon_color">#26A65B</color>
+    <color name="unavailability_end_icon_color">#DC5046</color>
+    <color name="unavailability_start_end_text_color">#686365</color>
+    <color name="close_button_bg">#686365</color>
+    <color name="start_activity_bg">#BB000000</color>
+
+    <!-- Colors used in rowview unavailability layout -->
+    <color name="issue_description_color">#737373</color>
+
+    <!-- Colors used in unavailability list item layout -->
+    <color name="stop_button_color">#DC5046</color>
+
+    <!-- Colors used in add invoice quotation -->
+    <color name="add_invoice_text_color">#696969</color>
+    <color name="total_bg_color">#E1E1E1</color>
+    <color name="cancel_btn_color">#555555</color>
+    <color name="invoice_hint_color">#979797</color>
+    <color name="boxframe_stroke_color">#D1D1D1</color>
+    <color name="invoice_label_color">#ACACAD</color> <!-- previously used colors : CDCDCD -->
+    <color name="invoice_text_color">#686365</color> <!-- previously used colors : 595959 -->
+    <color name="divider_color">#60CDCDCD</color>
+
+    <!-- Colors used in Floating action button -->
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="default_normal">#ff0099cc</color> <!-- android.R.color.holo_blue_dark -->
+    <color name="default_pressed">#ff33b5e5</color> <!-- android.R.color.holo_blue_light -->
+    <color name="default_disabled">#aaa</color> <!-- android.R.color.darker_gray -->
+
+
+    <!-- Colors used in invoice quotation list row -->
+    <color name="close_btn_color">#A4A4A4</color>
+
+    <!-- Colors used in inventory list row -->
+    <color name="serializable_color">#1F8B14</color>
+    <color name="down_arrow_color">#F22613</color>
+    <color name="header_bg">#686465</color>
+    <color name="text_container_bg">#EEEEEE</color>
+    <color name="text_serial_bg">#DADADA</color>
+
+    <!-- Colors used in parts & services list -->
+    <color name="filter_bg">#FBF9FC</color>
+    <color name="item_bg">#4A8E21</color>
+    <color name="select_icon_bg">#828282</color>
+
+    <!-- Colors used in Reports screen #247BE4-->
+    <color name="expand_color">#247BE4</color>
+
+    <!--Theme colors for material deign-->
+    <color name="colorPrimaryDark">#d07202</color>
+    <color name="colorAccent">#2196F3</color>
+
+    <color name="invoice_title_bg">#B6B6B6</color>
+
+    <!--Colors used in All jobs screen-->
+    <color name="search_container_bg">#515151</color>
+    <color name="divider_bg_color">#44808080</color>
+
+    <!--Colors used in shared block-->
+    <color name="sb_count_color">#2EB1F1</color>
+
+    <!--Colors used for payment-->
+    <color name="pay_now_green">#10a136</color>
+    <color name="confirm_button_enabled_clr">#108b4c</color>
+    <color name="confirm_button_disabled_clr">#3010a136</color>
+
+    <!--Card view colors-->
+    <color name="green_continue">#1fc055</color>
+    <color name="chip_color">#d4edfa</color>
+    <color name="chip_inner_color">#e0e4e4</color>
+    <color name="chip_yellow_color">#fbe191</color>
+    <color name="chip_yellow_inner_color">#eed280</color>
+    <color name="incident_yellow_color">#fab319</color>
+
+    <color name="purple_color">#5515a9</color>
+    <color name="purple_color_gradient">#651dc4</color>
+
+    <color name="green_color">#108b4c</color>
+    <color name="green_color_gradient">#1caf57</color>
+
+    <color name="blue_color">#5D8BF2</color>
+    <color name="blue_color_gradient">#3545AE</color>
+
+    <color name="pink_color">#d04c84</color>
+    <color name="pink_color_gradient">#d04882</color>
+
+    <color name="default_color">#363434</color>
+    <color name="default_color_gradient">#434141</color>
+
+    <color name="brown_color">#800000</color>
+    <color name="brown_color_gradient">#A52A2A</color>
+
+    <color name="red_color">#DC5046</color>
+
+    <color name="text_color">#696969</color>
+    <color name="hint_color">#C1C1C1</color>
+    <color name="text_light">#A1A1A1</color>
+    <color name="pay_now_bg">#10a136</color>
+    <color name="light_grey">#e0e4e4</color>
+    <color name="close_btn_grey">#5e5e5e</color>
+    <color name="inactive_bg_color">#ED1D25</color>
+    <color name="light_grey_new">#80e0e4e4</color>
+    <color name="close_btn_bg">#4D4D4C</color>
+
+    <color name="freeze_bg_color">#0199C3</color>
+    <color name="freeze_txt_color">#91D7EB</color>
+
+
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <color name="caldroid_middle_gray">#888</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+
+    <color name="caldroid_333">#333</color>
+    <color name="caldroid_555">#555</color>
+    <color name="caldroid_light_red">#ff7f7f</color>
+
+</resources>

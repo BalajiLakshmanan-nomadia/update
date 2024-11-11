@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearparent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--Shared block container-->
+    <FrameLayout
+        android:id="@+id/lin_add_shared_block"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+        android:layout_marginTop="@dimen/marginTopInformationTvLoginDomain"
+        android:background="@drawable/boxframe_count_shared_block"
+        android:clickable="true"
+        android:elevation="@dimen/strokeSizeCalander">
+
+        <LinearLayout
+            android:id="@+id/lin_inner_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/paddingTopOrangeButton">
+
+            <TextView
+                android:id="@+id/txt_add_icon"
+                style="@style/shared_block_button_text_size"
+                android:text="@string/fm_plus_circle" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                style="@style/shared_block_button_text_size"
+                android:text="@string/add_shared_block"
+                fontify:font_name="@string/fontName_avenir" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+        android:layout_marginTop="@dimen/marginTopInformationTvLoginDomain"
+        android:background="@drawable/boxframe_textview_layout">
+
+        <RelativeLayout
+            android:id="@+id/relAttachmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/paddingReportsJobDetailRelativeLayout"
+            android:paddingLeft="@dimen/paddingLeftReportsJobDetailRelativeLayout"
+            android:paddingRight="@dimen/paddingReportsJobDetailRelativeLayout"
+            android:paddingTop="@dimen/paddingReportsJobDetailRelativeLayout">
+
+            <ImageView
+                android:id="@+id/addAttachmentIconIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marginRIghtReportsJobDetailaddAttachmentIconIv"
+                android:layout_toLeftOf="@+id/arrowButtonAttachIv"
+                android:src="@drawable/add_icon" />
+
+            <ImageView
+                android:id="@+id/arrowButtonAttachIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/paddingReportsJobDetailarrowButtonAttachIv"
+                android:src="@drawable/arrow_down" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/titleAttachmentTv"
+                style="@style/styleHeadingsTextViewAttachmentTitle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@+id/arrowButtonAttachIv"
+                android:layout_centerVertical="true"
+                android:text="@string/textAttachmentLableTv"
+                fontify:font_name="@string/fontName_avenir" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/attachmentListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_lay_cus_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                android:layout_marginTop="@dimen/marginTopInformationTvLoginDomain"
+                android:background="@color/white"
+                android:padding="@dimen/paddingReportsJobDetailRelativeLayout">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/customerSignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textCustomerSignatureLableTv"
+                    android:textColor="@color/textCustomerSignatureLableJobDetails"
+                    android:textSize="@dimen/textSizeCustomerDisReportsJobDetails"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <LinearLayout
+                    android:id="@+id/customaerSignatureContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widthReportsJobDetailcustomerSignatureDataTv"
+                    android:layout_below="@+id/customerSignature"
+                    android:layout_marginTop="@dimen/paddingMenusTitle"
+                    android:background="@drawable/boxframe_signature"
+                    android:orientation="vertical"
+                    android:padding="@dimen/paddingMenusTitle">
+
+                    <ImageView
+                        android:id="@+id/customerSignatureDataTv"
+                        android:layout_width="@dimen/widthReportsJobDetailcustomerSignatureDataTvNew"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/textSignatureLabelTv"
+                        style="@style/styleHeadingsTextViewAttachmentTitle"
+                        android:clickable="false"
+                        android:ellipsize="end"
+                        android:ems="4"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        fontify:font_name="@string/fontName_avenir" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_lay_tech_sig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                android:layout_marginTop="@dimen/marginTopInformationTvLoginDomain"
+                android:background="@color/white"
+                android:padding="@dimen/paddingReportsJobDetailRelativeLayout">
+
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/mySignature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/paddingMenusTitle"
+                    android:text="@string/textMySignatureLableTv"
+                    android:textColor="@color/textCustomerSignatureLableJobDetails"
+                    android:textSize="@dimen/textSizeCustomerDisReportsJobDetails"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <LinearLayout
+                    android:id="@+id/containerMysignature"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widthReportsJobDetailcustomerSignatureDataTv"
+                    android:layout_below="@+id/mySignature"
+                    android:layout_marginTop="@dimen/paddingTopOrangeButton"
+                    android:background="@drawable/boxframe_signature"
+                    android:orientation="vertical"
+                    android:padding="@dimen/paddingMenusTitle">
+
+                    <ImageView
+                        android:id="@+id/mysignatureDataIv"
+                        android:layout_width="@dimen/widthSignatureIv"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/textMySignatureLabelTv"
+                        style="@style/styleHeadingsTextViewAttachmentTitle"
+                        android:clickable="false"
+                        android:ellipsize="end"
+                        android:ems="4"
+                        android:gravity="left"
+                        android:singleLine="true"
+                        android:visibility="gone"
+                        fontify:font_name="@string/fontName_avenir" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_view_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:background="@drawable/bg_report_download"
+            android:elevation="@dimen/paddingTopOrangeButton"
+            android:paddingBottom="@dimen/paddingTopOrangeButton"
+            android:paddingLeft="@dimen/textSizeDateAndTimeUnavability"
+            android:paddingRight="@dimen/paddingMenusTitle"
+            android:paddingTop="@dimen/paddingTopOrangeButton"
+            android:text="@string/fa_eye"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSizeActionBarJobDiscription" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null" />
+
+</LinearLayout>

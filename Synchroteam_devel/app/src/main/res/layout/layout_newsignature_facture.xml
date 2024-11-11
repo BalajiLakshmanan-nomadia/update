@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inner_drawsignature"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/semiTransparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/widthNewSigantureFactureLinearLayout"
+        android:layout_height="wrap_content"
+        android:background="@color/backSigantureDialog"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.synchroteam.TypefaceLibrary.Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/backSignatureButtonBack"
+                android:text="@string/textSignature"
+                android:textColor="@color/textSignatureButton"
+                android:textSize="@dimen/textSizeSignaureDialogLables"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dividerline" />
+
+            <com.synchroteam.TypefaceLibrary.Button
+                android:id="@+id/clearclt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/textClear"
+                android:textColor="@color/textClearButton"
+                android:textSize="@dimen/textSizeSignaureDialogLables"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cadre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/signclient"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightCadreSignatureDrawSignature"
+                android:background="@color/white"
+                android:orientation="horizontal"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingMenusParent"
+            android:visibility="gone">
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/editTextCustomerName"
+                style="@style/EditTextAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_border_edittext"
+                android:hint="@string/textCustomerNameLable"
+                android:maxLines="3"
+                android:padding="@dimen/paddingNewJobsTextView"
+                android:textColor="@color/textDataItemsTv"
+                android:textColorHint="@color/textColorLableNonManadtoryMandatoryFiled"
+                android:textSize="@dimen/textSizeLableMandatoryFields"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.synchroteam.TypefaceLibrary.Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/backGroundCancelBtn"
+                android:text="@string/textCancelLable"
+                android:textColor="@color/textGrayCancelBtn"
+                android:textSize="@dimen/textSizeSignaureDialogLables"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dividerline" />
+
+            <com.synchroteam.TypefaceLibrary.Button
+                android:id="@+id/saveclt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/backGroundOkBtn"
+                android:text="@string/textOkLable"
+                android:textAllCaps="true"
+                android:textColor="@color/textGrayOkBtn"
+                android:textSize="@dimen/textSizeSignaureDialogLables"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

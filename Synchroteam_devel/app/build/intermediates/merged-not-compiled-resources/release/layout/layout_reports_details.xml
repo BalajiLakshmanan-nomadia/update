@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/titlebarbackground"
+        android:visibility="gone"
+        android:padding="@dimen/paddingReportsDetailRelativeLayout" >
+
+        <ImageView
+            android:id="@+id/backArrowIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_btn" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/titleReportsDetailsTv"
+            style="@style/styleScreenTitleTvSyncroteam"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginLeftReportsDetailTitleReportsDetailsTv"
+            android:layout_toRightOf="@+id/backArrowIv" />
+
+        <ImageView
+            android:id="@+id/reportsSyncIconIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marginRightReportsDetailTitleReportsDetailsTv"
+            android:src="@drawable/back_reports_sync_icon" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddingReportsDetailLinearLayout"
+        
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                style="@style/styleLablesTvReportsDetails"
+                android:text="@string/textStartLable" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                style="@style/styleLablesTvReportsDetails"
+                android:textAllCaps="true"
+                android:text="@string/textFinishLableTv" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                style="@style/styleLablesTvReportsDetails"
+                android:textAllCaps="true"
+                android:text="@string/textDurationLableTv" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/startTimeTv"
+                style="@style/styleDataTvReportsDetails" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/finishedTimeTv"
+                
+                style="@style/styleDataTvReportsDetails" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/spentTimeTv"
+                
+                style="@style/styleDataTvReportsDetails" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/startDateTv"
+                style="@style/styleDataTvReportsDetails" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/finishDateTv"
+                
+                style="@style/styleDataTvReportsDetails" />
+
+            <com.synchroteam.TypefaceLibrary.TextView style="@style/styleDataTvReportsDetailsLight" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/paddingReportsDetailLinearLayout" >
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            style="@style/styleLablesTvReportsDetails"
+            android:text="@string/textJobCompletedLableTv" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            style="@style/styleDataTvReportsDetails"
+            android:text="@string/textYesLable" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/reportsDetailLv"
+        android:layout_width="match_parent"
+        android:divider="@android:color/transparent"
+        android:padding="@dimen/paddingReportsDetailLinearLayout"
+        android:dividerHeight="@dimen/paddingReportsDetailLinearLayout"
+             android:listSelector="@android:color/transparent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

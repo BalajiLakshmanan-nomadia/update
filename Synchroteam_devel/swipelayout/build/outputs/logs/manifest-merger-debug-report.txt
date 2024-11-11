@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml:1:1-41
+INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml:1:1-41
+INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml:1:1-41
+	package
+		ADDED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml:1:11-39
+		INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+		INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml:1:1-41
+uses-sdk
+INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+		ADDED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+		INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+		ADDED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml
+		INJECTED from D:\Synchro\Synchroteam_devel\swipelayout\src\main\AndroidManifest.xml

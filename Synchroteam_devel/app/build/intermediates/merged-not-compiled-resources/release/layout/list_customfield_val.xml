@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linCustomFieldChildContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_textview_layout"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/marginLeftCutomFiledvalcustom" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/nomcustom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/custom_details_text_color"
+                    android:textSize="@dimen/textSizeItemAutoCompleteclientNameTv"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:focusableInTouchMode="false"
+                android:orientation="horizontal" >
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/valcustom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopCutomFiledvalcustom"
+                    android:autoLink="web|phone|email"
+                    android:background="@drawable/boxframe_textview_layout_gray"
+                    android:padding="@dimen/paddingMenusTitle"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSizeItemAutoCompleteclientNameTv"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/customDetailsDivider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/job_description_bg"
+        android:visibility="gone" />
+
+</LinearLayout>

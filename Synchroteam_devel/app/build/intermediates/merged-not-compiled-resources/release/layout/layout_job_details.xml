@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:id="@+id/relativelayoutJobDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/job_description_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_incident"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sizeHeightItemImageReports"
+                android:layout_below="@+id/toolbar"
+                android:layout_gravity="bottom"
+                android:background="@color/start_activity_bg">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/rel_prog"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/paddingTopOrangeButton">
+
+                    <ImageView
+                        android:id="@+id/img_view_incident"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txt_incident_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                        android:layout_toLeftOf="@+id/img_view_incident"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text=" "
+                        android:textColor="@android:color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_prog"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_height="match_parent">
+
+                    <com.synchroteam.utils.TwoLevelCircularProgressBar
+                        android:id="@+id/progress_incident"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="start|center_vertical"
+                        app:tlcp_bg_color="@color/gray"
+                        app:tlcp_progress="20"
+                        app:tlcp_progress_color="@color/actionbarColor"
+                        app:tlcp_strokeWidth="4dp" />
+
+                    <ImageView
+                        android:id="@+id/img_pause_incident"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_pause_incident_24dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tabIndicatorRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundAppScreens"
+                android:layout_below="@+id/rel_incident">
+
+                <com.synchroteam.utils.TabPageIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_start_job"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sizeHeightItemImageReports"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@color/start_activity_bg">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/txt_clock_mode"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txt_stopview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/fa_stop"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSizeDateTv"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        fontify:font_name="@string/fontName_fontAwesome" />
+
+                    <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                        android:id="@+id/txtJobStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                        android:gravity="center_vertical"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/textStartLable"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textSizeReportsListOfValues"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_clock_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/red_color"
+                    android:gravity="start|center_vertical"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/paddingTableRowConfig_Hour_tracking"
+                    android:paddingRight="@dimen/paddingTableRowConfig_Hour_tracking"
+                    android:singleLine="true"
+                    android:text="@string/fa_clock_o"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/txt_clock_in_out"
+                    android:textStyle="bold"
+                    fontify:font_name="@string/fontName_fontAwesome" />
+
+            </RelativeLayout>
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/actionbarColor"
+                android:minHeight="?attr/actionBarSize"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    style="@style/styleActionBarTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:singleLine="true" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.synchroteam.utils.NonSwipeableViewPager
+                android:id="@+id/pagerJobDetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/job_description_bg"
+                android:layout_above="@+id/layout_start_job"
+                android:layout_below="@+id/tabIndicatorRel">
+
+            </com.synchroteam.utils.NonSwipeableViewPager>
+
+            <RelativeLayout
+                android:id="@+id/rel_incident_view"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:visibility="visible"
+                android:layout_below="@+id/rel_incident"
+                android:layout_height="match_parent">
+
+                <include layout="@layout/layout_incident_tracking"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_done_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:text="Done" />
+    </LinearLayout>
+</LinearLayout>

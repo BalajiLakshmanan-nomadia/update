@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddinTrackingLinearLayout2">
+
+        <RadioButton
+            android:id="@+id/onOffTrackingSettingsTb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_hotline_mob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/textTrackingLableTvTracking"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/celldivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddinTrackingLinearLayout2"
+        android:visibility="gone">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/textPridocityLableTv"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.EditText
+            android:id="@+id/preodicityDataTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/celldivider"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddinTrackingLinearLayout2">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/textFrequencLableTv"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.EditText
+            android:id="@+id/frequencyDataTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/celldivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddinTrackingLinearLayout2">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/textDaysOfOperationLableTv"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/dayaOfOperationDataSp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_ab_default_stylejobddscriptiontitlebar"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:text="@string/textDaysOfOperationDataTv"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/celldivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/paddinTrackingLinearLayout2">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/textHoursOfOperationLableTv"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/hoursofOperationDataTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_ab_default_stylejobddscriptiontitlebar"
+            android:gravity="left|center_vertical"
+            android:padding="@dimen/paddingTrackinghoursofOperationDataTv"
+            android:text="@string/textHoursOfOperationDataTv"
+            android:textColor="@color/textLableTrackingSettings"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/celldivider" />
+
+    <LinearLayout
+        android:id="@+id/lay_debug_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/marginTopTrackingidBtnSave"
+        android:gravity="center|top">
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/idBtnSave"
+            style="@style/styleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/paddingTrackingidBtnSave"
+            android:text="@string/modifier"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textSizeTackingidBtnSave"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+    </LinearLayout>
+
+</LinearLayout>

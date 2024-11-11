@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@android:color/background_light">
+
+        <ProgressBar
+            android:id="@+id/progressBarToComeJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_report_without_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/empty_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/no_jobs_were_found"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textSizeDateTv"
+            android:visibility="invisible"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </RelativeLayout>
+
+    <!--Search & sort container-->
+    <LinearLayout
+        android:id="@+id/lin_search_sort"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginTopSyncroTeamLoginLinearLayout"
+        android:layout_gravity="top"
+        android:background="@color/search_container_bg"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_behavior="com.synchroteam.utils.QuickReturnBehavior">
+
+        <RelativeLayout
+            android:id="@+id/rel_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/paddingTopOrangeButton">
+
+            <TextView
+                android:id="@+id/ic_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:text="@string/fm_sort_amount_asc"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeJobNameTextView" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_sort_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:layout_toRightOf="@+id/ic_sort"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeJobNameTextView"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/paddingTopOrangeButton">
+
+            <TextView
+                android:id="@+id/ic_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/fm_search"
+                android:textColor="@color/actionbarColor"
+                android:textSize="@dimen/textSizeJobNameTextView" />
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/ed_search_all_jobs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                android:layout_toLeftOf="@+id/ic_barcode"
+                android:layout_toRightOf="@+id/ic_search"
+                android:background="@android:color/transparent"
+                android:hint="@string/txt_search_hint"
+                android:singleLine="true"
+                android:textColor="@color/actionbarColor"
+                android:textColorHint="@color/actionbarColor"
+                android:textSize="@dimen/textSizeJobNameTextView"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+            <TextView
+                android:id="@+id/ic_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                android:gravity="center_vertical"
+                android:padding="@dimen/paddingMenusTitle"
+                android:text="@string/fa_barcode"
+                android:textColor="@color/actionbarColor"
+                android:textSize="@dimen/textSizeJobNameTextView" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/marginLeftclientNameTv"
+                android:layout_alignLeft="@+id/ic_search"
+                android:layout_alignRight="@+id/ic_barcode"
+                android:layout_below="@+id/ed_search_all_jobs"
+                android:layout_marginTop="@dimen/paddingMenusTitle"
+                android:background="@color/actionbarColor" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

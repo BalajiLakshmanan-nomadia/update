@@ -1,0 +1,1596 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.synchroteam.synchroteam3"
+4    android:versionCode="5"
+5    android:versionName="58.01" >
+6
+7    <uses-sdk
+7-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:603:5-80
+8        android:minSdkVersion="26"
+8-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:603:5-80
+9        android:targetSdkVersion="34" />
+9-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:603:5-80
+10
+11    <queries>
+11-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:482:5-515:15
+12
+13        <!-- WebView -->
+14        <intent>
+14-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:484:9-488:18
+15            <action android:name="android.intent.action.VIEW" />
+15-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:485:13-65
+15-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:485:21-62
+16
+17            <category android:name="android.intent.category.BROWSABLE" />
+17-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:486:13-74
+17-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:486:23-71
+18
+19            <data android:scheme="http" />
+19-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:435:17-50
+19-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:435:23-47
+20        </intent>
+21        <intent>
+21-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:489:9-493:18
+22            <action android:name="android.intent.action.VIEW" />
+22-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:485:13-65
+22-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:485:21-62
+23
+24            <category android:name="android.intent.category.BROWSABLE" />
+24-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:486:13-74
+24-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:486:23-71
+25
+26            <data android:scheme="https" />
+26-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:435:17-50
+26-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:435:23-47
+27        </intent>
+28
+29        <!-- Camera -->
+30        <intent>
+30-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:496:9-498:18
+31            <action android:name="android.media.action.IMAGE_CAPTURE" />
+31-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:497:13-73
+31-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:497:21-70
+32        </intent>
+33
+34        <!-- Gallery -->
+35        <intent>
+35-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:501:9-504:18
+36            <action android:name="android.intent.action.GET_CONTENT" />
+36-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:502:13-72
+36-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:502:21-69
+37
+38            <data android:mimeType="image/*" />
+38-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:435:17-50
+38-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:503:19-45
+39        </intent>
+40        <intent>
+40-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:506:9-509:18
+41            <action android:name="android.intent.action.PICK" />
+41-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:507:13-65
+41-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:507:21-62
+42
+43            <data android:mimeType="vnd.android.cursor.dir/image" />
+43-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:435:17-50
+43-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:503:19-45
+44        </intent>
+45
+46        <package android:name="com.google.android.apps.maps" />
+46-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:511:9-64
+46-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:511:18-61
+47        <package android:name="com.whatsapp" />
+47-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:512:9-48
+47-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:512:18-45
+48    </queries>
+49
+50    <supports-screens
+50-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:517:5-522:40
+51        android:anyDensity="true"
+51-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:518:9-34
+52        android:largeScreens="true"
+52-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:519:9-36
+53        android:normalScreens="true"
+53-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:520:9-37
+54        android:smallScreens="true"
+54-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:521:9-36
+55        android:xlargeScreens="true" />
+55-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:522:9-37
+56
+57    <uses-feature
+57-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:524:5-526:36
+58        android:name="android.hardware.camera"
+58-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:525:9-47
+59        android:required="false" />
+59-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:526:9-33
+60    <uses-feature
+60-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:527:5-529:36
+61        android:name="android.hardware.telephony"
+61-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:528:9-50
+62        android:required="false" />
+62-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:529:9-33
+63    <uses-feature
+63-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:530:5-532:36
+64        android:name="android.hardware.camera.autofocus"
+64-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:531:9-57
+65        android:required="false" />
+65-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:532:9-33
+66    <uses-feature
+66-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:533:5-535:36
+67        android:name="android.hardware.location.gps"
+67-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:534:9-53
+68        android:required="false" />
+68-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:535:9-33
+69
+70    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+70-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:537:5-77
+70-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:537:22-74
+71    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+71-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:538:5-86
+71-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:538:22-83
+72    <uses-permission
+72-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:539:5-541:36
+73        android:name="android.permission.INTERNET"
+73-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:540:9-51
+74        android:required="false" />
+74-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:541:9-33
+75    <uses-permission
+75-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:542:5-544:36
+76        android:name="android.permission.CALL_PHONE"
+76-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:543:9-53
+77        android:required="false" />
+77-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:544:9-33
+78    <uses-permission
+78-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:546:5-548:36
+79        android:name="android.permission.ACCESS_NETWORK_STATE"
+79-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:547:9-63
+80        android:required="false" />
+80-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:548:9-33
+81    <uses-permission android:name="android.permission.CAMERA" />
+81-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:549:5-65
+81-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:549:22-62
+82    <uses-permission
+82-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:550:5-553:37
+83        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+83-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:551:9-65
+84        android:maxSdkVersion="28"
+84-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:553:9-35
+85        android:required="false" />
+85-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:552:9-33
+86    <uses-permission
+86-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:554:5-556:36
+87        android:name="android.permission.ACCESS_FINE_LOCATION"
+87-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:555:9-63
+88        android:required="false" />
+88-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:556:9-33
+89
+90    <!-- FOR GCM -->
+91    <!-- <permission -->
+92    <!-- android:name="com.synchroteam.synchroteam2.permission.C2D_MESSAGE" -->
+93    <!-- android:protectionLevel="signature" /> -->
+94
+95
+96    <!-- <uses-permission android:name="com.synchroteam.synchroteam2.permission.C2D_MESSAGE" /> -->
+97
+98    <uses-permission
+98-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:569:5-571:36
+99        android:name="android.permission.ACCESS_COARSE_LOCATION"
+99-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:570:9-65
+100        android:required="false" />
+100-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:571:9-33
+101    <!-- <uses-permission android:name="com.google.android.c2dm.permission.REGISTER" /> -->
+102    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+102-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:573:5-82
+102-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:573:22-79
+103    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+103-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:574:5-71
+103-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:574:22-68
+104    <uses-permission android:name="android.permission.WAKE_LOCK" />
+104-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:575:5-68
+104-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:575:22-65
+105    <uses-permission android:name="android.permission.VIBRATE" />
+105-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:576:5-66
+105-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:576:22-63
+106    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+106-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:578:5-77
+106-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:578:22-74
+107    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+107-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:580:5-76
+107-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:580:22-73
+108    <uses-permission
+108-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:582:5-583:37
+109        android:name="android.permission.READ_EXTERNAL_STORAGE"
+109-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:582:22-77
+110        android:maxSdkVersion="32" />
+110-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:583:9-35
+111    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+111-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:585:5-90
+111-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:585:22-87
+112    <uses-permission android:name="android.permission.GET_TASKS" />
+112-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:588:5-68
+112-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:588:22-65
+113    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+113-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:589:5-591:47
+113-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:590:9-57
+114    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+114-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:592:5-81
+114-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:592:22-78
+115    <uses-permission android:name="android.permission.CAMERA" />
+115-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:549:5-65
+115-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:549:22-62
+116    <uses-permission android:name="android.permission.READ_CONTACTS" />
+116-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:594:5-71
+116-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:594:22-69
+117    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+117-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:595:5-72
+117-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:595:22-70
+118    <uses-permission android:name="android.permission.FLASHLIGHT" />
+118-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:596:5-68
+118-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:596:22-66
+119    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+119-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:599:5-84
+119-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:599:22-81
+120    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+120-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:601:5-79
+120-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:601:22-76
+121
+122    <uses-feature
+122-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\173b285a26880c7fe398785f32b3580f\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+123        android:glEsVersion="0x00020000"
+123-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\173b285a26880c7fe398785f32b3580f\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+124        android:required="true" />
+124-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\173b285a26880c7fe398785f32b3580f\transformed\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+125
+126    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+126-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+126-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+127
+128    <permission
+128-->[androidx.core:core:1.9.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1f9682ac1cd3c6814cdd8825704c7347\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+129        android:name="com.synchroteam.synchroteam3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+129-->[androidx.core:core:1.9.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1f9682ac1cd3c6814cdd8825704c7347\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+130        android:protectionLevel="signature" />
+130-->[androidx.core:core:1.9.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1f9682ac1cd3c6814cdd8825704c7347\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+131
+132    <uses-permission android:name="com.synchroteam.synchroteam3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+132-->[androidx.core:core:1.9.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1f9682ac1cd3c6814cdd8825704c7347\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+132-->[androidx.core:core:1.9.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1f9682ac1cd3c6814cdd8825704c7347\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+133
+134    <application
+134-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:10:5-480:19
+135        android:name="com.synchroteam.synchroteam.SyncroTeamApplication"
+135-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:11:9-73
+136        android:allowBackup="false"
+136-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:12:9-36
+137        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+137-->[androidx.core:core:1.9.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1f9682ac1cd3c6814cdd8825704c7347\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+138        android:extractNativeLibs="false"
+139        android:fullBackupContent="false"
+139-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:13:9-42
+140        android:icon="@drawable/app_icon"
+140-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:14:9-42
+141        android:label="@string/app_name"
+141-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:15:9-41
+142        android:largeHeap="true"
+142-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:16:9-33
+143        android:theme="@style/AppTheme" >
+143-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:17:9-40
+144        <activity
+144-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:20:9-30:20
+145            android:name="com.synchroteam.synchroteam.SpalshActivity"
+145-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:21:13-70
+146            android:exported="true"
+146-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:25:13-36
+147            android:label="@string/app_name"
+147-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:22:13-45
+148            android:screenOrientation="portrait"
+148-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:23:13-49
+149            android:theme="@style/SplashTheme" >
+149-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:24:13-47
+150            <intent-filter>
+150-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:26:13-29:29
+151                <action android:name="android.intent.action.MAIN" />
+151-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:27:17-69
+151-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:27:25-66
+152
+153                <category android:name="android.intent.category.LAUNCHER" />
+153-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:28:17-77
+153-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:28:27-74
+154            </intent-filter>
+155        </activity>
+156        <activity
+156-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:31:9-35:52
+157            android:name="com.synchroteam.synchroteam.Login_Syncroteam"
+157-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:32:13-72
+158            android:exported="false"
+158-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:34:13-37
+159            android:hardwareAccelerated="false"
+159-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:33:13-48
+160            android:screenOrientation="portrait" />
+160-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:35:13-49
+161        <activity
+161-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:36:9-46:20
+162            android:name="com.synchroteam.synchroteam.SiteDetail"
+162-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:37:13-66
+163            android:exported="false"
+163-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:41:13-37
+164            android:logo="@drawable/transparent_image"
+164-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:38:13-55
+165            android:screenOrientation="portrait"
+165-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:39:13-49
+166            android:theme="@style/myTheme"
+166-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:40:13-43
+167            android:windowSoftInputMode="adjustPan" >
+167-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:42:13-52
+168            <meta-data
+168-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+169                android:name="android.support.PARENT_ACTIVITY"
+169-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+170                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+170-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+171        </activity>
+172        <activity
+172-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:47:9-57:20
+173            android:name="com.synchroteam.synchroteam.EquipmentDetials"
+173-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:48:13-72
+174            android:exported="false"
+174-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:51:13-37
+175            android:logo="@drawable/transparent_image"
+175-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:49:13-55
+176            android:screenOrientation="portrait"
+176-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:50:13-49
+177            android:theme="@style/myTheme"
+177-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:52:13-43
+178            android:windowSoftInputMode="adjustPan" >
+178-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:53:13-52
+179            <meta-data
+179-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+180                android:name="android.support.PARENT_ACTIVITY"
+180-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+181                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+181-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+182        </activity>
+183        <activity
+183-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:58:9-67:20
+184            android:name="com.synchroteam.synchroteam.SiteListingClientDetails"
+184-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:59:13-80
+185            android:exported="false"
+185-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:62:13-37
+186            android:logo="@drawable/transparent_image"
+186-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:60:13-55
+187            android:screenOrientation="portrait"
+187-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:61:13-49
+188            android:theme="@style/styleSyncroteamActionBarJobDetails" >
+188-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:63:13-70
+189            <meta-data
+189-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+190                android:name="android.support.PARENT_ACTIVITY"
+190-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+191                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+191-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+192        </activity>
+193        <activity
+193-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:68:9-77:20
+194            android:name="com.synchroteam.synchroteam.EquipmentListCLientDetail"
+194-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:69:13-81
+195            android:exported="false"
+195-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:72:13-37
+196            android:logo="@drawable/transparent_image"
+196-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:70:13-55
+197            android:screenOrientation="portrait"
+197-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:71:13-49
+198            android:theme="@style/styleSyncroteamActionBarJobDetails" >
+198-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:73:13-70
+199            <meta-data
+199-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+200                android:name="android.support.PARENT_ACTIVITY"
+200-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+201                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+201-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+202        </activity>
+203        <activity
+203-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:78:9-82:54
+204            android:name="com.synchroteam.synchroteam.NearestClientSite"
+204-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:79:13-73
+205            android:exported="false"
+205-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:81:13-37
+206            android:screenOrientation="portrait"
+206-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:80:13-49
+207            android:windowSoftInputMode="adjustPan" />
+207-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:82:13-52
+208        <activity
+208-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:83:9-87:55
+209            android:name="com.synchroteam.scanner.CodeScannerActivity"
+209-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:84:13-71
+210            android:exported="false"
+210-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:86:13-37
+211            android:screenOrientation="portrait"
+211-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:85:13-49
+212            android:windowSoftInputMode="adjustPan" />
+212-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:87:13-52
+213        <activity
+213-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:88:9-98:20
+214            android:name="com.synchroteam.technicalsupport.JobDetails"
+214-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:89:13-71
+215            android:exported="false"
+215-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:92:13-37
+216            android:logo="@drawable/transparent_image"
+216-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:90:13-55
+217            android:screenOrientation="portrait"
+217-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:91:13-49
+218            android:theme="@style/theme_job_details"
+218-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:93:13-53
+219            android:windowSoftInputMode="stateHidden|adjustPan" >
+219-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:94:13-64
+220            <meta-data
+220-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+221                android:name="android.support.PARENT_ACTIVITY"
+221-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+222                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+222-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+223        </activity>
+224        <activity
+224-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:100:9-110:20
+225            android:name="com.synchroteam.synchroteam.JobPoolDetails"
+225-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:101:13-70
+226            android:exported="false"
+226-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:104:13-37
+227            android:logo="@drawable/transparent_image"
+227-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:102:13-55
+228            android:screenOrientation="portrait"
+228-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:103:13-49
+229            android:theme="@style/theme_job_details"
+229-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:105:13-53
+230            android:windowSoftInputMode="stateHidden|adjustPan" >
+230-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:106:13-64
+231            <meta-data
+231-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+232                android:name="android.support.PARENT_ACTIVITY"
+232-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+233                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+233-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+234        </activity>
+235        <activity
+235-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:112:9-122:20
+236            android:name="com.synchroteam.synchroteam.JobPoolSchedule"
+236-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:113:13-71
+237            android:exported="false"
+237-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:116:13-37
+238            android:logo="@drawable/transparent_image"
+238-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:114:13-55
+239            android:screenOrientation="portrait"
+239-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:115:13-49
+240            android:theme="@style/theme_job_details"
+240-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:117:13-53
+241            android:windowSoftInputMode="stateHidden|adjustPan" >
+241-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:118:13-64
+242            <meta-data
+242-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+243                android:name="android.support.PARENT_ACTIVITY"
+243-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+244                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+244-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+245        </activity>
+246        <activity
+246-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:123:9-132:20
+247            android:name="com.synchroteam.catalouge.CatalougeSubCategotyUpdated"
+247-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:124:13-81
+248            android:logo="@drawable/transparent_image"
+248-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:125:13-55
+249            android:screenOrientation="portrait"
+249-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:126:13-49
+250            android:theme="@style/styleSyncroteamActionBarJobDetails"
+250-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:127:13-70
+251            android:windowSoftInputMode="adjustPan" >
+251-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:128:13-52
+252            <meta-data
+252-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+253                android:name="android.support.PARENT_ACTIVITY"
+253-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+254                android:value="com.synchroteam.technicalsupport.JobDetails" />
+254-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+255        </activity>
+256        <activity
+256-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:133:9-140:64
+257            android:name="com.synchroteam.synchroteam.SyncoteamNavigationActivity"
+257-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:134:13-83
+258            android:exported="false"
+258-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:138:13-37
+259            android:label="@string/title_activity_syncro_team_base"
+259-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:135:13-68
+260            android:launchMode="singleTop"
+260-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:136:13-43
+261            android:screenOrientation="portrait"
+261-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:137:13-49
+262            android:theme="@style/theme_fragment_tab_page_indicator"
+262-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:139:13-69
+263            android:windowSoftInputMode="adjustPan" />
+263-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:140:13-52
+264        <activity
+264-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:141:9-150:20
+265            android:name="com.synchroteam.synchroteam.LastSyncronizationSettingActivity"
+265-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:142:13-89
+266            android:exported="false"
+266-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:145:13-37
+267            android:logo="@drawable/transparent_image"
+267-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:143:13-55
+268            android:screenOrientation="portrait"
+268-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:144:13-49
+269            android:theme="@style/styleSyncroteamActionBarJobDetails" >
+269-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:146:13-70
+270            <meta-data
+270-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+271                android:name="android.support.PARENT_ACTIVITY"
+271-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+272                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+272-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+273        </activity>
+274        <activity
+274-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:151:9-162:20
+275            android:name="com.synchroteam.synchroteam.NewJob"
+275-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:152:13-62
+276            android:exported="false"
+276-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:156:13-37
+277            android:label="@string/title_activity_syncro_team_base"
+277-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:153:13-68
+278            android:logo="@drawable/transparent_image"
+278-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:154:13-55
+279            android:screenOrientation="portrait"
+279-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:155:13-49
+280            android:theme="@style/styleSyncroteamActionBarJobDetails"
+280-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:157:13-70
+281            android:windowSoftInputMode="adjustPan|stateHidden" >
+281-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:158:13-64
+282            <meta-data
+282-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+283                android:name="android.support.PARENT_ACTIVITY"
+283-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+284                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+284-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+285        </activity>
+286        <activity
+286-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:164:9-167:52
+287            android:name="com.synchroteam.utils.ScannerBar"
+287-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:165:13-60
+288            android:exported="false"
+288-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:166:13-37
+289            android:screenOrientation="portrait" />
+289-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:167:13-49
+290        <activity
+290-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:169:9-173:67
+291            android:name="com.synchroteam.synchroteam.ClientJobType"
+291-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:170:13-69
+292            android:exported="false"
+292-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:171:13-37
+293            android:screenOrientation="portrait"
+293-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:172:13-49
+294            android:windowSoftInputMode="adjustPan|stateHidden" />
+294-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:173:13-64
+295        <activity
+295-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:175:9-179:67
+296            android:name="com.synchroteam.synchroteam.ClientJobReport"
+296-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:176:13-71
+297            android:exported="false"
+297-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:177:13-37
+298            android:screenOrientation="portrait"
+298-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:178:13-49
+299            android:windowSoftInputMode="adjustPan|stateHidden" />
+299-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:179:13-64
+300        <activity
+300-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:183:9-186:65
+301            android:name="com.synchroteam.synchroteam.CustomFieldClient"
+301-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:184:13-73
+302            android:exported="false"
+302-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:185:17-41
+303            android:screenOrientation="portrait" />
+303-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:186:17-53
+304        <activity
+304-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:187:9-190:65
+305            android:name="com.synchroteam.synchroteam.CustomFieldEquipment"
+305-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:188:17-80
+306            android:exported="false"
+306-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:189:17-41
+307            android:screenOrientation="portrait" />
+307-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:190:17-53
+308        <activity
+308-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:191:9-194:65
+309            android:name="com.synchroteam.synchroteam.CustomFieldSite"
+309-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:192:17-75
+310            android:exported="false"
+310-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:193:17-41
+311            android:screenOrientation="portrait" />
+311-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:194:17-53
+312        <activity
+312-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:197:9-200:68
+313            android:name="com.synchroteam.technicalsupport.SignatureFacture"
+313-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:198:13-77
+314            android:exported="false"
+314-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:199:13-37
+315            android:theme="@android:style/Theme.Dialog" />
+315-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:200:13-56
+316        <activity
+316-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:201:9-204:61
+317            android:name="com.synchroteam.technicalsupport.CustomField"
+317-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:202:13-72
+318            android:exported="false"
+318-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:203:13-37
+319            android:screenOrientation="portrait" />
+319-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:204:13-49
+320        <activity
+320-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:205:9-215:20
+321            android:name="com.synchroteam.synchroteam.ReportsDetails"
+321-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:206:13-70
+322            android:exported="false"
+322-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:209:13-37
+323            android:logo="@drawable/transparent_image"
+323-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:207:13-55
+324            android:screenOrientation="portrait"
+324-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:208:13-49
+325            android:theme="@style/styleSyncroteamActionBarJobDetails"
+325-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:210:13-70
+326            android:windowSoftInputMode="adjustPan" >
+326-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:211:13-52
+327            <meta-data
+327-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+328                android:name="android.support.PARENT_ACTIVITY"
+328-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+329                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+329-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+330        </activity>
+331        <activity
+331-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:216:9-220:76
+332            android:name="com.synchroteam.synchroteam.CategoryPartList"
+332-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:217:13-72
+333            android:exported="false"
+333-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:219:13-37
+334            android:screenOrientation="portrait"
+334-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:218:13-49
+335            android:windowSoftInputMode="adjustPan|stateHidden" />
+335-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:220:13-64
+336        <activity
+336-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:222:9-226:76
+337            android:name="com.synchroteam.synchroteam.ClientListNew"
+337-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:223:13-69
+338            android:exported="false"
+338-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:225:13-37
+339            android:screenOrientation="portrait"
+339-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:224:13-49
+340            android:windowSoftInputMode="adjustPan|stateHidden" />
+340-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:226:13-64
+341        <activity
+341-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:228:9-232:76
+342            android:name="com.synchroteam.synchroteam.SiteList"
+342-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:229:13-64
+343            android:exported="false"
+343-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:231:13-37
+344            android:screenOrientation="portrait"
+344-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:230:13-49
+345            android:windowSoftInputMode="adjustPan|stateHidden" />
+345-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:232:13-64
+346        <activity
+346-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:233:9-237:76
+347            android:name="com.synchroteam.synchroteam.EquipmentList"
+347-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:234:13-69
+348            android:exported="false"
+348-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:236:13-37
+349            android:screenOrientation="portrait"
+349-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:235:13-49
+350            android:windowSoftInputMode="adjustPan|stateHidden" />
+350-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:237:13-64
+351
+352        <!-- <service android:name="com.synchroteam.pushNotification.GCMService" /> -->
+353
+354
+355        <!-- FOR GCM -->
+356        <!-- <receiver -->
+357        <!-- android:name="com.synchroteam.pushNotification.GCMReceiver" -->
+358        <!-- android:permission="com.google.android.c2dm.permission.SEND"> -->
+359        <!-- <intent-filter> -->
+360        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+361        <!-- <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> -->
+362
+363
+364        <!-- <category android:name="com.synchroteam.synchroteam" /> -->
+365        <!-- </intent-filter> -->
+366        <!-- </receiver> -->
+367
+368        <activity
+368-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:253:9-263:20
+369            android:name="com.synchroteam.synchroteam.ClientDetail"
+369-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:254:13-68
+370            android:exported="false"
+370-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:258:13-37
+371            android:logo="@drawable/transparent_image"
+371-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:255:13-55
+372            android:screenOrientation="portrait"
+372-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:256:13-49
+373            android:theme="@style/myTheme"
+373-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:257:13-43
+374            android:windowSoftInputMode="adjustPan" >
+374-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:259:13-52
+375            <meta-data
+375-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+376                android:name="android.support.PARENT_ACTIVITY"
+376-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+377                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+377-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+378        </activity>
+379        <activity
+379-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:265:9-273:20
+380            android:name="com.synchroteam.synchroteam.JobsListOnCurrentDate"
+380-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:266:13-77
+381            android:exported="false"
+381-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:268:13-37
+382            android:screenOrientation="portrait"
+382-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:267:13-49
+383            android:theme="@style/theme_fragment_tab_page_indicator" >
+383-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:269:13-69
+384            <meta-data
+384-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+385                android:name="android.support.PARENT_ACTIVITY"
+385-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+386                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+386-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+387        </activity>
+388        <activity
+388-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:274:9-277:68
+389            android:name="com.synchroteam.listadapters.SignatureFactureItem"
+389-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:275:13-77
+390            android:exported="false"
+390-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:276:13-37
+391            android:theme="@android:style/Theme.Dialog" />
+391-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:277:13-56
+392        <activity
+392-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:278:9-288:20
+393            android:name="com.synchroteam.catalouge.CatalougeSubCategory"
+393-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:279:13-74
+394            android:exported="false"
+394-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:282:13-37
+395            android:logo="@drawable/transparent_image"
+395-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:280:13-55
+396            android:screenOrientation="portrait"
+396-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:281:13-49
+397            android:theme="@style/styleSyncroteamActionBarJobDetails"
+397-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:283:13-70
+398            android:windowSoftInputMode="adjustPan" >
+398-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:284:13-52
+399            <meta-data
+399-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+400                android:name="android.support.PARENT_ACTIVITY"
+400-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+401                android:value="com.synchroteam.technicalsupport.JobDetails" />
+401-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+402        </activity>
+403        <activity
+403-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:289:9-298:20
+404            android:name="com.synchroteam.synchroteam.AddNewJob"
+404-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:290:13-65
+405            android:exported="false"
+405-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:292:13-37
+406            android:screenOrientation="portrait"
+406-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:291:13-49
+407            android:theme="@style/styleSyncroteamActionBarJobDetails"
+407-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:293:13-70
+408            android:windowSoftInputMode="adjustPan" >
+408-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:294:13-52
+409            <meta-data
+409-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+410                android:name="android.support.PARENT_ACTIVITY"
+410-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+411                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+411-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+412        </activity>
+413        <activity
+413-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:299:9-309:20
+414            android:name="com.synchroteam.catalouge.CatalougePices"
+414-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:300:13-68
+415            android:exported="false"
+415-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:303:13-37
+416            android:logo="@drawable/transparent_image"
+416-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:301:13-55
+417            android:screenOrientation="portrait"
+417-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:302:13-49
+418            android:theme="@style/styleSyncroteamActionBarJobDetails"
+418-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:304:13-70
+419            android:windowSoftInputMode="adjustPan" >
+419-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:305:13-52
+420            <meta-data
+420-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+421                android:name="android.support.PARENT_ACTIVITY"
+421-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+422                android:value="com.synchroteam.technicalsupport.JobDetails" />
+422-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+423        </activity>
+424        <activity
+424-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:310:9-320:20
+425            android:name="com.synchroteam.synchroteam.AddDuplicateNewJob"
+425-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:311:13-74
+426            android:exported="false"
+426-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:314:13-37
+427            android:logo="@drawable/transparent_image"
+427-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:312:13-55
+428            android:screenOrientation="portrait"
+428-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:313:13-49
+429            android:theme="@style/myTheme"
+429-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:315:13-43
+430            android:windowSoftInputMode="adjustPan" >
+430-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:316:13-52
+431            <meta-data
+431-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:43:13-45:91
+432                android:name="android.support.PARENT_ACTIVITY"
+432-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:44:17-63
+433                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+433-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:45:17-88
+434        </activity>
+435        <activity
+435-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:322:9-326:73
+436            android:name="com.synchroteam.synchroteam.CreateUnavailability"
+436-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:323:13-76
+437            android:exported="false"
+437-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:325:13-37
+438            android:screenOrientation="portrait"
+438-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:324:13-49
+439            android:theme="@style/styleSyncroteamActionBarJobDetails" />
+439-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:326:13-70
+440        <activity
+440-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:327:9-332:55
+441            android:name="com.synchroteam.synchroteam.AddUnavailability"
+441-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:328:13-73
+442            android:exported="false"
+442-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:330:13-37
+443            android:screenOrientation="portrait"
+443-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:329:13-49
+444            android:theme="@style/myTheme"
+444-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:331:13-43
+445            android:windowSoftInputMode="adjustPan" />
+445-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:332:13-52
+446        <activity
+446-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:334:9-339:55
+447            android:name="com.synchroteam.synchroteam.UpdateUnavailability"
+447-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:335:13-76
+448            android:exported="false"
+448-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:337:13-37
+449            android:screenOrientation="portrait"
+449-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:336:13-49
+450            android:theme="@style/myTheme"
+450-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:338:13-43
+451            android:windowSoftInputMode="adjustPan" />
+451-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:339:13-52
+452        <activity
+452-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:340:9-345:55
+453            android:name="com.synchroteam.synchroteam.AddInvoiceQuotation"
+453-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:341:13-75
+454            android:exported="false"
+454-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:343:13-37
+455            android:screenOrientation="portrait"
+455-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:342:13-49
+456            android:theme="@style/myTheme"
+456-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:344:13-43
+457            android:windowSoftInputMode="adjustPan" />
+457-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:345:13-52
+458        <activity
+458-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:346:9-351:55
+459            android:name="com.synchroteam.synchroteam.AddInvoiceQuotationNew"
+459-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:347:13-78
+460            android:exported="false"
+460-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:349:13-37
+461            android:screenOrientation="portrait"
+461-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:348:13-49
+462            android:theme="@style/myTheme"
+462-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:350:13-43
+463            android:windowSoftInputMode="adjustPan" />
+463-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:351:13-52
+464        <activity
+464-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:353:9-358:55
+465            android:name="com.synchroteam.synchroteam.UpdateInvoiceQuotation"
+465-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:354:13-78
+466            android:exported="false"
+466-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:356:13-37
+467            android:screenOrientation="portrait"
+467-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:355:13-49
+468            android:theme="@style/myTheme"
+468-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:357:13-43
+469            android:windowSoftInputMode="adjustPan" />
+469-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:358:13-52
+470        <activity
+470-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:359:9-364:55
+471            android:name="com.synchroteam.synchroteam.InventoryDetails"
+471-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:360:13-72
+472            android:exported="false"
+472-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:362:13-37
+473            android:screenOrientation="portrait"
+473-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:361:13-49
+474            android:theme="@style/myTheme"
+474-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:363:13-43
+475            android:windowSoftInputMode="adjustPan" />
+475-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:364:13-52
+476        <activity
+476-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:366:9-371:55
+477            android:name="com.synchroteam.synchroteam.PartsAndServicesListNew"
+477-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:367:13-79
+478            android:exported="false"
+478-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:369:13-37
+479            android:screenOrientation="portrait"
+479-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:368:13-49
+480            android:theme="@style/myTheme"
+480-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:370:13-43
+481            android:windowSoftInputMode="adjustPan" />
+481-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:371:13-52
+482        <activity
+482-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:372:9-377:55
+483            android:name="com.synchroteam.synchroteam.EditReportImage"
+483-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:373:13-71
+484            android:exported="false"
+484-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:375:13-37
+485            android:screenOrientation="portrait"
+485-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:374:13-49
+486            android:theme="@style/theme_job_details_toolbar"
+486-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:376:13-61
+487            android:windowSoftInputMode="adjustPan" />
+487-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:377:13-52
+488        <activity
+488-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:379:9-384:55
+489            android:name="com.synchroteam.synchroteam.ActivityCustomStripeCard"
+489-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:380:13-80
+490            android:exported="false"
+490-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:382:13-37
+491            android:screenOrientation="portrait"
+491-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:381:13-49
+492            android:theme="@style/theme_job_details_toolbar"
+492-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:383:13-61
+493            android:windowSoftInputMode="adjustPan" />
+493-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:384:13-52
+494
+495        <meta-data
+495-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:386:9-388:69
+496            android:name="com.google.android.gms.version"
+496-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:387:13-58
+497            android:value="@integer/google_play_services_version" />
+497-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:388:13-66
+498        <meta-data
+498-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:389:9-391:72
+499            android:name="com.crashlytics.ApiKey"
+499-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:390:13-50
+500            android:value="c3ad9c21e65c5a36fcd4607a5b60966429c821b6" />
+500-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:391:13-69
+501        <meta-data
+501-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:392:9-394:56
+502            android:name="com.google.firebase.messaging.default_notification_icon"
+502-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:393:13-83
+503            android:resource="@drawable/notif_black" />
+503-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:394:13-53
+504        <meta-data
+504-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:395:9-397:48
+505            android:name="com.google.firebase.messaging.default_notification_color"
+505-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:396:13-84
+506            android:resource="@color/orange" />
+506-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:397:13-45
+507
+508        <provider
+509            android:name="androidx.core.content.FileProvider"
+509-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:400:13-62
+510            android:authorities="com.synchroteam.synchroteam3.provider"
+510-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:401:13-60
+511            android:exported="false"
+511-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:402:13-37
+512            android:grantUriPermissions="true" >
+512-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:403:13-47
+513            <meta-data
+513-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:404:13-406:58
+514                android:name="android.support.FILE_PROVIDER_PATHS"
+514-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:405:17-67
+515                android:resource="@xml/provider_paths" />
+515-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:406:17-55
+516        </provider>
+517
+518        <receiver
+518-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:409:9-410:39
+519            android:name="com.synchroteam.utils.AutoSyncBraodcastReciver"
+519-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:409:19-80
+520            android:exported="false" />
+520-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:410:13-37
+521        <!-- <receiver android:name="com.synchroteam.utils.NotificationSyncBraodcastReciver" -->
+522        <!-- android:exported="false"/> -->
+523        <receiver
+523-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:413:9-418:20
+524            android:name="com.synchroteam.utils.LocaleChangeBroadcastReciver"
+524-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:413:19-84
+525            android:exported="false" >
+525-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:414:13-37
+526            <intent-filter>
+526-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:415:13-417:29
+527                <action android:name="android.intent.action.LOCALE_CHANGED" />
+527-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:416:17-79
+527-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:416:25-76
+528            </intent-filter>
+529        </receiver>
+530        <receiver
+530-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:419:9-427:20
+531            android:name="com.synchroteam.tracking.MobileSwichOffSwitchOnBroadcastReciver"
+531-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:419:19-97
+532            android:exported="false" >
+532-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:420:13-37
+533            <intent-filter>
+533-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:421:13-423:29
+534                <action android:name="android.intent.action.BOOT_COMPLETED" />
+534-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:422:17-79
+534-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:422:25-76
+535            </intent-filter>
+536            <intent-filter>
+536-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:424:13-426:29
+537                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+537-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:425:17-80
+537-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:425:25-77
+538            </intent-filter>
+539        </receiver>
+540
+541        <!-- New changes parts test -->
+542        <receiver
+542-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:430:9-437:20
+543            android:name="com.synchroteam.tracking.UpdateApplicationBroadCastReciver"
+543-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:430:19-92
+544            android:exported="false" >
+544-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:431:13-37
+545            <intent-filter>
+545-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:432:13-436:29
+546                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+546-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:433:17-81
+546-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:433:25-78
+547
+548                <data android:scheme="package" />
+548-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:435:17-50
+548-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:435:23-47
+549            </intent-filter>
+550        </receiver>
+551        <receiver
+551-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:439:9-444:20
+552            android:name="com.synchroteam.utils.NetworkBroadCastReciver"
+552-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:439:19-79
+553            android:exported="false" >
+553-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:440:13-37
+554            <intent-filter>
+554-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:441:13-443:29
+555                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+555-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:442:17-79
+555-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:442:25-76
+556            </intent-filter>
+557        </receiver>
+558        <receiver
+558-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:445:9-446:39
+559            android:name="com.synchroteam.receiver.ClockInTimeOutReceiver"
+559-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:445:19-81
+560            android:exported="false" />
+560-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:446:13-37
+561
+562        <service
+562-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:449:9-451:39
+563            android:name="com.synchroteam.tracking2.LocationService"
+563-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:449:18-74
+564            android:exported="false"
+564-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:451:13-37
+565            android:foregroundServiceType="location" />
+565-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:450:13-53
+566        <service
+566-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:453:9-457:44
+567            android:name="com.synchroteam.tracking.TrackingParameterService"
+567-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:454:13-77
+568            android:enabled="true"
+568-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:456:13-35
+569            android:foregroundServiceType="location"
+569-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:455:13-53
+570            android:stopWithTask="false" />
+570-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:457:13-41
+571
+572        <!-- Set custom default icon. -->
+573        <service
+573-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:462:9-469:19
+574            android:name="com.synchroteam.JobDispatcher.ScheduledJobService"
+574-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:463:13-77
+575            android:exported="false" >
+575-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:464:13-37
+576            <intent-filter>
+576-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:466:13-468:29
+577                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+577-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:467:17-84
+577-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:467:25-81
+578            </intent-filter>
+579        </service>
+580        <!-- Set color used with incoming notification messages. -->
+581        <service
+581-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:471:9-478:19
+582            android:name="com.synchroteam.Firebase.MyFirebaseMessagingService"
+582-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:472:13-79
+583            android:exported="false"
+583-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:474:13-37
+584            android:stopWithTask="false" >
+584-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:473:13-41
+585            <intent-filter>
+585-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:475:13-477:29
+586                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+586-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:476:17-78
+586-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:476:25-75
+587            </intent-filter>
+588        </service>
+589
+590        <activity
+590-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:10:9-12:57
+591            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+591-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:11:13-76
+592            android:theme="@style/StripeDefaultTheme" />
+592-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:12:13-54
+593        <activity
+593-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:13:9-15:57
+594            android:name="com.stripe.android.view.PaymentMethodsActivity"
+594-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:14:13-74
+595            android:theme="@style/StripeDefaultTheme" />
+595-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:15:13-54
+596        <activity
+596-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:16:9-18:57
+597            android:name="com.stripe.android.view.PaymentFlowActivity"
+597-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:17:13-71
+598            android:theme="@style/StripeDefaultTheme" />
+598-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:18:13-54
+599        <activity
+599-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:19:9-22:58
+600            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+600-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:20:13-78
+601            android:theme="@style/StripeDefaultTheme"
+601-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:21:13-54
+602            android:windowSoftInputMode="adjustResize" />
+602-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:22:13-55
+603        <activity
+603-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:23:9-25:57
+604            android:name="com.stripe.android.view.PaymentRelayActivity"
+604-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:24:13-72
+605            android:theme="@style/StripeDefaultTheme" />
+605-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:25:13-54
+606        <activity
+606-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:26:9-28:57
+607            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+607-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:27:13-80
+608            android:theme="@style/StripeDefaultTheme" />
+608-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:28:13-54
+609        <activity
+609-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:29:9-31:69
+610            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+610-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:30:13-80
+611            android:theme="@style/StripePaymentSheetDefaultTheme" />
+611-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:31:13-66
+612        <activity
+612-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:32:9-34:69
+613            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+613-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:33:13-82
+614            android:theme="@style/StripePaymentSheetDefaultTheme" />
+614-->[com.stripe:stripe-android:16.1.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\ab454d1b39fd04dc3f6d67306ae92d52\transformed\jetified-stripe-android-16.1.1\AndroidManifest.xml:34:13-66
+615        <activity
+615-->[com.stripe:stripe-3ds2-android:4.1.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\17c74c2683e8e952fdb37a19fcb0500d\transformed\jetified-stripe-3ds2-android-4.1.2\AndroidManifest.xml:10:9-12:54
+616            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+616-->[com.stripe:stripe-3ds2-android:4.1.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\17c74c2683e8e952fdb37a19fcb0500d\transformed\jetified-stripe-3ds2-android-4.1.2\AndroidManifest.xml:11:13-81
+617            android:theme="@style/Stripe3DS2Theme" />
+617-->[com.stripe:stripe-3ds2-android:4.1.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\17c74c2683e8e952fdb37a19fcb0500d\transformed\jetified-stripe-3ds2-android-4.1.2\AndroidManifest.xml:12:13-51
+618        <activity
+618-->[com.stripe:stripe-3ds2-android:4.1.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\17c74c2683e8e952fdb37a19fcb0500d\transformed\jetified-stripe-3ds2-android-4.1.2\AndroidManifest.xml:13:9-15:54
+619            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity"
+619-->[com.stripe:stripe-3ds2-android:4.1.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\17c74c2683e8e952fdb37a19fcb0500d\transformed\jetified-stripe-3ds2-android-4.1.2\AndroidManifest.xml:14:13-89
+620            android:theme="@style/Stripe3DS2Theme" />
+620-->[com.stripe:stripe-3ds2-android:4.1.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\17c74c2683e8e952fdb37a19fcb0500d\transformed\jetified-stripe-3ds2-android-4.1.2\AndroidManifest.xml:15:13-51
+621
+622        <uses-library
+622-->[com.amazonaws:aws-android-sdk-core:2.23.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\9ce39250e788494254bdf036561f377c\transformed\jetified-aws-android-sdk-core-2.23.0\AndroidManifest.xml:11:9-13:40
+623            android:name="org.apache.http.legacy"
+623-->[com.amazonaws:aws-android-sdk-core:2.23.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\9ce39250e788494254bdf036561f377c\transformed\jetified-aws-android-sdk-core-2.23.0\AndroidManifest.xml:12:13-50
+624            android:required="false" />
+624-->[com.amazonaws:aws-android-sdk-core:2.23.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\9ce39250e788494254bdf036561f377c\transformed\jetified-aws-android-sdk-core-2.23.0\AndroidManifest.xml:13:13-37
+625
+626        <service
+626-->[com.google.firebase:firebase-config-ktx:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dee6bdb5c6159cf51505cbd5a50fba84\transformed\jetified-firebase-config-ktx-21.2.1\AndroidManifest.xml:11:9-17:19
+627            android:name="com.google.firebase.components.ComponentDiscoveryService"
+627-->[com.google.firebase:firebase-config-ktx:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dee6bdb5c6159cf51505cbd5a50fba84\transformed\jetified-firebase-config-ktx-21.2.1\AndroidManifest.xml:12:13-84
+628            android:directBootAware="true"
+628-->[com.google.firebase:firebase-common:20.3.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\197330eb5ea56fca015631f8d0a5db67\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:34:13-43
+629            android:exported="false" >
+629-->[com.google.firebase:firebase-config-ktx:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dee6bdb5c6159cf51505cbd5a50fba84\transformed\jetified-firebase-config-ktx-21.2.1\AndroidManifest.xml:13:13-37
+630            <meta-data
+630-->[com.google.firebase:firebase-config-ktx:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dee6bdb5c6159cf51505cbd5a50fba84\transformed\jetified-firebase-config-ktx-21.2.1\AndroidManifest.xml:14:13-16:85
+631                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar"
+631-->[com.google.firebase:firebase-config-ktx:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dee6bdb5c6159cf51505cbd5a50fba84\transformed\jetified-firebase-config-ktx-21.2.1\AndroidManifest.xml:15:17-132
+632                android:value="com.google.firebase.components.ComponentRegistrar" />
+632-->[com.google.firebase:firebase-config-ktx:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dee6bdb5c6159cf51505cbd5a50fba84\transformed\jetified-firebase-config-ktx-21.2.1\AndroidManifest.xml:16:17-82
+633            <meta-data
+633-->[com.google.firebase:firebase-crashlytics-ktx:18.3.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\4a08a6501c9f2e4145bd8c285f7f2169\transformed\jetified-firebase-crashlytics-ktx-18.3.2\AndroidManifest.xml:26:13-28:85
+634                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+634-->[com.google.firebase:firebase-crashlytics-ktx:18.3.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\4a08a6501c9f2e4145bd8c285f7f2169\transformed\jetified-firebase-crashlytics-ktx-18.3.2\AndroidManifest.xml:27:17-130
+635                android:value="com.google.firebase.components.ComponentRegistrar" />
+635-->[com.google.firebase:firebase-crashlytics-ktx:18.3.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\4a08a6501c9f2e4145bd8c285f7f2169\transformed\jetified-firebase-crashlytics-ktx-18.3.2\AndroidManifest.xml:28:17-82
+636            <meta-data
+636-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:53:13-55:85
+637                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+637-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:54:17-119
+638                android:value="com.google.firebase.components.ComponentRegistrar" />
+638-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:55:17-82
+639            <meta-data
+639-->[com.google.firebase:firebase-config:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1cc758671bf35b0450c45c74aa02bd24\transformed\jetified-firebase-config-21.2.1\AndroidManifest.xml:31:13-33:85
+640                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+640-->[com.google.firebase:firebase-config:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1cc758671bf35b0450c45c74aa02bd24\transformed\jetified-firebase-config-21.2.1\AndroidManifest.xml:32:17-117
+641                android:value="com.google.firebase.components.ComponentRegistrar" />
+641-->[com.google.firebase:firebase-config:21.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1cc758671bf35b0450c45c74aa02bd24\transformed\jetified-firebase-config-21.2.1\AndroidManifest.xml:33:17-82
+642            <meta-data
+642-->[com.google.firebase:firebase-abt:21.1.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\2048c8dce1f22d06716858198d1ec095\transformed\jetified-firebase-abt-21.1.0\AndroidManifest.xml:12:13-14:85
+643                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+643-->[com.google.firebase:firebase-abt:21.1.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\2048c8dce1f22d06716858198d1ec095\transformed\jetified-firebase-abt-21.1.0\AndroidManifest.xml:13:17-109
+644                android:value="com.google.firebase.components.ComponentRegistrar" />
+644-->[com.google.firebase:firebase-abt:21.1.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\2048c8dce1f22d06716858198d1ec095\transformed\jetified-firebase-abt-21.1.0\AndroidManifest.xml:14:17-82
+645            <meta-data
+645-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\56a6e43c929c9f28bd2b4f8be61f2374\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+646                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+646-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\56a6e43c929c9f28bd2b4f8be61f2374\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+647                android:value="com.google.firebase.components.ComponentRegistrar" />
+647-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\56a6e43c929c9f28bd2b4f8be61f2374\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+648            <meta-data
+648-->[com.google.firebase:firebase-crashlytics:18.3.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\8d7ee678546a96d46ef3be11fd2d7755\transformed\jetified-firebase-crashlytics-18.3.2\AndroidManifest.xml:17:13-19:85
+649                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+649-->[com.google.firebase:firebase-crashlytics:18.3.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\8d7ee678546a96d46ef3be11fd2d7755\transformed\jetified-firebase-crashlytics-18.3.2\AndroidManifest.xml:18:17-115
+650                android:value="com.google.firebase.components.ComponentRegistrar" />
+650-->[com.google.firebase:firebase-crashlytics:18.3.2] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\8d7ee678546a96d46ef3be11fd2d7755\transformed\jetified-firebase-crashlytics-18.3.2\AndroidManifest.xml:19:17-82
+651            <meta-data
+651-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\5bf8b984fcee30370ecd5ef7ecc3c1fb\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+652                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+652-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\5bf8b984fcee30370ecd5ef7ecc3c1fb\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+653                android:value="com.google.firebase.components.ComponentRegistrar" />
+653-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\5bf8b984fcee30370ecd5ef7ecc3c1fb\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+654            <meta-data
+654-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\beef1b30c14a9cd6ab542aaff00dba4a\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+655                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+655-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\beef1b30c14a9cd6ab542aaff00dba4a\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+656                android:value="com.google.firebase.components.ComponentRegistrar" />
+656-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\beef1b30c14a9cd6ab542aaff00dba4a\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+657            <meta-data
+657-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\74e1443288316022065e2b9e9096f7da\transformed\jetified-firebase-common-ktx-20.3.0\AndroidManifest.xml:14:13-16:85
+658                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+658-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\74e1443288316022065e2b9e9096f7da\transformed\jetified-firebase-common-ktx-20.3.0\AndroidManifest.xml:15:17-113
+659                android:value="com.google.firebase.components.ComponentRegistrar" />
+659-->[com.google.firebase:firebase-common-ktx:20.3.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\74e1443288316022065e2b9e9096f7da\transformed\jetified-firebase-common-ktx-20.3.0\AndroidManifest.xml:16:17-82
+660        </service>
+661
+662        <receiver
+662-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:29:9-36:20
+663            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+663-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:30:13-78
+664            android:exported="true"
+664-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:31:13-36
+665            android:permission="com.google.android.c2dm.permission.SEND" >
+665-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:32:13-73
+666            <intent-filter>
+666-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:33:13-35:29
+667                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+667-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:34:17-81
+667-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:34:25-78
+668            </intent-filter>
+669        </receiver>
+670        <!--
+671             FirebaseMessagingService performs security checks at runtime,
+672             but set to not exported to explicitly avoid allowing another app to call it.
+673        -->
+674        <service
+674-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:42:9-49:19
+675            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+675-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:43:13-82
+676            android:directBootAware="true"
+676-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:44:13-43
+677            android:exported="false" >
+677-->[com.google.firebase:firebase-messaging:23.2.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\e9d8f8022e5c1c6739a1adbb783e83b1\transformed\jetified-firebase-messaging-23.2.1\AndroidManifest.xml:45:13-37
+678            <intent-filter android:priority="-500" >
+678-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:475:13-477:29
+679                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+679-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:476:17-78
+679-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:476:25-75
+680            </intent-filter>
+681        </service>
+682
+683        <activity
+683-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1880927a1354667fe80e2fce5a7aba10\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+684            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+684-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1880927a1354667fe80e2fce5a7aba10\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+685            android:exported="false"
+685-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1880927a1354667fe80e2fce5a7aba10\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+686            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+686-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\1880927a1354667fe80e2fce5a7aba10\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+687
+688        <receiver
+688-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+689            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+689-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+690            android:enabled="true"
+690-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+691            android:exported="false" >
+691-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+692        </receiver>
+693
+694        <service
+694-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+695            android:name="com.google.android.gms.measurement.AppMeasurementService"
+695-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+696            android:enabled="true"
+696-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+697            android:exported="false" />
+697-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+698        <service
+698-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+699            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+699-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+700            android:enabled="true"
+700-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+701            android:exported="false"
+701-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+702            android:permission="android.permission.BIND_JOB_SERVICE" />
+702-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\540070bce112da4926d7a7589c1836a6\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+703
+704        <provider
+704-->[com.google.firebase:firebase-common:20.3.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\197330eb5ea56fca015631f8d0a5db67\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:25:9-30:39
+705            android:name="com.google.firebase.provider.FirebaseInitProvider"
+705-->[com.google.firebase:firebase-common:20.3.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\197330eb5ea56fca015631f8d0a5db67\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:26:13-77
+706            android:authorities="com.synchroteam.synchroteam3.firebaseinitprovider"
+706-->[com.google.firebase:firebase-common:20.3.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\197330eb5ea56fca015631f8d0a5db67\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:27:13-72
+707            android:directBootAware="true"
+707-->[com.google.firebase:firebase-common:20.3.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\197330eb5ea56fca015631f8d0a5db67\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:28:13-43
+708            android:exported="false"
+708-->[com.google.firebase:firebase-common:20.3.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\197330eb5ea56fca015631f8d0a5db67\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:29:13-37
+709            android:initOrder="100" />
+709-->[com.google.firebase:firebase-common:20.3.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\197330eb5ea56fca015631f8d0a5db67\transformed\jetified-firebase-common-20.3.1\AndroidManifest.xml:30:13-36
+710        <provider
+710-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:31:9-39:20
+711            android:name="androidx.startup.InitializationProvider"
+711-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:32:13-67
+712            android:authorities="com.synchroteam.synchroteam3.androidx-startup"
+712-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:33:13-68
+713            android:exported="false" >
+713-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:34:13-37
+714            <meta-data
+714-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+715                android:name="androidx.work.WorkManagerInitializer"
+715-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+716                android:value="androidx.startup" />
+716-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+717            <meta-data
+717-->[androidx.emoji2:emoji2:1.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\8232a442440772e21ac8243fe780678b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+718                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+718-->[androidx.emoji2:emoji2:1.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\8232a442440772e21ac8243fe780678b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+719                android:value="androidx.startup" />
+719-->[androidx.emoji2:emoji2:1.2.0] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\8232a442440772e21ac8243fe780678b\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+720            <meta-data
+720-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\a1f78dd245846d8109dceabd45f39577\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+721                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+721-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\a1f78dd245846d8109dceabd45f39577\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+722                android:value="androidx.startup" />
+722-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\a1f78dd245846d8109dceabd45f39577\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+723        </provider>
+724
+725        <service
+725-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+726            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+726-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+727            android:directBootAware="false"
+727-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+728            android:enabled="@bool/enable_system_alarm_service_default"
+728-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+729            android:exported="false" />
+729-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+730        <service
+730-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+731            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+731-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+732            android:directBootAware="false"
+732-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+733            android:enabled="@bool/enable_system_job_service_default"
+733-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+734            android:exported="true"
+734-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+735            android:permission="android.permission.BIND_JOB_SERVICE" />
+735-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+736        <service
+736-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+737            android:name="androidx.work.impl.foreground.SystemForegroundService"
+737-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+738            android:directBootAware="false"
+738-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+739            android:enabled="@bool/enable_system_foreground_service_default"
+739-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+740            android:exported="false" />
+740-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+741
+742        <receiver
+742-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+743            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+743-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+744            android:directBootAware="false"
+744-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+745            android:enabled="true"
+745-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+746            android:exported="false" />
+746-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+747        <receiver
+747-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+748            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+748-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+749            android:directBootAware="false"
+749-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+750            android:enabled="false"
+750-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+751            android:exported="false" >
+751-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+752            <intent-filter>
+752-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+753                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+753-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+753-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+754                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+754-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+754-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+755            </intent-filter>
+756        </receiver>
+757        <receiver
+757-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+758            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+758-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+759            android:directBootAware="false"
+759-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+760            android:enabled="false"
+760-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+761            android:exported="false" >
+761-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+762            <intent-filter>
+762-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+763                <action android:name="android.intent.action.BATTERY_OKAY" />
+763-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+763-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+764                <action android:name="android.intent.action.BATTERY_LOW" />
+764-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+764-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+765            </intent-filter>
+766        </receiver>
+767        <receiver
+767-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+768            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+768-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+769            android:directBootAware="false"
+769-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+770            android:enabled="false"
+770-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+771            android:exported="false" >
+771-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+772            <intent-filter>
+772-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+773                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+773-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+773-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+774                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+774-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+774-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+775            </intent-filter>
+776        </receiver>
+777        <receiver
+777-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+778            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+778-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+779            android:directBootAware="false"
+779-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+780            android:enabled="false"
+780-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+781            android:exported="false" >
+781-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+782            <intent-filter>
+782-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:441:13-443:29
+783                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+783-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:442:17-79
+783-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:442:25-76
+784            </intent-filter>
+785        </receiver>
+786        <receiver
+786-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+787            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+787-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+788            android:directBootAware="false"
+788-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+789            android:enabled="false"
+789-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+790            android:exported="false" >
+790-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+791            <intent-filter>
+791-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+792                <action android:name="android.intent.action.BOOT_COMPLETED" />
+792-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:422:17-79
+792-->D:\Synchro\Synchroteam_devel\app\src\main\AndroidManifest.xml:422:25-76
+793                <action android:name="android.intent.action.TIME_SET" />
+793-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+793-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+794                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+794-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+794-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+795            </intent-filter>
+796        </receiver>
+797        <receiver
+797-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+798            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+798-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+799            android:directBootAware="false"
+799-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+800            android:enabled="@bool/enable_system_alarm_service_default"
+800-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+801            android:exported="false" >
+801-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+802            <intent-filter>
+802-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+803                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+803-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+803-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+804            </intent-filter>
+805        </receiver>
+806        <receiver
+806-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+807            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+807-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+808            android:directBootAware="false"
+808-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+809            android:enabled="true"
+809-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+810            android:exported="true"
+810-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+811            android:permission="android.permission.DUMP" >
+811-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+812            <intent-filter>
+812-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+813                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+813-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+813-->[androidx.work:work-runtime:2.7.1] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\0437ff90ec1948cc8e5cb9f4cb27b145\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+814            </intent-filter>
+815        </receiver>
+816
+817        <service
+817-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\96952830ad1f419726b3f3e60e037517\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+818            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+818-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\96952830ad1f419726b3f3e60e037517\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+819            android:exported="false" >
+819-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\96952830ad1f419726b3f3e60e037517\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+820            <meta-data
+820-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\96952830ad1f419726b3f3e60e037517\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+821                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+821-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\96952830ad1f419726b3f3e60e037517\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+822                android:value="cct" />
+822-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\96952830ad1f419726b3f3e60e037517\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+823        </service>
+824        <service
+824-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\fec04cfa9552a8c658b16bc7e496a9be\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+825            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+825-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\fec04cfa9552a8c658b16bc7e496a9be\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+826            android:exported="false"
+826-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\fec04cfa9552a8c658b16bc7e496a9be\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+827            android:permission="android.permission.BIND_JOB_SERVICE" >
+827-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\fec04cfa9552a8c658b16bc7e496a9be\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+828        </service>
+829
+830        <receiver
+830-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\fec04cfa9552a8c658b16bc7e496a9be\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+831            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+831-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\fec04cfa9552a8c658b16bc7e496a9be\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+832            android:exported="false" />
+832-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\fec04cfa9552a8c658b16bc7e496a9be\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+833
+834        <service
+834-->[androidx.room:room-runtime:2.2.5] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\6317b6fdce47c2fff1c3e2b4aed85bcd\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+835            android:name="androidx.room.MultiInstanceInvalidationService"
+835-->[androidx.room:room-runtime:2.2.5] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\6317b6fdce47c2fff1c3e2b4aed85bcd\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+836            android:directBootAware="true"
+836-->[androidx.room:room-runtime:2.2.5] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\6317b6fdce47c2fff1c3e2b4aed85bcd\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+837            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+837-->[androidx.room:room-runtime:2.2.5] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\6317b6fdce47c2fff1c3e2b4aed85bcd\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+838        <activity
+838-->[com.google.android.play:core-common:2.0.3] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dd096c81561d1625ee94762ef810ad3c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+839            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+839-->[com.google.android.play:core-common:2.0.3] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dd096c81561d1625ee94762ef810ad3c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:15:13-93
+840            android:exported="false"
+840-->[com.google.android.play:core-common:2.0.3] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dd096c81561d1625ee94762ef810ad3c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:16:13-37
+841            android:stateNotNeeded="true"
+841-->[com.google.android.play:core-common:2.0.3] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dd096c81561d1625ee94762ef810ad3c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:17:13-42
+842            android:theme="@style/Theme.PlayCore.Transparent" />
+842-->[com.google.android.play:core-common:2.0.3] C:\Users\BalajiLakshmanan\.gradle\caches\transforms-3\dd096c81561d1625ee94762ef810ad3c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:18:13-62
+843    </application>
+844
+845</manifest>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/paddingLoginDomainDialogLinearLayout"
+    android:layout_marginLeft="@dimen/paddingLoginDomainDialogLinearLayout"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/paddingLoginDomainDialogLinearLayout"
+        android:layout_marginRight="@dimen/paddingLoginDomainDialogLinearLayout"
+        android:minHeight="280dp"
+        android:gravity="center"
+        android:minWidth="@dimen/dialog_clock_in_out_width"
+        android:orientation="vertical">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxframe_serial_title_layout"
+            android:gravity="center"
+            android:padding="@dimen/paddingCategoryItem"
+            android:text="@string/txt_lbl_global"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeDateDetailsTextView"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/boxframe_unavailability_title_layout"
+            android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:layout_marginRight="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:padding="@dimen/padding_small"
+            android:orientation="vertical">
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/edtInvoiceDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightSpinnerNewJob"
+                android:layout_marginTop="@dimen/txt_padding_invoice"
+                android:layout_weight="2"
+                android:background="@drawable/boxframe_invoice_edittext"
+                android:digits="0123456789."
+                android:inputType="numberDecimal"
+                android:layout_marginLeft="@dimen/padding_normal"
+                android:layout_marginRight="@dimen/padding_normal"
+                android:padding="@dimen/paddingTopOrangeButton"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+                fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtDiscountLbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/padding_normal"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:text="@string/txt_discount_option_label"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeAddAttachmentImageTitle"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <RadioGroup
+                    android:id="@+id/discountOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/paddingTopOrangeButton"
+                    android:orientation="horizontal">
+
+                    <com.synchroteam.TypefaceLibrary.RadioButton
+                        android:id="@+id/radioBtnOne"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:textColor="@color/invoice_text_color"
+                        android:text="@string/txt_ext_amt_lbl"
+                        android:textSize="@dimen/textSizeDaysTv"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.RadioButton
+                        android:id="@+id/radioBtnTwo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:maxLines="1"
+                        android:text="@string/txt_perc_lbl"
+                        android:textColor="@color/invoice_text_color"
+                        android:textSize="@dimen/textSizeDaysTv"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                </RadioGroup>
+
+
+
+            <LinearLayout
+                android:id="@+id/linContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightSpinnerNewJob"
+                android:layout_marginTop="@dimen/paddingTopOrangeButton"
+                android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingTopOrangeButton"
+                android:paddingRight="@dimen/paddingTopOrangeButton">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtSave"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                    android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/boxframe_add_button"
+                    android:gravity="center"
+                    android:text="@string/modifier"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeStartTimeTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/boxframe_close_button_new"
+                    android:gravity="center"
+                    android:text="@string/txt_close"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeStartTimeTv"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+
+        </LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

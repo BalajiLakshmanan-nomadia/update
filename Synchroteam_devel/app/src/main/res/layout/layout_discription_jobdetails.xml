@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/job_description_bg"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/paddingMenusTitle"
+    android:paddingRight="@dimen/paddingMenusTitle"
+    android:paddingTop="@dimen/paddingTopOrangeButton">
+
+    <LinearLayout
+        android:id="@+id/containerDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+        android:background="@color/transparent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/lin_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/paddingMenusTitle"
+            android:layout_weight="25"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDateIcon"
+                    style="@style/styleFontAwesomeTextview"
+                    android:text="@string/fa_calendar" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/textView2"
+                    style="@style/styleHeadingsTextViewJobDiscriptionNew"
+                    android:gravity="center"
+                    android:text="@string/textDateSmallLable" />
+            </LinearLayout>
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/dateAndTimeTv"
+                style="@style/styleDatTextViewJobDiscriptionNew"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_start_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/paddingMenusTitle"
+            android:layout_weight="25"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtStartIcon"
+                    style="@style/styleFontAwesomeTextview"
+                    android:text="@string/fa_clock_o" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/textView3"
+                    style="@style/styleHeadingsTextViewJobDiscriptionNew"
+                    android:text="@string/textStartLable" />
+            </LinearLayout>
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/startTimeTv"
+                style="@style/styleDatTextViewJobDiscriptionNew" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_end_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/paddingMenusTitle"
+            android:layout_weight="25"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtEndIcon"
+                    style="@style/styleFontAwesomeTextview"
+                    android:text="@string/fa_clock_o" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/textView4"
+                    style="@style/styleHeadingsTextViewJobDiscriptionNew"
+                    android:text="@string/textEndLableTv" />
+            </LinearLayout>
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/endTImeTv"
+                style="@style/styleDatTextViewJobDiscriptionNew" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginStart="1dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPlannedIcon"
+                    style="@style/styleFontAwesomeTextview"
+                    android:text="@string/fa_cogs" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/textView5"
+                    style="@style/styleHeadingsTextViewJobDiscriptionNew"
+                    android:text="@string/textDurationLableTv" />
+            </LinearLayout>
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/plannedTv"
+                style="@style/styleDatTextViewJobDiscriptionNew" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.synchroteam.utils.CirclePageIndicator
+        android:id="@+id/circlePageIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/paddingTopOrangeButton" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/job_description_bg" />
+
+</LinearLayout>

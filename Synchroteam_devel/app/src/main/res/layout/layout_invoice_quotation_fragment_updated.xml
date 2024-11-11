@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/job_description_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relTotalContainer"
+            android:layout_below="@+id/rel_header_view">
+
+            <ListView
+                android:id="@+id/invoiceQuotationList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/job_description_bg"
+                android:divider="@null"
+                android:dividerHeight="0dp">
+
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/rel_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/empty_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txt_empty_list"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/fa_file_text_o"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/textSizeDataTvReschedule" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_empty_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/txt_empty_invoice"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+                    fontify:font_name="@string/fontName_avenir" />
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <net.i2p.android.ext.floatingactionbutton.AddFloatingActionButton
+            android:id="@+id/addItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relTotalContainer"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/txt5dp"
+            android:visibility="gone"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/actionbarColor"
+            fab:fab_colorPressed="@color/actionbarColor"
+            fab:fab_plusIconColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/rel_header_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/padding_small"
+            android:layout_marginBottom="@dimen/padding_small"
+            android:background="@color/invoice_title_bg"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small">
+
+            <LinearLayout
+                android:id="@+id/linPdf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/paddingMenusTitle"
+                android:paddingBottom="@dimen/paddingMenusTitle"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txtViewPdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/paddingMenusTitle"
+                    android:paddingRight="@dimen/paddingMenusTitle"
+                    android:text="@string/fa_eye"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeHeaderTvDomainDialog" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/txt_pdf"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_size_normal"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                android:layout_toLeftOf="@+id/linPdf"
+                android:layout_toRightOf="@+id/txt_delete_invoice_quotation"
+                android:gravity="center">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_invoice_quotation_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingTop="@dimen/paddingMenusTitle"
+                    android:paddingBottom="@dimen/paddingMenusTitle"
+                    android:singleLine="true"
+                    android:text="@string/txt_label_invoice"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <!--                android:background="@drawable/boxframe_cancel_button"-->
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_draft_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_toRightOf="@+id/txt_invoice_quotation_title"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/paddingMenusTitle"
+                    android:paddingRight="@dimen/paddingMenusTitle"
+                    android:singleLine="true"
+                    android:text="@string/txt_draft_lbl"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeLableTvLegalInformation"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_delete_invoice_quotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:gravity="center"
+                android:padding="@dimen/paddingMenusTitle"
+                android:paddingTop="@dimen/paddingMenusTitle"
+                android:paddingBottom="@dimen/paddingMenusTitle"
+                android:text="@string/fa_trash_o"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                tools:targetApi="honeycomb" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relTotalContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/total_bg_color"
+            android:paddingTop="@dimen/paddingMenusTitle"
+            android:paddingBottom="@dimen/paddingMenusTitle">
+
+            <LinearLayout
+                android:id="@+id/lin_rel_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right|top"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:textColor="@color/unavailability_title_color"
+                        android:text="@string/txt_subtotal"
+                        android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtSubtotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/paddingMenusTitle"
+                        android:layout_marginLeft="@dimen/paddingMenusTitle"
+                        android:layout_weight="1"
+                        android:textColor="@color/unavailability_title_color"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:text="0.00 $"
+                        android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                        fontify:font_name="@string/fontName_avenir" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linGlobalDiscountItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtLblDiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/txt_tax_height"
+                        android:layout_marginRight="@dimen/paddingMenusTitle"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/txt_discount_label"
+                        android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtGlobalDiscount"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/paddingMenusTitle"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="-"
+                        android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linTaxItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtLblTax"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/txt_tax_height"
+                        android:layout_marginRight="@dimen/paddingMenusTitle"
+                        android:layout_weight="1.5"
+                        android:gravity="right|center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/txt_tax_label"
+                        android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtTax"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/txt_tax_height"
+                        android:layout_marginRight="@dimen/paddingMenusTitle"
+                        android:layout_weight="1"
+                        android:gravity="right|center"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="0.022 $"
+                        android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linTaxList"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/txt_rv_height"
+                    android:gravity="right|center"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvTaxName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtLblTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:textColor="@color/unavailability_title_color"
+                        android:text="@string/txt_total_label"
+                        android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtTotal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/paddingMenusTitle"
+                        android:layout_marginLeft="@dimen/paddingMenusTitle"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:textStyle="bold"
+                        android:text="0.022 $"
+                        android:textColor="@color/unavailability_title_color"
+                        android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                        fontify:font_name="@string/fontName_avenir" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/labelBal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:text="@string/txt_label_balance"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtBalance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/paddingMenusTitle"
+                        android:layout_marginLeft="@dimen/paddingMenusTitle"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:text="0.00 $"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lin_rel_container"
+                android:layout_gravity="right"
+                android:gravity="left|top"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <com.synchroteam.TypefaceLibrary.Button
+                    android:id="@+id/btn_save_new_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_marginTop="@dimen/paddingTopOrangeButton"
+                    android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                    android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+                    android:background="@color/backLableAddAttachmentTv"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:text="@string/text_save_new"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                    android:visibility="gone"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.Button
+                    android:id="@+id/btn_cnv_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_marginTop="@dimen/paddingTopOrangeButton"
+                    android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                    android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+                    android:layout_toRightOf="@+id/btn_save_new_invoice"
+                    android:background="@color/backLableAddAttachmentTv"
+                    android:text="@string/text_convert_invoice"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                    android:visibility="gone"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.Button
+                    android:id="@+id/btn_pay_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_marginTop="@dimen/paddingTopOrangeButton"
+                    android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                    android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+                    android:background="@color/pay_now_green"
+                    android:text="@string/pay_now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeTitleTvSyncroteam"
+                    android:visibility="visible"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/addInvoiceQuotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/paddingTopOrangeButton"
+        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+        android:layout_marginBottom="@dimen/marginRightItemsMainListItemExpandCollapseIcon"
+        android:visibility="invisible"
+        fab:fab_addButtonColorNormal="@color/actionbarColor"
+        fab:fab_addButtonColorPressed="@color/actionbarColor"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/menu_labels_style">
+
+        <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addInvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/actionbarColor"
+            fab:fab_colorPressed="@color/actionbarColor"
+            fab:fab_icon="@drawable/ic_note"
+            fab:fab_size="mini"
+            fab:fab_title="@string/txt_add_invoice_lbl" />
+
+        <net.i2p.android.ext.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addQuotation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/actionbarColor"
+            fab:fab_colorPressed="@color/actionbarColor"
+            fab:fab_icon="@drawable/ic_note"
+            fab:fab_labelStyle="@style/menu_labels_style"
+            fab:fab_size="mini"
+            fab:fab_title="@string/txt_add_quotation_lbl"
+            fontify:font_name="@string/fontName_avenir" />
+    </net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu>
+
+
+</FrameLayout>

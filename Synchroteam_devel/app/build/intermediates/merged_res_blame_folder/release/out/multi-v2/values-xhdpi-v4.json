@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.synchroteam.synchroteam3.app-mergeReleaseResources-49:/values-xhdpi-v4/values-xhdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\BalajiLakshmanan\\.gradle\\caches\\transforms-3\\ab454d1b39fd04dc3f6d67306ae92d52\\transformed\\jetified-stripe-android-16.1.1\\res\\values-xhdpi-v4\\values-xhdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "56",
+                        "endOffsets": "107"
+                    }
+                }
+            ]
+        }
+    ]
+}

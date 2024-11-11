@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/job_description_bg" >
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_bg"
+        android:paddingBottom="@dimen/paddingMenusTitle"
+        android:paddingLeft="@dimen/paddingTopOrangeButton"
+        android:paddingTop="@dimen/paddingMenusTitle"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textSizeDaysTv"
+        fontify:font_name="@string/fontName_avenir" />
+
+</RelativeLayout>

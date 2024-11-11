@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_serial_title_layout"
+        android:gravity="center"
+        android:padding="@dimen/paddingMenusTitle"
+        android:text="@string/txt_shared_block"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeDaysTv"
+        fontify:font_name="@string/fontName_avenir" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_unavailability_title_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/paddingTopOrangeButton">
+
+            <TextView
+                android:id="@+id/txtSearchIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:text="@string/fa_search"
+                android:textColor="@color/invoice_text_color"
+                android:textSize="@dimen/textSizeDaysTv" />
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/edtSearchSharedBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                android:layout_toRightOf="@+id/txtSearchIcon"
+                android:background="@android:color/transparent"
+                android:hint="@string/txt_search_hint"
+                android:singleLine="true"
+                android:textColor="@color/invoice_text_color"
+                android:textColorHint="@color/invoice_text_color"
+                android:textSize="@dimen/textSizeDaysTv"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/edtSearchSharedBlock"
+                android:layout_marginTop="@dimen/paddingMenusTitle"
+                android:background="@color/divider_bg_color" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_shared_blocks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lin_button"
+            android:layout_below="@+id/rel_search"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:paddingLeft="@dimen/paddingTopOrangeButton"
+            android:paddingRight="@dimen/paddingTopOrangeButton"
+            android:paddingTop="@dimen/paddingTopOrangeButton" />
+
+        <!-- Close Button container -->
+
+        <LinearLayout
+            android:id="@+id/lin_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/paddingTopOrangeButton"
+            android:paddingRight="@dimen/paddingTopOrangeButton">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/paddingTopOrangeButton">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtConfirm"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/boxframe_add_button"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:singleLine="true"
+                    android:text="@string/txt_confirm"
+                    android:textColor="@color/job_description_bg"
+                    android:textSize="@dimen/textSizeStartTimeTv"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtClose"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/boxframe_cancel_button"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:singleLine="true"
+                    android:text="@string/textCancelLable"
+                    android:textColor="@color/job_description_bg"
+                    android:textSize="@dimen/textSizeStartTimeTv"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

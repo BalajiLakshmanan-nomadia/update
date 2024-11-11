@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayoutJobDetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundAppScreens"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <com.synchroteam.utils.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ViewAnimator
+        android:id="@+id/viewAnimatorClientSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        >
+
+        <androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pagerClientSection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            layout="@layout/layout_nearby_client"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ViewAnimator>
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/nearestClientClientBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backCancelOkTvNewJob"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/paddingCleintSectionNearestClient"
+        android:text="@string/textNearestClientNewJob"
+        android:textAllCaps="true"
+        android:textColor="@color/textCancelOkTvNewJob"
+        android:textSize="@dimen/textSizeLableMandatoryFields"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+</LinearLayout>

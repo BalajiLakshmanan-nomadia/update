@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/dateDetailCurrentJobsTv"
+        style="@style/styleDateDetailsTextView" />
+
+    <ImageView
+        android:id="@+id/imgDateDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/cell_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/containerLinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

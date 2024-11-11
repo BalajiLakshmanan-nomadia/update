@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiTransparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/widthParentAddAttachment"
+        android:layout_height="wrap_content"
+        android:background="@color/backAddAttachmentDialog"
+        android:orientation="vertical">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backLableAddAttachmentTv"
+                android:gravity="center"
+                android:padding="@dimen/paddingTextViewAddAttachment"
+                android:text="@string/planning"
+                android:textAllCaps="true"
+                android:textColor="@color/textAddAttachmentFormTitle"
+                android:textSize="@dimen/textSizeAddAttachmentTitle"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/paddingAddAttachmentCancelBtn"
+                android:orientation="vertical">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textDateStartDate"
+                    android:textColor="@color/textColorLableNonManadtoryMandatoryFiled"
+                    android:padding="@dimen/padding_small"
+                    android:textSize="@dimen/textSizeLableMandatoryFields"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.EditText
+                    android:id="@+id/dateDebut"
+                    style="@style/EditTextAppTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_apptheme_edit_text_holo_light"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/textDateStartDate"
+                    android:onClick="showDate"
+                    android:textColor="@color/textDataItemsTv"
+                    android:textColorHint="@color/textColorLableNonManadtoryMandatoryFiled"
+                    android:textSize="@dimen/textSizeLableMandatoryFields"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textStartTimeLable"
+                    android:textColor="@color/textColorLableNonManadtoryMandatoryFiled"
+                    android:padding="@dimen/padding_small"
+                    android:textSize="@dimen/textSizeLableMandatoryFields"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.EditText
+                    android:id="@+id/heurDebut"
+                    style="@style/EditTextAppTheme"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/black_apptheme_edit_text_holo_light"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/textStartTimeLable"
+                    android:onClick="showTime1"
+                    android:textColor="@color/textDataItemsTv"
+                    android:textColorHint="@color/textColorLableNonManadtoryMandatoryFiled"
+                    android:textSize="@dimen/textSizeLableMandatoryFields"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textDateEndDate"
+                    android:textColor="@color/textColorLableNonManadtoryMandatoryFiled"
+                    android:padding="@dimen/padding_small"
+                    android:textSize="@dimen/textSizeLableMandatoryFields"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.EditText
+                    android:id="@+id/dateDebutfin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/black_apptheme_edit_text_holo_light"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/textDateEndDate"
+                    android:onClick="showDateEnd"
+                    android:textColor="@color/textDataItemsTv"
+                    android:textColorHint="@color/textColorLableNonManadtoryMandatoryFiled"
+                    android:textSize="@dimen/textSizeLableMandatoryFields"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textEndTimeLable"
+                    android:padding="@dimen/padding_small"
+                    android:textColor="@color/textColorLableNonManadtoryMandatoryFiled"
+                    android:textSize="@dimen/textSizeLableMandatoryFields"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.EditText
+                    android:id="@+id/heurFin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:background="@drawable/black_apptheme_edit_text_holo_light"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/textEndTimeLable"
+                    android:onClick="showTime2"
+                    android:textColor="@color/textDataItemsTv"
+                    android:textColorHint="@color/textColorLableNonManadtoryMandatoryFiled"
+                    android:textSize="@dimen/textSizeLableMandatoryFields"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_small"
+                android:orientation="horizontal">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backAddAttachmentBottomCancelButton"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingAddAttachmentCancelBtn"
+                    android:text="@string/textCancelLable"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textDataItemsTv"
+                    android:textSize="@dimen/textSizeCancelTextSize"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/setBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/backAddAttachmentBottomCancelButton"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingAddAttachmentCancelBtn"
+                    android:text="@string/ok"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textDataItemsTv"
+                    android:textSize="@dimen/textSizeCancelTextSize"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+            </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

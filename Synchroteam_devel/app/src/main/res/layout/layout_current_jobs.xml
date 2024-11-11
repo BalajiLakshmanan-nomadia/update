@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/job_description_bg"
+    android:orientation="vertical" >
+
+    <com.synchroteam.utils.MyGallery
+        android:id="@+id/currentJobDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:background="@drawable/date_selector_img"
+        android:clipChildren="true"
+        android:padding="0dp"
+        android:spacing="15dp" />
+
+    <LinearLayout
+        android:id="@+id/dateDetailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/dateDetailCurrentJobsTv"
+            style="@style/styleDateDetailsTextView"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/currentJobLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:divider="@null" />
+
+        <!-- Start Activity button -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/start_activity_bg"
+            android:paddingBottom="@dimen/paddingMenusTitle"
+            android:paddingTop="@dimen/paddingMenusTitle" >
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txtStartActivity"
+                android:layout_width="@dimen/heightCatalougeItemParentLayout"
+                android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/boxframe_textview_layout"
+                android:gravity="center"
+                android:paddingLeft="@dimen/paddingTopOrangeButton"
+                android:paddingRight="@dimen/paddingTopOrangeButton"
+                android:singleLine="true"
+                android:text="@string/txt_start_activity"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeStartTimeTv"
+                fontify:font_name="@string/fontName_avenir" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

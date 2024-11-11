@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/job_description_text_color"
+        android:padding="@dimen/paddingMenusTitle">
+
+        <com.synchroteam.smoothcheckbox.SmoothCheckBox
+            android:id="@+id/chk_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+            app:color_checked="@color/unavailability_start_icon_color"
+            app:color_tick="@android:color/white"
+            app:color_unchecked="@color/job_description_text_color"
+            app:color_unchecked_stroke="@android:color/darker_gray" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:layout_toRightOf="@+id/chk_stock"
+            android:text="@string/txt_stock"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <com.synchroteam.smoothcheckbox.SmoothCheckBox
+            android:id="@+id/chk_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+            android:layout_toRightOf="@+id/txt_stock"
+            android:layout_centerVertical="true"
+            android:text="@string/txt_request"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            app:color_checked="@color/unavailability_start_icon_color"
+            app:color_tick="@android:color/white"
+            app:color_unchecked="@color/job_description_text_color"
+            app:color_unchecked_stroke="@android:color/darker_gray" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:layout_toRightOf="@+id/chk_request"
+            android:text="@string/txt_request"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txtOk"
+            android:layout_width="@dimen/heightFooterCatalougeListItemaddItemContainer"
+            android:layout_height="@dimen/marginTopSyncroteamLoginloginBt"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/boxframe_textview_layout_blue"
+            android:elevation="@dimen/paddingMenusTitle"
+            android:gravity="center"
+            android:paddingLeft="@dimen/paddingTopOrangeButton"
+            android:paddingRight="@dimen/paddingTopOrangeButton"
+            android:text="@string/textOkLable"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+            fontify:font_name="@string/fontName_avenir" />
+    </RelativeLayout>
+
+    <com.synchroteam.utils.MyFixedListView
+        android:id="@+id/itemListLv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null" />
+
+</LinearLayout>

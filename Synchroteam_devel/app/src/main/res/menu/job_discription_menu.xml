@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:syncroteamapp="http://schemas.android.com/apk/res-auto">
+
+    <!--
+         <item
+        android:id="@+id/action_information"
+        android:icon="@drawable/back_informationicon_jobdetails"
+        android:title="@string/textInformationlable"
+        syncroteamapp:showAsAction="ifRoom"/>
+    -->
+    <item
+        android:id="@+id/action_duplication"
+        android:icon="@drawable/ic_note"
+        android:title="@string/textCopyIcon"
+        syncroteamapp:showAsAction="ifRoom" />
+
+    <!--<item
+        android:id="@+id/action_job_more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/textCopyIcon"
+        syncroteamapp:showAsAction="ifRoom" />-->
+
+    <item
+        android:id="@+id/action_reschedule"
+        android:title="@string/textRescedule"
+        syncroteamapp:showAsAction="never" />
+    <item
+        android:id="@+id/action_decline"
+        android:title="@string/textDecline"
+        syncroteamapp:showAsAction="never" />
+
+</menu>

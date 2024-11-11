@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@android:color/transparent"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/white_rounded_rectangle_bg"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtRescheduleJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/textRescedule"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/backGroundCancelBtn" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtDeclineJob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="7dp"
+                    android:text="@string/textDecline"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/white_rounded_rectangle_bg"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/textCancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/textCancelLable"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/textSizeHeaderTvDomainDialog"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.synchroteam.TypefaceLibrary.TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:singleLine="false"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    
+    android:textSize="@dimen/textSizeReportsListOfValues"
+    android:textColor="@color/black"
+    fontify:font_name="@string/fontName_hevelicaLight" />

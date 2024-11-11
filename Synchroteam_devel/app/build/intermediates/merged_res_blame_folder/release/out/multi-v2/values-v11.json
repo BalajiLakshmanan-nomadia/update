@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.synchroteam.synchroteam3.app-mergeReleaseResources-49:/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "D:\\Synchro\\Synchroteam_devel\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "from": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "360",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "432"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "12",
+                        "endOffsets": "126"
+                    }
+                }
+            ]
+        }
+    ]
+}

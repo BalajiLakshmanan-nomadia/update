@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/job_description_bg"
+    android:paddingLeft="@dimen/paddingMenusTitle"
+    android:paddingRight="@dimen/paddingGeneralMenusTitle"
+    android:paddingTop="@dimen/paddingGeneralMenusTitle">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/paddingMenusTitle">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/paddingTopOrangeButton"
+            android:background="@color/job_description_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxframe_item_layout_white"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingMenusTitle">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtItemLabel"
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/txt_item_label"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/categoryDataTv"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txtItemLabel"
+                    android:layout_toLeftOf="@+id/txtQtyLabel"
+                    android:ellipsize="end"
+                    android:text="Antenne mord > Noite joct leaf seelam"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/dataQantitiyEt"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_marginTop="@dimen/paddingTopOrangeButton"
+                    android:background="@drawable/boxframe_qty_text"
+                    android:paddingLeft="@dimen/marginTopMessageDetailTv"
+                    android:paddingTop="@dimen/paddingMenusTitle"
+                    android:paddingRight="@dimen/marginTopMessageDetailTv"
+                    android:paddingBottom="@dimen/paddingMenusTitle"
+                    android:text="100"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtQtyLabel"
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:layout_alignBottom="@+id/dataQantitiyEt"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_toLeftOf="@+id/dataQantitiyEt"
+                    android:text="@string/txt_quantity_label"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_qty_left"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_alignLeft="@+id/txtQtyLabel"
+                    android:layout_below="@+id/txtQtyLabel"
+                    android:layout_marginBottom="@dimen/paddingMenusTitle"
+                    android:background="@drawable/boxframe_qty_text"
+                    android:paddingBottom="@dimen/paddingMenusTitle"
+                    android:paddingLeft="@dimen/marginTopMessageDetailTv"
+                    android:paddingRight="@dimen/marginTopMessageDetailTv"
+                    android:paddingTop="@dimen/paddingMenusTitle"
+                    android:text="100"
+                    android:visibility="gone"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtPriceLabel"
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:layout_alignLeft="@+id/txtQtyLabel"
+                    android:layout_below="@+id/txt_qty_left"
+                    android:text="@string/txt_price_label"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/costTv"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_alignLeft="@+id/txtPriceLabel"
+                    android:layout_below="@+id/txtPriceLabel"
+                    android:ellipsize="end"
+                    android:text="1000000000"
+                    fontify:font_name="@string/fontName_avenir" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relSerialNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/viewDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="@dimen/paddingMenusTitle"
+                    android:layout_marginTop="@dimen/paddingMenusTitle"
+                    android:background="@color/job_description_bg" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtSerialLabel"
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/viewDivider"
+                    android:text="@string/txt_serial_nos_label"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <RelativeLayout
+                    android:id="@+id/relSerialContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSerialLabel"
+                    android:layout_marginRight="@dimen/paddingMenusTitle"
+                    android:layout_toLeftOf="@+id/txtSelectSerialNo"
+                    android:background="@color/text_container_bg"
+                    android:paddingBottom="@dimen/paddingMenusTitle"
+                    android:paddingRight="@dimen/paddingMenusTitle"></RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txtSelectSerialNo"
+                    android:layout_width="@dimen/marginTopSyncroteamLoginloginBt"
+                    android:layout_height="@dimen/marginTopSyncroteamLoginloginBt"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/relSerialContainer"
+                    android:background="@drawable/ring_select_button"
+                    android:gravity="center"
+                    android:text="@string/fa_pencil"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeDaysTv" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/removeImageIcon"
+        android:layout_width="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+        android:layout_height="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+        android:layout_gravity="top|end"
+        android:background="@drawable/ring_close_button"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeCalanderMonth" />
+
+</FrameLayout>

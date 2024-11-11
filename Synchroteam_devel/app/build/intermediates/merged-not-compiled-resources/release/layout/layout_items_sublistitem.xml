@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemTr"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light" >
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/itemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/paddingItemsSubListItemTv"
+            android:textColor="@color/textDataItemsTv"
+            android:textSize="@dimen/textSizeItemsTvitems"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <ImageView
+            android:id="@+id/addItemIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/paddingItemsSubListItemIv" />
+    </RelativeLayout>
+
+</TableRow>

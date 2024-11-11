@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/actionbarColor"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/styleActionBarTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="marquee"
+            android:singleLine="true" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/job_description_bg"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/linSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/paddingTopOrangeButton"
+            android:background="@android:color/white"
+            android:elevation="3dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="@dimen/strokeSizeCalander"
+            app:cardElevation="3dp"
+            app:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/paddingTopOrangeButton"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                        android:layout_weight="1">
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtStartDateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="left|center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="@dimen/margin_small"
+                            android:text="Start Date"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/textSizeDateDetailsTextView"
+                            fontify:font_name="@string/fontName_avenir" />
+
+                        <LinearLayout
+                            android:id="@+id/linContainer1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtStartDateLabel"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/txtStartDateIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                                android:text="@string/fa_calendar"
+                                android:textColor="@color/invoice_text_color"
+                                android:textSize="@dimen/textSizeDaysTv" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/dividerHeightJobSchedule"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:background="@color/hint_color" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txtStartDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dividerHeightJobSchedule"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:background="@android:color/transparent"
+                                android:hint="Start Date"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/hint_color"
+                                android:textSize="@dimen/textSizeDaysTv"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/linContainer1"
+                            android:layout_marginTop="@dimen/paddingMenusTitle"
+                            android:background="@color/divider_bg_color" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                        android:layout_weight="1">
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtEndDateLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="left|center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="@dimen/margin_small"
+                            android:text="End Date"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/textSizeDateDetailsTextView"
+                            fontify:font_name="@string/fontName_avenir" />
+
+                        <LinearLayout
+                            android:id="@+id/linContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtEndDateLabel"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/txtEndDateIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                                android:text="@string/fa_calendar"
+                                android:textColor="@color/invoice_text_color"
+                                android:textSize="@dimen/textSizeDaysTv" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/dividerHeightJobSchedule"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:background="@color/hint_color" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txtEndDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dividerHeightJobSchedule"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:background="@android:color/transparent"
+                                android:hint="End Date"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/hint_color"
+                                android:textSize="@dimen/textSizeDaysTv"
+                                fontify:font_name="@string/fontName_avenir" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/linContainer"
+                            android:layout_marginTop="@dimen/paddingMenusTitle"
+                            android:background="@color/divider_bg_color" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/paddingTopOrangeButton"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                        android:layout_weight="1">
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtStartTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="left|center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="@dimen/margin_small"
+                            android:text="@string/textStartTimeLable"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/textSizeDateDetailsTextView"
+                            fontify:font_name="@string/fontName_avenir" />
+
+                        <LinearLayout
+                            android:id="@+id/linContainer2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtStartTimeLabel"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/txtStartTimeIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                                android:text="@string/fa_clock_o"
+                                android:textColor="@color/invoice_text_color"
+                                android:textSize="@dimen/textSizeDaysTv" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/dividerHeightJobSchedule"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:background="@color/hint_color" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txtStartTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dividerHeightJobSchedule"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/textStartTimeLable"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/hint_color"
+                                android:textSize="@dimen/textSizeDaysTv"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/linContainer2"
+                            android:layout_marginTop="@dimen/paddingMenusTitle"
+                            android:background="@color/divider_bg_color" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                        android:layout_weight="1">
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtEndTimeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="left|center"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="@dimen/margin_small"
+                            android:text="@string/textEndTimeLable"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/textSizeDateDetailsTextView"
+                            fontify:font_name="@string/fontName_avenir" />
+
+                        <LinearLayout
+                            android:id="@+id/linContainer3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtEndTimeLabel"
+                            android:layout_centerVertical="true"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/txtEndTimeIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                                android:text="@string/fa_clock_o"
+                                android:textColor="@color/invoice_text_color"
+                                android:textSize="@dimen/textSizeDaysTv" />
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="@dimen/dividerHeightJobSchedule"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:background="@color/hint_color" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txtEndTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dividerHeightJobSchedule"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:background="@android:color/transparent"
+                                android:hint="@string/textEndTimeLable"
+                                android:singleLine="true"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/hint_color"
+                                android:textSize="@dimen/textSizeDaysTv"
+                                fontify:font_name="@string/fontName_avenir" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/linContainer3"
+                            android:layout_marginTop="@dimen/paddingMenusTitle"
+                            android:background="@color/divider_bg_color" />
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtprefSlotLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:background="@color/white"
+                    android:gravity="left|center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:textColor="@color/grayDate"
+                    android:textSize="@dimen/textSizeTackingidBtnSave"
+                    android:visibility="gone"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:padding="@dimen/paddingTopOrangeButton">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtCancel"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/heightFooterCatalougeListcustomerSignatureDataTv"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/boxframe_cancel_button"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingTopOrangeButton"
+                        android:paddingRight="@dimen/paddingTopOrangeButton"
+                        android:singleLine="true"
+                        android:text="@string/textCancelLable"
+                        android:textColor="@color/job_description_bg"
+                        android:textSize="@dimen/textSizeStartTimeTv"
+                        fontify:font_name="@string/fontName_hevelicaLight" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtValidate"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/heightFooterCatalougeListcustomerSignatureDataTv"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                        android:layout_weight="1"
+                        android:background="@drawable/boxframe_add_button"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/paddingTopOrangeButton"
+                        android:paddingRight="@dimen/paddingTopOrangeButton"
+                        android:singleLine="true"
+                        android:text="@string/txt_validate_label"
+                        android:textColor="@color/job_description_bg"
+                        android:textSize="@dimen/textSizeStartTimeTv"
+                        fontify:font_name="@string/fontName_hevelicaLight" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/view_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/linSchedule"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:background="@drawable/dotted_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_divider_line"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/jobListLv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/paddingMenusTitle"
+                android:divider="@null"
+                android:dividerHeight="0dp" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/no_jobs_were_scheduled"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="@dimen/textSizeDateDetailsTextView"
+                android:visibility="invisible"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

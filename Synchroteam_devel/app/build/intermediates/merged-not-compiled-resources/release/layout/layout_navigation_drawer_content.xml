@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Current JOb -->
+
+            <RelativeLayout
+                android:id="@+id/currentJobsListItem"
+                style="@style/styleNavigationDrawerListItem"
+                android:onClick="editActions">
+
+                <ImageView
+                    android:id="@+id/iconCurrentJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_currentjobs_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconCurrentJob"
+                    android:text="@string/textCurrentJobLable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/countCurrentJobsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_green"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textCurrentJobCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount" />
+            </RelativeLayout>
+
+            <!-- Current JOb -->
+
+
+            <!-- Upcoming JOb -->
+
+            <RelativeLayout
+                android:id="@+id/toComeListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconToComeJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_tocome_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconToComeJob"
+                    android:text="@string/textToComeLable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/countToComeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_gray"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textToComeCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount" />
+            </RelativeLayout>
+
+            <!-- Upcoming JOb -->
+
+
+            <!-- Late JOb -->
+
+            <RelativeLayout
+                android:id="@+id/deadlineExceededListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconDeadLineExceed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_deadline_exceeded" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconDeadLineExceed"
+                    android:text="@string/textDedlineExceededLable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/countDeadlineExceededtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_red"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textDeadlineExceededCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount" />
+            </RelativeLayout>
+
+            <!-- Late JOb -->
+
+
+            <!-- Report JOb -->
+
+            <RelativeLayout
+                android:id="@+id/reportsListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconReports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_reports_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconReports"
+                    android:text="@string/textReportsLable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/countReportsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_blue"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textReportsCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount" />
+            </RelativeLayout>
+
+            <!-- All JOb -->
+
+            <RelativeLayout
+                android:id="@+id/allJobsListItem"
+                style="@style/styleNavigationDrawerListItem"
+                android:onClick="editActions">
+
+                <ImageView
+                    android:id="@+id/iconAllJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_alljobs_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconAllJob"
+                    android:text="@string/textAllJobLable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/countAllJobsTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_purple"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textCurrentJobCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount" />
+            </RelativeLayout>
+
+            <!-- All JOb -->
+
+            <!-- Job pool -->
+
+            <RelativeLayout
+                android:id="@+id/jobPoolListItem"
+                style="@style/styleNavigationDrawerListItem"
+                android:onClick="editActions">
+
+                <ImageView
+                    android:id="@+id/iconJobPool"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_job_pool_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconJobPool"
+                    android:text="@string/textJobPoolLable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/countJobPoolTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_white"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textCurrentJobCount"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSizeJobsCount" />
+            </RelativeLayout>
+
+            <!-- Job pool -->
+
+            <!-- Unavailabilities JOb -->
+
+            <RelativeLayout
+                android:id="@+id/unavabilitiesListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconUnavabilities"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_unavailability_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconUnavabilities"
+                    android:text="@string/texUnavabilitiesLables"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/unAvabilitiesCountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle_org"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textUnavabilitiesCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount" />
+            </RelativeLayout>
+
+            <!-- Unavailabilities JOb -->
+
+
+            <!-- Calendar JOb -->
+
+            <RelativeLayout
+                android:id="@+id/calendarListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_calendar_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconCalendar"
+                    android:text="@string/textCalanderlable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circle_green"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textCurrentJobCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <!-- Calendar JOb -->
+
+            <LinearLayout style="@style/styleNavigationDrawerListItemGreyLine">
+
+                <LinearLayout
+                    style="@style/styleGeneralNavigationDrawerTitleBarListItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Client JOb -->
+
+            <RelativeLayout
+                android:id="@+id/clientListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_client_section" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconClient"
+                    android:text="@string/textJobCustomerLableTv"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+
+            <!-- Client JOb -->
+
+
+            <!-- Attachments JOb -->
+
+            <RelativeLayout
+                android:id="@+id/attachmentListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconAttachments"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_attachemnts" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconAttachments"
+                    android:text="@string/textAttachmentLableTv"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+
+            <!-- Attachments JOb -->
+
+
+            <!-- Inventory -->
+
+            <RelativeLayout
+                android:id="@+id/inventoryListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconInventory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_inventory" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconInventory"
+                    android:text="@string/txt_inventory_label"
+                    android:textAllCaps="true" />
+            </RelativeLayout>
+
+            <!-- Inventory -->
+
+
+            <!-- Message JOb -->
+
+            <RelativeLayout
+                android:id="@+id/messageListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_messages_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconMessage"
+                    android:text="@string/textMessagesLable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/countMessageTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/message_background"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textMessageCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount" />
+            </RelativeLayout>
+
+            <!-- Message JOb -->
+
+
+            <!-- System JOb -->
+
+            <LinearLayout
+                style="@style/styleNavigationDrawerListItemGreyLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleNavigationDrawerTitleBarListItem"
+                    android:text="@string/textSystemOptions"
+                    android:textAllCaps="true" />
+            </LinearLayout>
+
+            <!-- System JOb -->
+
+
+            <!-- LASTSYNC JOb -->
+
+            <LinearLayout
+                android:id="@+id/syncronizationListItem"
+                style="@style/styleNavigationDrawerListItem"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_lastsyncronization_listitem" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleTextNavigationDrawerListItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/textLastSyncronization"
+                        android:textAllCaps="true" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/dateLastSyncronizationTv"
+                        style="@style/styleTextNavigationDrawerListItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textSizeDataLastSync" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/settingsSyncronizationIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:src="@drawable/setting_icon" />
+            </LinearLayout>
+
+            <!-- LASTSYNC JOb -->
+
+            <LinearLayout
+                android:id="@+id/trackingListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="5dp"
+                        android:src="@drawable/icon_traking_listitem" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtTrackingLabelTv"
+                        style="@style/styleTextNavigationDrawerListItem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                        android:text="@string/textTrackingLableTvTracking"
+                        android:textAllCaps="true" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/trackingIndicatorIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/tracking_indicator_disabled" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/trackingOnOffTb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                        android:button="@null" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Logout JOb -->
+
+            <RelativeLayout
+                android:id="@+id/logoutListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_logout_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconLogout"
+                    android:text="@string/textLogout"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circle_green"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textCurrentJobCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+            <!-- Logout JOb -->
+
+            <LinearLayout style="@style/styleNavigationDrawerListItemGreyLine">
+
+                <LinearLayout
+                    style="@style/styleGeneralNavigationDrawerTitleBarListItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!-- Legal JOb -->
+
+            <RelativeLayout
+                android:id="@+id/legalInformationListItem"
+                style="@style/styleNavigationDrawerListItem">
+
+                <ImageView
+                    android:id="@+id/iconLegalInformations"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@drawable/icon_legalinformation_listitem" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleTextNavigationDrawerListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:layout_toRightOf="@id/iconLegalInformations"
+                    android:text="@string/textLegalInformationLable"
+                    android:textAllCaps="true" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circle_green"
+                    android:gravity="center"
+                    android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                    android:text="@string/textCurrentJobCount"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSizeJobsCount"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Legal JOb -->
+
+    </ScrollView>
+
+</RelativeLayout>

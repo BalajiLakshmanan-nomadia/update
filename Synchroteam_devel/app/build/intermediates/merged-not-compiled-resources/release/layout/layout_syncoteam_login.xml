@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relParentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_screen_background"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingSyncroTeamLoginRelativeLayout">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTopSyncroteamLoginimageView1"
+        android:src="@drawable/login_syncroteam_logo_updated" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="@dimen/marginTopSyncroTeamLoginLinearLayout"
+        android:orientation="vertical">
+
+        <com.synchroteam.TypefaceLibrary.FloatLabelLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottomSyncroTeamLoginFloatLabelLayout"
+            fontify:floatLabelTextAppearance="@style/TextAppearance.YourApp.FloatLabel">
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/domainLoginEt"
+                style="@style/EditTextAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/marginBottomSyncroTeamLogindomainLoginEt"
+                android:hint="@string/text_domainSmall"
+                android:imeOptions="actionNext"
+                android:paddingRight="@dimen/paddingRightBottomSyncroTeamLogindomainLoginEt"
+                android:singleLine="true"
+                android:textSize="@dimen/textSizeEditTextLoginSyncroTeam"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+            <ImageView
+                android:id="@+id/domainInformationIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/error_icon" />
+        </com.synchroteam.TypefaceLibrary.FloatLabelLayout>
+
+        <com.synchroteam.TypefaceLibrary.FloatLabelLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottomSyncroTeamLoginFloatLabelLayout"
+            fontify:floatLabelTextAppearance="@style/TextAppearance.YourApp.FloatLabel">
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/userNameLoginEt"
+                style="@style/EditTextAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopSyncroteamLoginuserEditText"
+                android:hint="@string/textUserName"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="@dimen/textSizeEditTextLoginSyncroTeam"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </com.synchroteam.TypefaceLibrary.FloatLabelLayout>
+
+        <com.synchroteam.TypefaceLibrary.FloatLabelLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/marginBottomSyncroTeamLoginFloatLabelLayout"
+            fontify:floatLabelTextAppearance="@style/TextAppearance.YourApp.FloatLabel">
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/passwordLoginEt"
+                style="@style/EditTextAppTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTopSyncroteamLoginuserEditText"
+                android:hint="@string/textPassword"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="@dimen/textSizeEditTextLoginSyncroTeam"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </com.synchroteam.TypefaceLibrary.FloatLabelLayout>
+<com.synchroteam.TypefaceLibrary.TextViewHelveticaMedium
+    android:layout_width="match_parent"
+    android:id="@+id/txt_show_change_pwd_dialog"
+    android:padding="@dimen/txt10dp"
+android:gravity="right"
+    android:layout_marginTop="@dimen/txt5dp"
+
+    android:text="@string/textChangePwdTitle"
+    android:layout_height="wrap_content"/>
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/loginBt"
+            style="@style/styleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopSyncroteamLoginloginBt"
+            android:gravity="center"
+            android:onClick="login"
+            android:text="@string/button_login"
+            android:textAllCaps="true"
+            android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/wipeAllDetailsButton"
+            style="@style/styleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTopSyncroteamLoginloginBt"
+            android:gravity="center"
+            android:onClick="login"
+            android:text="@string/button_wipeAllDetails"
+            android:textAllCaps="true"
+            android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

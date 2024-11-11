@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/actionbarColor"
+        android:minHeight="?attr/actionBarSize"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_action_back" />
+
+            <TextView
+                android:id="@+id/toolbarText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text="@string/txt_payment"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/button_container"
+        android:layout_below="@id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/payment_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="$ 00.00"
+                android:textColor="@color/text_color"
+                android:textSize="35sp"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_small"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/txt_payable_amount"
+                android:textColor="@color/text_light"
+                android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/paddingLeftCurrentJobWeekRibbonStrip"
+                android:layout_marginRight="@dimen/paddingLeftCurrentJobWeekRibbonStrip"
+                android:layout_marginTop="@dimen/margin_large"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="7dp">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="@string/txt_card_details"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.stripe.android.view.CardInputWidget
+                        android:id="@+id/card_input_widget"
+                        style="@style/StripeCardInputStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:padding="2dp" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginTopSyncroteamLoginuserEditText"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="@string/card_holder"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.EditText
+                        android:id="@+id/edtCardHolderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="@string/name_on_card"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginTopSyncroteamLoginuserEditText"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:singleLine="true"
+                        android:text="@string/textJobEmailLableTv"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.EditText
+                        android:id="@+id/edtCardHolderEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="xxx@xxx.xxx"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/text_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="@dimen/tetSizeLoginBtLoginSyncroTeam"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_small"
+        android:orientation="horizontal">
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/btn_pay_now"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_pay_now"
+            android:gravity="center"
+            android:padding="@dimen/padding_normal"
+            android:text="@string/pay_now"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+    </LinearLayout>
+
+</RelativeLayout>

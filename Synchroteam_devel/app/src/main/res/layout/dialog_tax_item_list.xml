@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginRight="@dimen/paddingLoginDomainDialogLinearLayout"
+    android:layout_marginLeft="@dimen/paddingLoginDomainDialogLinearLayout"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/paddingLoginDomainDialogLinearLayout"
+        android:layout_marginRight="@dimen/paddingLoginDomainDialogLinearLayout"
+        android:minHeight="320dp"
+        android:minWidth="@dimen/dialog_clock_in_out_width"
+        android:orientation="vertical">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxframe_serial_title_layout"
+            android:gravity="center"
+            android:padding="@dimen/paddingMenusTitle"
+            android:text="@string/txt_tax_lst_label"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeDateDetailsTextView"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boxframe_unavailability_title_layout"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:layout_marginLeft="@dimen/paddingMenusTitle"
+                            android:layout_marginRight="@dimen/paddingMenusTitle"
+                            android:layout_marginTop="@dimen/paddingMenusTitle"
+                            android:padding="@dimen/paddingMenusTitle">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rel_spinner"
+                                android:padding="@dimen/paddingMenusTitle"
+                                android:layout_marginTop="@dimen/paddingMenusTitle"
+                                android:gravity="left|center"
+                                android:orientation="horizontal">
+
+                                <com.synchroteam.smoothcheckbox.SmoothCheckBox
+                                    android:id="@+id/chk_compound_tax"
+                                    android:layout_width="@dimen/marginTopMessageDetailTv"
+                                    android:layout_height="@dimen/marginTopMessageDetailTv"
+                                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                                    app:color_checked="@color/unavailability_start_icon_color"
+                                    app:color_unchecked="@android:color/white"
+                                    app:color_unchecked_stroke="@android:color/darker_gray" />
+
+                                <com.synchroteam.TypefaceLibrary.TextView
+                                    android:id="@+id/txt_compound_tax"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/txt_comp_tax_lbl"
+                                    android:textColor="@color/invoice_hint_color"
+                                    android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+                                    fontify:font_name="@string/fontName_avenir" />
+
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rel_spinner"
+                                android:layout_width="match_parent"
+                                android:paddingLeft="@dimen/paddingTopOrangeButton"
+                                android:gravity="center"
+                                android:paddingRight="@dimen/paddingTopOrangeButton"
+                                android:background="@drawable/boxframe_invoice_edittext"
+                                android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:clickable="false"
+                                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+                                <Spinner
+                                    android:id="@+id/spinnerTaxItem"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@null"
+                                    style="@style/spinner"
+                                    android:spinnerMode="dropdown"
+                                    android:textColor="@color/invoice_text_color"
+                                    android:textSize="@dimen/textSizeTrackingSettingsLableTv" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <net.i2p.android.ext.floatingactionbutton.AddFloatingActionButton
+                            android:id="@+id/addTaxItem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginEnd="@dimen/paddingTopOrangeButton"
+                            android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                            android:layout_marginBottom="@dimen/marginRightItemsMainListItemExpandCollapseIcon"
+                            android:visibility="visible"
+                            app:fab_colorNormal="@color/actionbarColor"
+                            app:fab_colorPressed="@color/actionbarColor"
+                            app:fab_plusIconColor="@color/white"
+                            app:fab_size="mini" />
+                    </LinearLayout>
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txtselTaxLbl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/paddingMenusTitle"
+                        android:background="@color/textCancelTvClientList"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/paddingMenusTitle"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:text="@string/txt_sel_tax_lbl"
+                        android:textColor="@color/job_description_bg"
+                        android:textSize="@dimen/textSizeDataTvDomainDialog"
+                        fontify:font_name="@string/fontName_avenir" />
+                    <LinearLayout
+                     android:layout_width="match_parent"
+                     android:background="@color/total_bg_color" android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_tax_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/dialog_clock_in_out_card_min_height"
+                        android:layout_marginTop="@dimen/paddingMenusTitle"
+                        android:background="@color/total_bg_color"
+                        android:paddingLeft="@dimen/paddingTopOrangeButton"
+                        android:paddingTop="@dimen/paddingTopOrangeButton"
+                        android:paddingRight="@dimen/paddingTopOrangeButton" />
+                </LinearLayout>
+                </LinearLayout>
+
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtCancel"
+                    android:layout_width="@dimen/heightCatalougeItemParentLayout"
+                    android:layout_height="@dimen/marginTopSyncroteamLoginimageView1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+                    android:layout_marginTop="@dimen/paddingTopOrangeButton"
+                    android:background="@drawable/boxframe_close_button_new"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:singleLine="true"
+                    android:text="@string/modifier"
+                    android:textColor="@color/job_description_bg"
+                    android:textSize="@dimen/textSizeStartTimeTv"
+                    fontify:font_name="@string/fontName_hevelicaLight" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

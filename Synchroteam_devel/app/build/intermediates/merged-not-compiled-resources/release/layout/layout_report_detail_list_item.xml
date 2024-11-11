@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/marginReportsDetailListItem"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        
+        >
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/reportsFieldLableTv"
+        android:layout_alignParentLeft="true"
+        style="@style/styleLablesTvReportsDetails" />
+    
+     <ImageView
+        android:id="@+id/resovedStatusIv"
+         android:layout_width="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_height="wrap_content"
+         />
+</RelativeLayout>
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/reportsFieldDataTv"
+        style="@style/styleDataTvReportsDetails" />
+   <!--  
+     <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/reportsCommentsLableTv"
+        style="@style/styleLablesTvReportsDetails" 
+        android:text="Comments"
+        />
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/reportsCommentsDataTv"
+        style="@style/styleDataTvReportsDetails" />
+    
+     <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/reportsAttachedImageLableTv"
+        style="@style/styleLablesTvReportsDetails" 
+        android:text="AttachedImage"
+        />
+    <ImageView  
+        android:id="@+id/itemImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        /> -->
+     
+
+   
+    
+
+</LinearLayout>

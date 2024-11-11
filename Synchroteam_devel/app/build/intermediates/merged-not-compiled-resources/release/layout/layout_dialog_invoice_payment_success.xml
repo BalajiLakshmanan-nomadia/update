@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbarColor"
+    android:orientation="vertical"
+    android:weightSum="11">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_sign_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_txt_sign_payment_result"
+                android:gravity="bottom"
+                android:padding="30dp"
+                android:text="@string/fa_thumbs_up"
+                android:textColor="@android:color/white"
+                android:textSize="45sp"
+                fontify:font_name="@string/fontName_fontAwesome" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:gravity="bottom"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="35sp"
+                fontify:font_name="@string/fontName_avenir" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_you_have_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                android:layout_marginRight="@dimen/paddingMenusTitle"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_amount_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_you_have_paid"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_OK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/bg_textok_payment_success"
+                android:gravity="bottom"
+                android:padding="20dp"
+                android:text="@string/textOkLable"
+                android:textColor="@android:color/white"
+                android:textSize="27sp"
+                fontify:font_name="@string/fontName_avenir" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

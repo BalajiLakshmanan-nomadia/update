@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.synchroteam.synchroteam3"
+    android:versionCode="5"
+    android:versionName="58.01" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <queries>
+
+        <!-- WebView -->
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="http" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+
+        <!-- Camera -->
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+
+        <!-- Gallery -->
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+
+            <data android:mimeType="image/*" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK" />
+
+            <data android:mimeType="vnd.android.cursor.dir/image" />
+        </intent>
+
+        <package android:name="com.google.android.apps.maps" />
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="false" />
+
+    <!-- FOR GCM -->
+    <!-- <permission -->
+    <!-- android:name="com.synchroteam.synchroteam2.permission.C2D_MESSAGE" -->
+    <!-- android:protectionLevel="signature" /> -->
+
+
+    <!-- <uses-permission android:name="com.synchroteam.synchroteam2.permission.C2D_MESSAGE" /> -->
+
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:required="false" />
+    <!-- <uses-permission android:name="com.google.android.c2dm.permission.REGISTER" /> -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <permission
+        android:name="com.synchroteam.synchroteam3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.synchroteam.synchroteam3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:name="com.synchroteam.synchroteam.SyncroTeamApplication"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="false"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.synchroteam.synchroteam.SpalshActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.Login_Syncroteam"
+            android:exported="false"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.synchroteam.synchroteam.SiteDetail"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.EquipmentDetials"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.SiteListingClientDetails"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.EquipmentListCLientDetail"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.NearestClientSite"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.scanner.CodeScannerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.technicalsupport.JobDetails"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_job_details"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.JobPoolDetails"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_job_details"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.JobPoolSchedule"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_job_details"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.catalouge.CatalougeSubCategotyUpdated"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.technicalsupport.JobDetails" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.SyncoteamNavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_syncro_team_base"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_fragment_tab_page_indicator"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.LastSyncronizationSettingActivity"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.NewJob"
+            android:exported="false"
+            android:label="@string/title_activity_syncro_team_base"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.utils.ScannerBar"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.synchroteam.synchroteam.ClientJobType"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.synchroteam.synchroteam.ClientJobReport"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.synchroteam.synchroteam.CustomFieldClient"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.synchroteam.synchroteam.CustomFieldEquipment"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.synchroteam.synchroteam.CustomFieldSite"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.synchroteam.technicalsupport.SignatureFacture"
+            android:exported="false"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.synchroteam.technicalsupport.CustomField"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.synchroteam.synchroteam.ReportsDetails"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.CategoryPartList"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.synchroteam.synchroteam.ClientListNew"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.synchroteam.synchroteam.SiteList"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.synchroteam.synchroteam.EquipmentList"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- <service android:name="com.synchroteam.pushNotification.GCMService" /> -->
+
+
+        <!-- FOR GCM -->
+        <!-- <receiver -->
+        <!-- android:name="com.synchroteam.pushNotification.GCMReceiver" -->
+        <!-- android:permission="com.google.android.c2dm.permission.SEND"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.RECEIVE" /> -->
+        <!-- <action android:name="com.google.android.c2dm.intent.REGISTRATION" /> -->
+
+
+        <!-- <category android:name="com.synchroteam.synchroteam" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity
+            android:name="com.synchroteam.synchroteam.ClientDetail"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.JobsListOnCurrentDate"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_fragment_tab_page_indicator" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.listadapters.SignatureFactureItem"
+            android:exported="false"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.synchroteam.catalouge.CatalougeSubCategory"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.technicalsupport.JobDetails" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.AddNewJob"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.catalouge.CatalougePices"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.technicalsupport.JobDetails" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.AddDuplicateNewJob"
+            android:exported="false"
+            android:logo="@drawable/transparent_image"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.synchroteam.synchroteam.SyncoteamNavigationActivity" />
+        </activity>
+        <activity
+            android:name="com.synchroteam.synchroteam.CreateUnavailability"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleSyncroteamActionBarJobDetails" />
+        <activity
+            android:name="com.synchroteam.synchroteam.AddUnavailability"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.UpdateUnavailability"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.AddInvoiceQuotation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.AddInvoiceQuotationNew"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.UpdateInvoiceQuotation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.InventoryDetails"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.PartsAndServicesListNew"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.EditReportImage"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_job_details_toolbar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.synchroteam.synchroteam.ActivityCustomStripeCard"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme_job_details_toolbar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="c3ad9c21e65c5a36fcd4607a5b60966429c821b6" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notif_black" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/orange" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.synchroteam.synchroteam3.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver
+            android:name="com.synchroteam.utils.AutoSyncBraodcastReciver"
+            android:exported="false" />
+        <!-- <receiver android:name="com.synchroteam.utils.NotificationSyncBraodcastReciver" -->
+        <!-- android:exported="false"/> -->
+        <receiver
+            android:name="com.synchroteam.utils.LocaleChangeBroadcastReciver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.synchroteam.tracking.MobileSwichOffSwitchOnBroadcastReciver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <!-- New changes parts test -->
+        <receiver
+            android:name="com.synchroteam.tracking.UpdateApplicationBroadCastReciver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.synchroteam.utils.NetworkBroadCastReciver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.synchroteam.receiver.ClockInTimeOutReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="com.synchroteam.tracking2.LocationService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+        <service
+            android:name="com.synchroteam.tracking.TrackingParameterService"
+            android:enabled="true"
+            android:foregroundServiceType="location"
+            android:stopWithTask="false" />
+
+        <!-- Set custom default icon. -->
+        <service
+            android:name="com.synchroteam.JobDispatcher.ScheduledJobService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+        <!-- Set color used with incoming notification messages. -->
+        <service
+            android:name="com.synchroteam.Firebase.MyFirebaseMessagingService"
+            android:exported="false"
+            android:stopWithTask="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentMethodsActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentFlowActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+            android:theme="@style/StripeDefaultTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.stripe.android.view.PaymentRelayActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+            android:theme="@style/StripePaymentSheetDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+            android:theme="@style/StripePaymentSheetDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+            android:theme="@style/Stripe3DS2Theme" />
+        <activity
+            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity"
+            android:theme="@style/Stripe3DS2Theme" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.synchroteam.synchroteam3.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.synchroteam.synchroteam3.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_foreground_service_default"
+            android:exported="false" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+        <activity
+            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+            android:exported="false"
+            android:stateNotNeeded="true"
+            android:theme="@style/Theme.PlayCore.Transparent" />
+    </application>
+
+</manifest>

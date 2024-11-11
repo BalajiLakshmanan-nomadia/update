@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/unavailabilitySwipeLayout"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/padding_small"
+    android:layout_height="wrap_content">
+
+    <!-- Bottom view start -->
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/stop_button_color"
+        android:padding="@dimen/paddingTopOrangeButton">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txtStopUnavailability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/stop_unavailability"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeStartTimeTv"
+            fontify:font_name="@string/fontName_avenir" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linUnavailabilityContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/boxframe_transparent_layout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/paddingRelativeLayout1UnavabilityListItem">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/nameUnavability"
+                        style="@style/styleUnavabilityTextView"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="false"
+                        android:textColor="@color/unavailability_title_color"
+                        fontify:font_name="@string/fontName_avenir" />
+                </LinearLayout>
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/discriptionUnavabilityTv"
+                    style="@style/styleUnavabilityDiscriptionTextView"
+                    android:layout_width="match_parent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/unavailability_description_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtStartTimeIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fa_clock_o"
+                            android:textColor="@color/unavailability_start_icon_color"
+                            android:textSize="@dimen/textSizeDateAndTimeUnavability" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/startTimeUnavabilityTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/paddingMenusTitle"
+                            android:singleLine="true"
+                            android:textColor="@color/unavailability_start_end_text_color"
+                            android:textSize="@dimen/textSizeDateAndTimeUnavability"
+                            fontify:font_name="@string/fontName_avenir" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txtEndTimeIcon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fa_clock_o"
+                            android:textColor="@color/unavailability_end_icon_color"
+                            android:textSize="@dimen/textSizeDateAndTimeUnavability" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/EndTimeUnavabilityTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/paddingMenusTitle"
+                            android:singleLine="true"
+                            android:gravity="left"
+                            android:textColor="@color/unavailability_start_end_text_color"
+                            android:textSize="@dimen/textSizeDateAndTimeUnavability"
+                            fontify:font_name="@string/fontName_avenir" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/paddingMenusTitle"
+            android:background="@color/job_description_bg" />
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>

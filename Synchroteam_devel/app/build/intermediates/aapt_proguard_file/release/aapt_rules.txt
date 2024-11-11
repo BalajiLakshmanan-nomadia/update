@@ -1,0 +1,363 @@
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.core.content.FileProvider { <init>(); }
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.RescheduleReceiver { <init>(); }
+-keep class androidx.work.impl.background.systemalarm.SystemAlarmService { <init>(); }
+-keep class androidx.work.impl.background.systemjob.SystemJobService { <init>(); }
+-keep class androidx.work.impl.diagnostics.DiagnosticsReceiver { <init>(); }
+-keep class androidx.work.impl.foreground.SystemForegroundService { <init>(); }
+-keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+-keep class com.stripe.android.paymentsheet.PaymentOptionsActivity { <init>(); }
+-keep class com.stripe.android.paymentsheet.PaymentSheetActivity { <init>(); }
+-keep class com.stripe.android.stripe3ds2.views.ChallengeActivity { <init>(); }
+-keep class com.stripe.android.stripe3ds2.views.ChallengeProgressActivity { <init>(); }
+-keep class com.stripe.android.view.AddPaymentMethodActivity { <init>(); }
+-keep class com.stripe.android.view.PaymentAuthWebViewActivity { <init>(); }
+-keep class com.stripe.android.view.PaymentFlowActivity { <init>(); }
+-keep class com.stripe.android.view.PaymentMethodsActivity { <init>(); }
+-keep class com.stripe.android.view.PaymentRelayActivity { <init>(); }
+-keep class com.stripe.android.view.Stripe3ds2CompletionActivity { <init>(); }
+-keep class com.synchroteam.Firebase.MyFirebaseMessagingService { <init>(); }
+-keep class com.synchroteam.JobDispatcher.ScheduledJobService { <init>(); }
+-keep class com.synchroteam.catalouge.CatalougePices { <init>(); }
+-keep class com.synchroteam.catalouge.CatalougeSubCategory { <init>(); }
+-keep class com.synchroteam.catalouge.CatalougeSubCategotyUpdated { <init>(); }
+-keep class com.synchroteam.listadapters.SignatureFactureItem { <init>(); }
+-keep class com.synchroteam.receiver.ClockInTimeOutReceiver { <init>(); }
+-keep class com.synchroteam.scanner.CodeScannerActivity { <init>(); }
+-keep class com.synchroteam.synchroteam.ActivityCustomStripeCard { <init>(); }
+-keep class com.synchroteam.synchroteam.AddDuplicateNewJob { <init>(); }
+-keep class com.synchroteam.synchroteam.AddInvoiceQuotation { <init>(); }
+-keep class com.synchroteam.synchroteam.AddInvoiceQuotationNew { <init>(); }
+-keep class com.synchroteam.synchroteam.AddNewJob { <init>(); }
+-keep class com.synchroteam.synchroteam.AddUnavailability { <init>(); }
+-keep class com.synchroteam.synchroteam.CategoryPartList { <init>(); }
+-keep class com.synchroteam.synchroteam.ClientDetail { <init>(); }
+-keep class com.synchroteam.synchroteam.ClientJobReport { <init>(); }
+-keep class com.synchroteam.synchroteam.ClientJobType { <init>(); }
+-keep class com.synchroteam.synchroteam.ClientListNew { <init>(); }
+-keep class com.synchroteam.synchroteam.CreateUnavailability { <init>(); }
+-keep class com.synchroteam.synchroteam.CustomFieldClient { <init>(); }
+-keep class com.synchroteam.synchroteam.CustomFieldEquipment { <init>(); }
+-keep class com.synchroteam.synchroteam.CustomFieldSite { <init>(); }
+-keep class com.synchroteam.synchroteam.EditReportImage { <init>(); }
+-keep class com.synchroteam.synchroteam.EquipmentDetials { <init>(); }
+-keep class com.synchroteam.synchroteam.EquipmentList { <init>(); }
+-keep class com.synchroteam.synchroteam.EquipmentListCLientDetail { <init>(); }
+-keep class com.synchroteam.synchroteam.InventoryDetails { <init>(); }
+-keep class com.synchroteam.synchroteam.JobPoolDetails { <init>(); }
+-keep class com.synchroteam.synchroteam.JobPoolSchedule { <init>(); }
+-keep class com.synchroteam.synchroteam.JobsListOnCurrentDate { <init>(); }
+-keep class com.synchroteam.synchroteam.LastSyncronizationSettingActivity { <init>(); }
+-keep class com.synchroteam.synchroteam.Login_Syncroteam { <init>(); }
+-keep class com.synchroteam.synchroteam.NearestClientSite { <init>(); }
+-keep class com.synchroteam.synchroteam.NewJob { <init>(); }
+-keep class com.synchroteam.synchroteam.PartsAndServicesListNew { <init>(); }
+-keep class com.synchroteam.synchroteam.ReportsDetails { <init>(); }
+-keep class com.synchroteam.synchroteam.SiteDetail { <init>(); }
+-keep class com.synchroteam.synchroteam.SiteList { <init>(); }
+-keep class com.synchroteam.synchroteam.SiteListingClientDetails { <init>(); }
+-keep class com.synchroteam.synchroteam.SpalshActivity { <init>(); }
+-keep class com.synchroteam.synchroteam.SyncoteamNavigationActivity { <init>(); }
+-keep class com.synchroteam.synchroteam.SyncroTeamApplication { <init>(); }
+-keep class com.synchroteam.synchroteam.UpdateInvoiceQuotation { <init>(); }
+-keep class com.synchroteam.synchroteam.UpdateUnavailability { <init>(); }
+-keep class com.synchroteam.technicalsupport.CustomField { <init>(); }
+-keep class com.synchroteam.technicalsupport.JobDetails { <init>(); }
+-keep class com.synchroteam.technicalsupport.SignatureFacture { <init>(); }
+-keep class com.synchroteam.tracking.MobileSwichOffSwitchOnBroadcastReciver { <init>(); }
+-keep class com.synchroteam.tracking.TrackingParameterService { <init>(); }
+-keep class com.synchroteam.tracking.UpdateApplicationBroadCastReciver { <init>(); }
+-keep class com.synchroteam.tracking2.LocationService { <init>(); }
+-keep class com.synchroteam.utils.AutoSyncBraodcastReciver { <init>(); }
+-keep class com.synchroteam.utils.LocaleChangeBroadcastReciver { <init>(); }
+-keep class com.synchroteam.utils.NetworkBroadCastReciver { <init>(); }
+-keep class com.synchroteam.utils.ScannerBar { <init>(); }
+-keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AppCompatImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AppCompatTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.DialogTitle { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.SearchView { <init>(android.content.Context); }
+
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.cardview.widget.CardView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.helper.widget.Flow { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.widget.Barrier { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.drawerlayout.widget.DrawerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.fragment.app.FragmentContainerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.viewpager.widget.ViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.antonyt.infiniteviewpager.InfiniteViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.codescanner.CodeScannerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.daimajia.swipe.SwipeLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.appbar.AppBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.appbar.MaterialToolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.button.MaterialButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.button.MaterialButtonToggleGroup { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.checkbox.MaterialCheckBox { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.chip.Chip { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.datepicker.MaterialCalendarGridView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.BaselineLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.ClippableRoundedCornerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.TouchObserverFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textfield.TextInputEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textfield.TextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ChipTextInputComboView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ClockFaceView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ClockHandView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.TimePickerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.roomorama.caldroid.CellView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.roomorama.caldroid.SquareTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.paymentsheet.AddButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.paymentsheet.BuyButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.paymentsheet.ui.BillingAddressView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.paymentsheet.ui.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.stripe3ds2.views.BrandZoneView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.stripe3ds2.views.ChallengeZoneView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.stripe3ds2.views.InformationZoneView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.stripe3ds2.views.ThreeDS2Button { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.stripe3ds2.views.ThreeDS2HeaderTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.stripe3ds2.views.ThreeDS2TextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.stripe3ds2.views.ThreeDS2WebView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.BecsDebitAccountNumberEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.BecsDebitBsbEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.BecsDebitMandateAcceptanceTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.CardBrandView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.CardInputWidget { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.CardMultilineWidget { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.CardNumberEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.CardNumberTextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.CardWidgetProgressView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.CountryAutoCompleteTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.CvcEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.EmailEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.ExpiryDateEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.IconTextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.MaskedCardView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.PaymentAuthWebView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.PaymentFlowViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.PaymentMethodsRecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.PostalCodeEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.SelectShippingMethodWidget { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.ShippingInfoWidget { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.stripe.android.view.StripeEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.HourMinuteCustomView.LoopView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.Button { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.CheckBox { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.EditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.EditTextAvenir { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.EditTextAvenirMedium { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.FloatLabelLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.RadioButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.TextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.TextViewAvenirBlack { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.TextViewAvenirMedium { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.TextViewFontAwesome { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.TextViewHelveticaBold { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.TypefaceLibrary.TextViewHelveticaMedium { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.customui.DrawingImageViewNew { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.customui.VerticalSlideColorPicker { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.fragment.CurrentJobFragment { <init>(); }
+
+-keep class com.synchroteam.smoothcheckbox.SmoothCheckBox { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.synchroteam.RestockSerialNumberDialog { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.synchroteam.ReturnSerialNumbersDialog { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.CalanderDateTextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.CirclePageIndicator { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.DateTimePicker { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.MyFixedListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.MyGallery { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.NonSwipeableViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.QuickReturnListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.RightSwipeableViewPager { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.TabPageIndicator { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.TouchImageView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.synchroteam.utils.TwoLevelCircularProgressBar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class net.i2p.android.ext.floatingactionbutton.AddFloatingActionButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class net.i2p.android.ext.floatingactionbutton.FloatingActionButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class net.i2p.android.ext.floatingactionbutton.FloatingActionsMenu { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class se.emilsjolander.stickylistheaders.StickyListHeadersListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keepclassmembers class * { *** editActions(android.view.View); }
+
+-keepclassmembers class * { *** geocoder(android.view.View); }
+
+-keepclassmembers class * { *** login(android.view.View); }
+
+-keepclassmembers class * { *** showDate(android.view.View); }
+
+-keepclassmembers class * { *** showDateEnd(android.view.View); }
+
+-keepclassmembers class * { *** showDateM(android.view.View); }
+
+-keepclassmembers class * { *** showTime1(android.view.View); }
+
+-keepclassmembers class * { *** showTime2(android.view.View); }
+
+-keepclassmembers class * { *** showTimeM(android.view.View); }
+

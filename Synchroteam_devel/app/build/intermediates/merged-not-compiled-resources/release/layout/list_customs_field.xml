@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inner_custField"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/titlebarbackground">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/titleTextTv"
+            style="@style/styleScreenTitleTvSyncroteam"
+            android:drawableLeft="@drawable/back_btn"
+            android:drawablePadding="@dimen/drawablePaddingCustomFieldtitleTextTv"
+            android:gravity="center_vertical"
+            android:paddingBottom="@dimen/paddingSyncroTeamBaseActivityiconNavigationDrawer"
+            android:paddingRight="@dimen/paddingSyncroTeamBaseActivityiconNavigationDrawer"
+            android:paddingTop="@dimen/paddingSyncroTeamBaseActivityiconNavigationDrawer"
+            android:text="@string/textAdditionalInformationTitleBar"
+            android:textAllCaps="true"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/listcustomfield"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:divider="@drawable/cell_divider_line"
+        android:groupIndicator="@null" />
+
+</LinearLayout>

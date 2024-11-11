@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relDropDown"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent" >
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/txtSpinnerItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/txtSpinnerIcon"
+        android:layout_toStartOf="@+id/txtSpinnerIcon"
+        android:ellipsize="marquee"
+        android:padding="@dimen/paddingMenusTitle"
+        android:singleLine="true"
+        android:textAlignment="inherit"
+        android:textColor="@color/invoice_text_color"
+        android:textSize="@dimen/textSizeDaysTv"
+        fontify:font_name="@string/fontName_avenir" >
+    </com.synchroteam.TypefaceLibrary.TextView>
+
+    <TextView
+        android:id="@+id/txtSpinnerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/paddingMenusTitle"
+        android:text="@string/fa_caret_down"
+        android:textColor="@color/invoice_text_color"
+        android:textSize="@dimen/textSizeDaysTv" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignEnd="@+id/txtSpinnerIcon"
+        android:layout_alignLeft="@+id/txtSpinnerItem"
+        android:layout_alignRight="@+id/txtSpinnerIcon"
+        android:layout_alignStart="@+id/txtSpinnerItem"
+        android:layout_below="@+id/txtSpinnerItem"
+        android:background="@color/divider_color"
+        android:padding="@dimen/paddingMenusTitle" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+#Mon Oct 21 14:56:04 IST 2024
+base.0=D\:\\Synchro\\Synchroteam_devel\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex
+base.1=D\:\\Synchro\\Synchroteam_devel\\app\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\12\\classes.dex
+path.0=0/classes.dex
+path.1=12/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

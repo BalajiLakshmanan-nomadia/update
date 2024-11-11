@@ -1,0 +1,743 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- <style name="AppBaseTheme" parent="android:Theme.Light">
+     </style>-->
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"></style>
+
+    <style name="ThemeDark" parent="ThemeOverlay.AppCompat.Dark" />
+
+    <style name="TextAppearance.YourApp.FloatLabel" parent="android:TextAppearance.Small">
+        <item name="android:textColor">@color/lable_selector_edit_text</item>
+        <item name="android:textSize">@dimen/lableTextSize</item>
+    </style>
+
+    <style name="styleScreenTitleTvSyncroteam">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/navigationDrawerTitleTvSyncroteam</item>
+        <item name="android:textSize">@dimen/textSizeTitleTvSyncroteam</item>
+    </style>
+
+    <style name="styleLable">
+        <item name="android:textSize">@dimen/lableTextSize</item>
+    </style>
+
+    <style name="styleButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/orange</item>
+        <item name="android:paddingTop">@dimen/paddingTopOrangeButton</item>
+        <item name="android:paddingBottom">@dimen/paddingBottomOrangeButton</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+
+    </style>
+
+    <!-- <style name="styleNavigationDrawerTitleBarListItem">
+         <item name="android:layout_width">match_parent</item>
+         <item name="android:layout_height">wrap_content</item>
+         <item name="android:layout_gravity">center_vertical</item>
+         <item name="android:background">@color/grayNavigationDraweTitleBarListItem</item>
+         <item name="android:padding">@dimen/paddingMenusTitle</item>
+         <item name="android:textColor">@color/orangeTitleColor</item>
+         <item name="android:textSize">@dimen/textSizeTvNavigationDrawerTitleBarListItem</item>
+         <item name="font_name">@string/fontName_hevelicaLight</item>
+     </style>-->
+
+    <style name="styleNavigationDrawerTitleBarListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/grayNavigationDraweTitleBarListItem</item>
+        <item name="android:padding">@dimen/paddingMenusTitle</item>
+        <item name="android:textColor">@color/orangeTitleColor</item>
+        <item name="android:textSize">@dimen/textSizeTvNavigationDrawerTitleBarListItem</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="styleGeneralNavigationDrawerTitleBarListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/grayNavigationDraweTitleBarListItem</item>
+        <item name="android:padding">@dimen/paddingGeneralMenusTitle</item>
+    </style>
+
+    <style name="styleNavigationDrawerListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">@dimen/paddingMenusParent</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="styleNavigationDrawerListItemGreyLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@color/grayNavigationDrawerListItemUnSelected</item>
+        <item name="android:paddingTop">@dimen/paddingMenusParent</item>
+        <item name="android:paddingBottom">@dimen/paddingMenusParent</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="styleTextNavigationDrawerListItem">
+        <item name="android:textColor">@color/blackTextNavigationDrawerListItemUnSelected</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/textSizeTvNavigationDrawerListItem</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="styleDateWeekCalander">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/textSizeDateTv</item>
+        <item name="android:textColor">@color/grayDate</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="styleDateDetailsTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/paddingTopBottomDateDetailsTextView</item>
+        <item name="android:paddingBottom">@dimen/paddingTopBottomDateDetailsTextView</item>
+        <item name="android:textSize">@dimen/textSizeDateDetailsTextView</item>
+        <item name="android:textColor">@color/dateDetailsTvCurrentJobs</item>
+        <item name="android:gravity">center</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+        <item name="android:background">@color/backgroundDateDetailTvCurrentJobs</item>
+    </style>
+
+    <style name="styleDaysTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/textSizeDaysTv</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="styleHeadingsTextViewJobDiscription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeTitleTvDiscriptionJobDetails</item>
+        <item name="android:textColor">@color/grayTextColorTitleTvDiscriptionJobDetails</item>
+        <item name="android:layout_weight">1</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+        <item name="android:paddingTop">@dimen/paddingTopDiscriptionItem</item>
+    </style>
+
+    <style name="styleHeadingsTextViewAttachmentTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLastSyncronizationLableTv</item>
+        <item name="android:textColor">@color/grayTextColorTitleTvDiscriptionJobDetails</item>
+        <item name="font_name">@string/fontName_avenir</item>
+        <item name="android:gravity">top</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+    </style>
+
+    <style name="styleHeadingsTextViewAttachmentTitleBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeTitleTvDiscriptionJobDetails</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+        <item name="android:gravity">top</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+    </style>
+
+    <style name="styleReportsTextViewJobDiscription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeTitleTvDiscriptionJobDetails</item>
+        <item name="android:textColor">@color/grayTextColorTitleTvDiscriptionJobDetails</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+        <item name="android:paddingTop">@dimen/paddingTopDiscriptionItem</item>
+    </style>
+
+    <style name="styleDatTextViewJobDiscription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvDiscriptionJobDetails</item>
+        <item name="android:textColor">@color/blackTextColorDataTvDiscriptionJobDetails</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">top</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+        <item name="android:paddingLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+        <item name="android:paddingBottom">@dimen/paddingBottomDiscriptionItem</item>
+    </style>
+
+    <style name="styleDatTextViewJobDiscriptionInformation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvDiscriptionJobDetails</item>
+        <item name="android:textColor">@color/blackTextColorDataTvDiscriptionJobDetails</item>
+        <item name="android:gravity">top</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+        <item name="android:paddingLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+        <item name="android:paddingBottom">@dimen/paddingBottomDiscriptionItem</item>
+    </style>
+
+    <style name="styleLableTvRescdule">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLableTvReschedule</item>
+        <item name="android:textColor">@color/textLableReschedule</item>
+    </style>
+
+    <style name="styleDataTvRescdule">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvReschedule</item>
+        <item name="android:textColor">@color/textDataReschedule</item>
+    </style>
+
+    <style name="styleSyncroteamActionBarJobDetails" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/styleActionBarJobDetials</item>
+        <item name="android:actionBarStyle" tools:targetApi="honeycomb">
+            @style/styleActionBarJobDetials
+        </item>
+        <item name="android:homeAsUpIndicator" tools:targetApi="honeycomb">
+            @drawable/ic_action_back
+        </item>
+        <item name="android:logo" tools:targetApi="honeycomb">@drawable/transparent_image</item>
+        <item name="searchViewStyle">@style/AutoCompleteTextView</item>
+        <item name="logo">@drawable/transparent_image</item>
+        <item name="android:actionOverflowButtonStyle" tools:targetApi="honeycomb">
+            @style/styleActionBarOverflowStyle
+        </item>
+        <item name="homeAsUpIndicator">@drawable/ic_action_back</item>
+        <item name="actionOverflowButtonStyle">@style/styleActionBarOverflowStyle</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/gray</item>
+        <item name="colorPrimary">@color/actionbarColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="styleActionBarOverflowStyle" parent="@android:style/Widget.Holo.ActionButton.Overflow" tools:targetApi="honeycomb">
+        <item name="android:src">@drawable/action_icon_selected</item>
+    </style>
+
+    <style name="styleActionBarJobDetials" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/actionbarColor</item>
+        <item name="background">@color/actionbarColor</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:titleTextStyle" tools:targetApi="honeycomb">
+            @style/styleActionBarTitleText
+        </item>
+        <item name="titleTextStyle">@style/styleActionBarTitleText</item>
+    </style>
+
+    <style name="styleActionBarTextJobDiscription" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/tab_job_discription_text</item>
+        <item name="android:padding">@dimen/paddingSyncroTeamBaseActivityiconNavigationDrawer</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="styleActionBarTitleText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textSizeTitleTvSyncroteam</item>
+    </style>
+
+    <style name="styleActionBarTabs">
+        <item name="android:background">@drawable/tab_indicator_jobdetails</item>
+        <item name="background">@drawable/tab_indicator_jobdetails</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="styleLablesTvReportsDetails">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizelableTvReportsDetails</item>
+        <item name="android:textColor">@color/textDataReportsDetails</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="styleDataTvReportsDetails">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvReportsDetails</item>
+        <item name="android:textColor">@color/textlableReportsDetails</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="styleDataTvReportsDetailsLight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvReportsDetails</item>
+        <item name="android:textColor">@color/textDataReportsDetailsLight</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+    </style>
+
+    <style name="stylelableTvNewJob">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLableTvNewJob</item>
+        <item name="android:textColor">@color/textLableNewJob</item>
+    </style>
+
+    <style name="styleTextTabsReports">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textSize">@dimen/textSizeTabsReports</item>
+        <item name="android:textColor">@color/tab_reports_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/paddingReportsTextTabsReports</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="styleLableTvLegalInformation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLableTvLegalInformation</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+        <item name="android:textColor">@color/textLableTvLegalInformation</item>
+    </style>
+
+    <style name="styleDataTvLegalInformation">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvLegalInformation</item>
+        <item name="font_name">@string/fontName_hevelicaLight</item>
+        <item name="android:textColor">@color/textDataTvLegalInformation</item>
+    </style>
+
+    <style name="styleHeaderTvCatalouge">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeHeaderTvCatalouge</item>
+        <item name="android:textColor">@color/textHeadetTvCatalougue</item>
+    </style>
+
+    <style name="styleDomainDialogHeaderLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeHeaderTvDomainDialog</item>
+        <item name="android:textColor">@color/textHeadetTvDialogDomain</item>
+        <item name="android:background">@color/backHeadetTvDialogDomain</item>
+    </style>
+
+    <style name="styleDoaminDIalogText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvDomainDialog</item>
+        <item name="android:textColor">@color/textDataTvDialogDomain</item>
+        <item name="android:background">@color/backDataTvDialogDomain</item>
+    </style>
+
+    <style name="styleOkButtonDomainDialogText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLableBtnDomainDialog</item>
+        <item name="android:textColor">@color/textLableOkBtnDialogDomain</item>
+        <item name="android:background">@color/backOkBtnDialogDomain</item>
+    </style>
+
+    <style name="styleConfirmButtonWipeAllDetailsText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeLableBtnDomainDialog</item>
+        <item name="android:textColor">@color/textLAbleCOnfirmkBtnWipeAllDetailDialog</item>
+        <item name="android:background">@color/backOkBtnDialogDomain</item>
+    </style>
+
+    <style name="styleClientListSearchEtNewJob">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/shape_search_et</item>
+    </style>
+
+    <style name="styleSyncroteamActionBarLoginScreen" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/styleActionBarLoginScreen</item>
+        <item name="android:actionBarStyle" tools:targetApi="honeycomb">
+            @style/styleActionBarLoginScreen
+        </item>
+        <item name="android:homeAsUpIndicator" tools:targetApi="honeycomb">
+            @drawable/transparent_image
+        </item>
+        <item name="android:windowActionBarOverlay" tools:targetApi="honeycomb">false</item>
+        <item name="android:logo" tools:targetApi="honeycomb">@drawable/transparent_image</item>
+        <item name="logo">@drawable/transparent_image</item>
+        <item name="android:actionOverflowButtonStyle" tools:targetApi="honeycomb">
+            @style/styleActionBarOverflowStyle
+        </item>
+        <item name="homeAsUpIndicator">@drawable/transparent_image</item>
+        <item name="actionOverflowButtonStyle">@style/styleActionBarOverflowStyle</item>
+    </style>
+
+    <style name="AutoCompleteTextView" parent="@style/Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="styleActionBarLoginScreen" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="myTheme" parent="@style/styleSyncroteamActionBarJobDetails">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomTabPageIndicator</item>
+
+    </style>
+
+    <style name="theme_fragment_tab_page_indicator" parent="@style/AppTheme">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/tab_indicator_jobdetails</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textColor">@color/tab_reports_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/paddingReportsTextTabsReports</item>
+        <item name="android:dividerPadding" tools:targetApi="honeycomb">10dp</item>
+        <item name="android:showDividers" tools:targetApi="honeycomb">middle</item>
+        <item name="android:textSize">@dimen/textSizeTabsReports</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium"></style>
+
+    <style name="CustomCirclePageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">@dimen/paddingReportsTextTabsReports</item>
+        <item name="android:dividerPadding" tools:targetApi="honeycomb">10dp</item>
+    </style>
+    <!-- Unavability -->
+
+    <style name="styleUnavabilityTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeItemAutoCompleteclientNameTv</item>
+        <item name="font_name">@string/fontName_avenir</item>
+    </style>
+
+    <style name="styleUnavabilityDiscriptionTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/paddingTextViewUnavabilityListItem</item>
+        <item name="android:textSize">@dimen/textSizeItemAutoCompleteclientNameTv</item>
+        <item name="font_name">@string/fontName_avenir_book_oblique</item>
+    </style>
+
+    <style name="styleMultipleDataDialogLable" parent="@style/styleDomainDialogHeaderLogin">
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textSizeLableTvMultiTextDialog</item>
+    </style>
+
+    <style name="styleMultipleDataDialogData">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_edittext_multiple_list_item</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textSizeDilogPhotoEditText</item>
+    </style>
+
+    <!-- ........................................NEW CHANGES............................................ -->
+    <style name="styleHeadingsTextViewJobDiscriptionNew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeTitleTvDiscriptionJobDetailsNew</item>
+        <item name="android:textColor">@color/grayTextColorTitleTvDiscriptionJobDetails</item>
+        <item name="font_name">@string/fontName_avenir</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+        <item name="android:paddingTop">@dimen/paddingTopDiscriptionItem</item>
+    </style>
+
+    <style name="styleFontAwesomeTextview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/grayTextColorTitleTvDiscriptionJobDetails</item>
+        <item name="android:textSize">@dimen/textSizeTitleTvDiscriptionJobDetailsNew</item>
+    </style>
+
+    <style name="styleDatTextViewJobDiscriptionNew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvDiscriptionJobDetails</item>
+        <item name="android:textColor">@color/job_description_text_color</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">top</item>
+        <item name="font_name">@string/fontName_avenir</item>
+        <item name="android:paddingLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+        <item name="android:paddingBottom">@dimen/paddingBottomDiscriptionItem</item>
+    </style>
+
+    <style name="styleHeadingsTextViewJobDiscriptionTxt">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDataTvDiscriptionJobDetails</item>
+        <item name="android:textColor">@color/actionbarColor</item>
+        <item name="font_name">@string/fontName_avenir</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingLeft">@dimen/paddingDiscriptionJobDetailcontainers</item>
+        <item name="android:paddingTop">@dimen/paddingTopDiscriptionItem</item>
+    </style>
+
+    <!-- New Changes -->
+    <!-- TwoWayView for adding Unavailabilities -->
+    <style name="TwoWayView">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="font_name">@string/fontName_avenir</item>
+        <item name="android:textSize">@dimen/textSizeMessageDiscription</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="styleInvoiceQuotationLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeCustomFieldValTextView</item>
+        <item name="android:textColor">@color/invoice_label_color</item>
+        <item name="font_name">@string/fontName_avenir</item>
+    </style>
+
+    <style name="styleInvoiceQuotationText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textSizeDaysTv</item>
+        <item name="android:textColor">@color/invoice_text_color</item>
+        <item name="font_name">@string/fontName_avenir</item>
+    </style>
+
+    <style name="styleInventorySpinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/paddingTopOrangeButton</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/paddingMenusTitle</item>
+        <item name="android:paddingTop">@dimen/paddingMenusTitle</item>
+        <item name="android:paddingLeft">@dimen/paddingMenusTitle</item>
+        <item name="android:paddingRight">@dimen/marginTopMessageDetailTv</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/textSizeDaysTv</item>
+    </style>
+
+    <style name="styleSpinnerIcon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:text">@string/fa_caret_down</item>
+        <item name="android:textColor">@color/invoice_text_color</item>
+        <item name="android:textSize">@dimen/textSizeDaysTv</item>
+    </style>
+
+    <style name="styleSpinnerDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginLeft">@dimen/paddingMenusTitle</item>
+        <item name="android:background">@color/divider_color</item>
+    </style>
+
+    <style name="theme_job_details" parent="@style/theme_job_details_toolbar">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomTabPageIndicator</item>
+
+    </style>
+
+    <style name="theme_job_details_toolbar" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/gray</item>
+        <item name="colorPrimary">@color/actionbarColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <style name="shared_block_button_text_size">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/paddingTopOrangeButton</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/tetSizeLoginBtLoginSyncroTeam</item>
+    </style>
+
+    <!--Shared block dialog style-->
+    <style name="Theme.TransparentDialog" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--New nultiple data dialog style-->
+    <style name="styleMultipleDataDialogDataNew">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">top|left</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textSizeDilogPhotoEditText</item>
+    </style>
+
+    <!--Theme for splash screen-->
+    <style name="SplashTheme" parent="Theme.AppCompat.Light">\
+        <item name="android:windowBackground">@drawable/splash_screen_bg</item>
+    </style>
+
+    <style name="BlackTextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/textSizeDataReports</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="StripeCardInputStyle">
+        <item name="android:textColorHint">@color/hint_color</item>
+    </style>
+
+    <style name="spinner" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:spinnerStyle">@android:style/Widget.Holo.Light.Spinner</item>
+    </style>
+    <style name="CaldroidDefault">
+        <item name="styleCaldroidViewLayout">@style/CaldroidDefaultCalendarViewLayout</item>
+        <item name="styleCaldroidLeftArrow">@style/CaldroidDefaultLeftButton</item>
+        <item name="styleCaldroidRightArrow">@style/CaldroidDefaultRightButton</item>
+        <item name="styleCaldroidMonthName">@style/CaldroidDefaultMonthName</item>
+        <item name="styleCaldroidGridView">@style/CaldroidDefaultGridView</item>
+        <item name="styleCaldroidNormalCell">@style/CaldroidDefaultNormalCell</item>
+        <item name="styleCaldroidSquareCell">@style/CaldroidDefaultSquareCell</item>
+        <item name="styleCaldroidWeekdayView">@style/CaldroidDefaultWeekday</item>
+    </style>
+
+
+    <style name="CaldroidDefaultCalendarViewLayout">
+        <item name="android:background">@color/caldroid_white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CaldroidDefaultArrowButton">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="CaldroidDefaultLeftButton" parent="CaldroidDefaultArrowButton">
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@drawable/left_arrow</item>
+    </style>
+
+    <style name="CaldroidDefaultRightButton" parent="CaldroidDefaultArrowButton">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@drawable/right_arrow</item>
+    </style>
+
+    <style name="CaldroidDefaultMonthName">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="CaldroidDefaultGridView">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:listSelector">@null</item>
+        <item name="android:background">@color/caldroid_lighter_gray</item>
+        <item name="android:horizontalSpacing">1dp</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:verticalSpacing">1dp</item>
+    </style>
+
+    <style name="CaldroidDefaultCell">
+        <item name="android:textColor">@color/cell_text_color</item>
+        <item name="android:background">@drawable/cell_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CaldroidDefaultNormalCell" parent="CaldroidDefaultCell">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="CaldroidDefaultSquareCell" parent="CaldroidDefaultCell" />
+
+    <style name="CaldroidDefaultWeekday">
+        <item name="android:textColor">@color/caldroid_middle_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <!-- Dark theme. -->
+    <style name="CaldroidDefaultDark" parent="CaldroidDefault">
+        <item name="styleCaldroidViewLayout">@style/CaldroidDefaultDarkCalendarViewLayout</item>
+        <item name="styleCaldroidMonthName">@style/CaldroidDefaultDarkMonthName</item>
+        <item name="styleCaldroidNormalCell">@style/CaldroidDefaultDarkNormalCell</item>
+        <item name="styleCaldroidSquareCell">@style/CaldroidDefaultDarkSquareCell</item>
+        <item name="styleCaldroidGridView">@style/CaldroidDefaultDarkGridView</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkCalendarViewLayout" parent="CaldroidDefaultCalendarViewLayout">
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkMonthName" parent="CaldroidDefaultMonthName">
+        <item name="android:textColor">@color/caldroid_white</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkGridView" parent="CaldroidDefaultGridView">
+        <item name="android:background">@color/caldroid_middle_gray</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkCell" parent="CaldroidDefaultCell">
+        <item name="android:textColor">@color/cell_text_color_dark</item>
+        <item name="android:background">@drawable/cell_bg_dark</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkNormalCell" parent="CaldroidDefaultDarkCell">
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="CaldroidDefaultDarkSquareCell" parent="CaldroidDefaultDarkCell" />
+</resources>

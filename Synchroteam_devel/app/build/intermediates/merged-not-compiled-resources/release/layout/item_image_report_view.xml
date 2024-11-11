@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_field"
+            android:layout_width="@dimen/widhtReplanIfEnterrepHeurDeb"
+            android:layout_height="@dimen/widthReportsJobDetailcustomerSignatureDataTv"
+            android:cropToPadding="true"
+            android:padding="@dimen/paddingTrackinghoursofOperationDataTv"
+            android:background="@drawable/boxframe_image_outline"
+            android:scaleType="centerCrop"/>
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_field_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+            android:textColor="@color/invoice_text_color"
+            android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+            fontify:font_name="@string/fontName_avenir" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingTrackinghoursofOperationDataTv"
+        android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+        android:layout_marginTop="@dimen/paddingTopOrangeButton"
+        android:background="@drawable/dotted_line"/>
+</LinearLayout>

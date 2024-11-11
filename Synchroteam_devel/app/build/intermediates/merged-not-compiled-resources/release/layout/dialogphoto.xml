@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingDilogPhotoParent" >
+
+        <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:text="@string/info"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSizeDilogPhotoEditText" />
+
+
+        <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/paddingBottomTextVeiwDialogPhoto"
+        android:text="@string/textCommentLableTv"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeDilogPhotoEditText" />
+
+            <com.synchroteam.TypefaceLibrary.EditText
+        android:id="@+id/commentaire"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:maxLength="50"
+        android:minLines="5"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSizeDilogPhotoEditText" />
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerWeekRibbonDate"
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/paddingLeftCurrentJobWeekRibbonStrip"
+    android:paddingRight="@dimen/paddingRightCurrentJobWeekRibbonStrip"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/dayslableTv"
+        style="@style/styleDaysTextView" />
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/datelableTv"
+        style="@style/styleDateWeekCalander" />
+
+</LinearLayout>

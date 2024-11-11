@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backReportsAttachmentListItem"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/dividerView"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:background="@color/job_description_bg"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_textview_layout" >
+
+        <RelativeLayout
+            android:id="@+id/containerAttachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:background="@android:color/white"
+            android:paddingBottom="@dimen/paddingLeftReportsJobDetailRelativeLayout"
+            android:paddingLeft="@dimen/paddingLeftReportsJobDetailRelativeLayout"
+            android:paddingRight="@dimen/paddingReportsJobDetailRelativeLayout"
+            android:paddingTop="@dimen/paddingLeftReportsJobDetailRelativeLayout" >
+
+            <ImageView
+                android:id="@+id/attachmentIv"
+                android:layout_width="@dimen/widthAttachMentListItemImageView"
+                android:layout_height="@dimen/heightAttachMentListItemImageView"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/textCommentsLabelTv"
+                style="@style/styleHeadingsTextViewAttachmentTitle"
+                android:layout_toRightOf="@+id/attachmentIv"
+                android:text="@string/textCommentLableTv"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <ImageView
+                android:id="@+id/removeAttachmentIconIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/marginRIghtReportsJobDetailaddAttachmentIconIv"
+                android:src="@drawable/delete_icon" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/attachmentCommentEt"
+                style="@style/styleHeadingsTextViewAttachmentTitleBlack"
+                android:layout_below="@id/textCommentsLabelTv"
+                android:layout_toLeftOf="@id/removeAttachmentIconIv"
+                android:layout_toRightOf="@+id/attachmentIv"
+                android:paddingRight="@dimen/paddingLeftReportsJobDetailRelativeLayout"
+                fontify:font_name="@string/fontName_avenir" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

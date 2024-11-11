@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Fontify">
+        <attr name="font_name" format="string" />
+    </declare-styleable>
+    <declare-styleable name="FloatLabelLayout">
+        <attr name="floatLabelTextAppearance" format="reference" />
+        <attr name="floatLabelSidePadding" format="reference|dimension" />
+    </declare-styleable>
+    <declare-styleable name="CalanderTextViewAttr">
+        <attr name="startedJob" format="integer" />
+        <attr name="suspendedJob" format="integer" />
+        <attr name="scheduledJob" format="integer" />
+        <attr name="completedJob" format="integer" />
+        <attr name="strokeWidthCalanderTextView" format="dimension"></attr>
+    </declare-styleable>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_icon" format="reference" />
+        <attr name="fab_size" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="fab_title" format="string" />
+        <attr name="fab_stroke_visible" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AddFloatingActionButton">
+        <attr name="fab_plusIconColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FloatingActionsMenu">
+        <attr name="fab_addButtonColorPressed" format="color" />
+        <attr name="fab_addButtonColorNormal" format="color" />
+        <attr name="fab_addButtonSize" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+        <attr name="fab_addButtonPlusIconColor" format="color" />
+        <attr name="fab_addButtonStrokeVisible" format="boolean" />
+        <attr name="fab_labelStyle" format="reference" />
+        <attr name="fab_labelsPosition" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="fab_expandDirection" format="enum">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="StickyListHeadersListView">
+        <attr name="stickyListHeadersListViewStyle" format="reference" />
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+        <attr name="android:stackFromBottom" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+
+    <!--Smooth checkbox attributes-->
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="color_tick" format="color"/>
+        <attr name="color_checked" format="color"/>
+        <attr name="color_unchecked" format="color"/>
+        <attr name="color_unchecked_stroke" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextImageView">
+        <!-- Text being drawn over the image -->
+        <attr name="android:text"/>
+
+        <!-- Color to apply to the text being drawn over the image -->
+        <attr name="android:textColor"/>
+
+        <!-- Size of the text being drawn over the image -->
+        <attr name="android:textSize"/>
+
+        <!-- Whether or not to allow the user to scale the text -->
+        <attr name="tiv_scaleEnabled" format="boolean" />
+
+        <!-- Minimum size of the text being drawn over the image -->
+        <attr name="tiv_minTextSize" format="dimension"/>
+
+        <!-- Maximum size of the text being drawn over the image -->
+        <attr name="tiv_maxTextSize" format="dimension"/>
+
+        <!-- Whether or not to allow the user to move the text -->
+        <attr name="tiv_panEnabled" format="boolean" />
+
+        <!-- Whether or not to allow the user to rotate the text -->
+        <attr name="tiv_rotationEnabled" format="boolean" />
+
+        <!-- Whether or not to allow the user to move the text -->
+        <attr name="tiv_interline" format="dimension" />
+
+        <!-- Controls how the the positioning behaves in relation to the image -->
+        <attr name="tiv_clampTextMode" format="enum">
+            <!-- Do not limit text position -->
+            <enum name="unlimited" value="0" />
+            <!-- Top-left corner inside the area of the image -->
+            <enum name="originInside" value="1" />
+            <!-- The whole text should fit inside the area of the image -->
+            <enum name="textInside" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="VerticalSlideColorPicker">
+        <attr name="borderColor" format="color" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="colors" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="tlcp_strokeWidth" format="dimension"/>
+        <attr name="tlcp_text" format="reference"/>
+        <attr name="tlcp_textSize" format="dimension"/>
+        <attr name="tlcp_drawable" format="reference"/>
+        <attr name="tlcp_progress_color" format="reference"/>
+        <attr name="tlcp_progress2_color" format="reference"/>
+        <attr name="tlcp_bg_color" format="reference"/>
+        <attr name="tlcp_progress" format="integer"/>
+        <attr name="tlcp_progress2" format="integer"/>
+    </declare-styleable>
+
+
+
+    <!-- Styles -->
+    <attr name="styleCaldroidViewLayout" format="reference"/>
+    <attr name="styleCaldroidLeftArrow" format="reference"/>
+    <attr name="styleCaldroidRightArrow" format="reference"/>
+    <attr name="styleCaldroidMonthName" format="reference"/>
+    <attr name="styleCaldroidNormalCell" format="reference"/>
+    <attr name="styleCaldroidSquareCell" format="reference"/>
+    <attr name="styleCaldroidGridView" format="reference"/>
+    <attr name="styleCaldroidWeekdayView" format="reference"/>
+
+    <!-- Custom states -->
+    <declare-styleable name="DateState">
+        <attr name="state_date_today" format="boolean"/>
+        <attr name="state_date_selected" format="boolean"/>
+        <attr name="state_date_disabled" format="boolean"/>
+        <attr name="state_date_prev_next_month" format="boolean"/>
+    </declare-styleable>
+
+    <!-- Declare stylable attribute for a cell -->
+    <declare-styleable name="Cell" >
+        <attr name="android:textColor" />
+        <attr name="android:background" />
+    </declare-styleable>
+
+    <!-- Declare stylable attribute for a Code scanner view -->
+    <declare-styleable name="CodeScannerView">
+        <attr name="maskColor" format="color"/>
+        <attr name="maskVisible" format="boolean"/>
+        <attr name="frameColor" format="color"/>
+        <attr name="frameVisible" format="boolean"/>
+        <attr name="frameThickness" format="dimension"/>
+        <attr name="frameCornersSize" format="dimension"/>
+        <attr name="frameCornersRadius" format="dimension"/>
+        <attr name="frameCornersCapRounded" format="boolean"/>
+        <attr name="frameAspectRatioWidth" format="float"/>
+        <attr name="frameAspectRatioHeight" format="float"/>
+        <attr name="frameSize" format="float"/>
+        <attr name="frameVerticalBias" format="float"/>
+        <attr name="autoFocusButtonColor" format="color"/>
+        <attr name="autoFocusButtonVisible" format="boolean"/>
+        <attr name="autoFocusButtonPaddingHorizontal" format="dimension"/>
+        <attr name="autoFocusButtonPaddingVertical" format="dimension"/>
+        <attr name="autoFocusButtonOnIcon" format="reference"/>
+        <attr name="autoFocusButtonOffIcon" format="reference"/>
+        <attr name="autoFocusButtonPosition" format="enum">
+            <enum name="topStart" value="0"/>
+            <enum name="topEnd" value="1"/>
+            <enum name="bottomStart" value="2"/>
+            <enum name="bottomEnd" value="3"/>
+        </attr>
+        <attr name="flashButtonColor" format="color"/>
+        <attr name="flashButtonVisible" format="boolean"/>
+        <attr name="flashButtonPaddingHorizontal" format="dimension"/>
+        <attr name="flashButtonPaddingVertical" format="dimension"/>
+        <attr name="flashButtonOnIcon" format="reference"/>
+        <attr name="flashButtonOffIcon" format="reference"/>
+        <attr name="flashButtonPosition" format="enum">
+            <enum name="topStart" value="0"/>
+            <enum name="topEnd" value="1"/>
+            <enum name="bottomStart" value="2"/>
+            <enum name="bottomEnd" value="3"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

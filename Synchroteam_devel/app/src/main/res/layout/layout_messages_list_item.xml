@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/listItemArrowDownBackgroundMessages"
+    android:orientation="vertical" >
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/messageTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/arrowUpDownTv"
+        android:layout_marginLeft="@dimen/marginLeftMessageTv"
+        android:layout_marginTop="@dimen/marginTopMessageTv"
+        android:textSize="@dimen/textSizeMessageTitle"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+    <ImageView
+        android:id="@+id/arrowUpDownTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/messageTv"
+        android:layout_marginRight="@dimen/marginRightArrowIv"
+        android:padding="@dimen/paddingMessageListItemarrowUpDownTv"
+        android:src="@drawable/arrow_up" />
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/messageDetailsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/messageTv"
+        android:layout_below="@+id/messageTv"
+        android:layout_marginTop="@dimen/marginTopMessageDetailTv"
+        android:layout_toLeftOf="@+id/arrowUpDownTv"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/paddingBottomMessageListItemMessageDetailsTv"
+        android:singleLine="false"
+        android:textColor="@color/messageDiscriptionTvMessages"
+        android:textSize="@dimen/textSizeMessageDiscription"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+</RelativeLayout>

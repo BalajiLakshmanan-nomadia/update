@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:minWidth="@dimen/dialog_clock_in_out_width">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/strokeSizeCalander"
+                app:cardPreventCornerOverlap="false">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:minHeight="@dimen/dialog_clock_in_out_card_min_height"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/activity_vertical_margin"
+                        android:paddingTop="@dimen/activity_vertical_margin">
+
+                        <LinearLayout
+                            android:id="@+id/lin_clock_in_out"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/paddingDilogPhotoParent"
+                            android:layout_marginLeft="@dimen/marginLeftCategoryItem"
+                            android:layout_marginRight="@dimen/marginLeftCategoryItem"
+                            android:layout_marginTop="@dimen/paddingDilogPhotoParent"
+                            android:background="@drawable/bg_clock_in_out_items"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_normal">
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txt_clock_mode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text="@string/fa_clock_o"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/txt_clock_in_out"
+                                android:textStyle="bold"
+                                android:visibility="gone"
+                                fontify:font_name="@string/fontName_fontAwesome" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:paddingRight="@dimen/paddingReportsTextTabsReports">
+
+                                <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                                    android:id="@+id/txt_clock_in_out"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:maxLines="1"
+                                    android:paddingLeft="@dimen/paddingReportsTextTabsReports"
+                                    android:paddingRight="@dimen/paddingReportsTextTabsReports"
+                                    android:singleLine="true"
+                                    android:text="@string/txt_clock_in"
+                                    android:textAllCaps="true"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/startActivityTextSize" />
+
+                                <Chronometer
+                                    android:id="@+id/timer_duration_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:format="@string/timeFormatChronometer"
+                                    android:gravity="center"
+                                    android:paddingLeft="@dimen/paddingReportsTextTabsReports"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="@dimen/textSizeDateDetailsTextView"
+                                    android:visibility="visible" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                            android:id="@+id/txt_job"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/paddingDilogPhotoParent"
+                            android:layout_marginLeft="@dimen/marginLeftCategoryItem"
+                            android:layout_marginRight="@dimen/marginLeftCategoryItem"
+                            android:layout_marginTop="@dimen/paddingDilogPhotoParent"
+                            android:background="@drawable/bg_clock_in_out_items"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:padding="@dimen/paddingReportsTextTabsReports"
+                            android:singleLine="true"
+                            android:text="@string/intervention"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/startActivityTextSize"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                            android:id="@+id/txt_drive"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/paddingDilogPhotoParent"
+                            android:layout_marginLeft="@dimen/marginLeftCategoryItem"
+                            android:layout_marginRight="@dimen/marginLeftCategoryItem"
+                            android:layout_marginTop="@dimen/marginAddAttachmentTableLayout"
+                            android:background="@drawable/bg_clock_in_out_items"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:padding="@dimen/paddingReportsTextTabsReports"
+                            android:singleLine="true"
+                            android:text="@string/txt_travel"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/startActivityTextSize"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                        <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                            android:id="@+id/txt_activity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/paddingDilogPhotoParent"
+                            android:layout_marginLeft="@dimen/marginLeftCategoryItem"
+                            android:layout_marginRight="@dimen/marginLeftCategoryItem"
+                            android:layout_marginTop="@dimen/marginAddAttachmentTableLayout"
+                            android:background="@drawable/bg_clock_in_out_items"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:padding="@dimen/paddingReportsTextTabsReports"
+                            android:paddingBottom="@dimen/activity_vertical_margin"
+                            android:singleLine="true"
+                            android:text="@string/txt_activity"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/startActivityTextSize"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_close"
+            android:layout_width="@dimen/dialog_clock_in_out_cancel_height"
+            android:layout_height="@dimen/dialog_clock_in_out_cancel_height"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_yellow_circle"
+            android:gravity="center">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/fa_close"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeReportsListOfValues"
+                android:textStyle="bold"
+                fontify:font_name="@string/fontName_fontAwesome" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/containerJobInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/titleJobInformationTv"
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/textDescriptionLable" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/dataJobInformationTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_height="wrap_content"
+                        android:linksClickable="true"
+                        android:autoLink="phone"
+
+                        android:layout_alignLeft="@+id/titleJobInformationTv"
+                        android:layout_below="@+id/titleJobInformationTv"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas"
+                        android:scrollbars="vertical" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerClientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/cloudClientIconIv"
+                        android:orientation="vertical" >
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/clientNameLableTv"
+                            style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                            android:text="@string/textJobCustomerLableTv" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/clientNameDataTv"
+                            style="@style/styleDatTextViewJobDiscriptionNew"
+                            android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                    </LinearLayout>
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/cloudClientIconIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/white"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/paddingTopOrangeButton"
+                        android:text="@string/fa_angle_right"
+                        android:textColor="@color/actionbarColor"
+                        android:textSize="@dimen/textSizeDataTvDiscriptionJobDetails" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerSite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/siteLableTv"
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textSiteLable" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/siteDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/paddingDilogPhotoParent" />
+                </LinearLayout>
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/locationSiteIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/paddingTopOrangeButton"
+                    android:text="@string/fa_angle_right"
+                    android:textColor="@color/actionbarColor"
+                    android:textSize="@dimen/textSizeDataTvDiscriptionJobDetails" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerJobEquipments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp" android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textEquipmentLable" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/jobEquipmentsTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                </LinearLayout>
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/locationEquipmentIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/paddingTopOrangeButton"
+                    android:text="@string/fa_angle_right"
+                    android:textColor="@color/actionbarColor"
+                    android:textSize="@dimen/textSizeDataTvDiscriptionJobDetails" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/conatainerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/clientActualNameTv"
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textAddressLable" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/dataJobAddressTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/paddingDilogPhotoParent" />
+                </LinearLayout>
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/locationIconIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/paddingTopOrangeButton"
+                    android:text="@string/fa_angle_right"
+                    android:textColor="@color/actionbarColor"
+                    android:textSize="@dimen/textSizeDataTvDiscriptionJobDetails" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/conatainerAdditionalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textAdditionalAddressLable" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/additionalAddressDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textContactLableTv" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/jobContactDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerMeeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textMeetingLable" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/jobMeetingDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textJobPhoneLableTv" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/jobPhoneDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/phoneIconIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/white"
+                    android:padding="@dimen/paddingTopOrangeButton"
+                    android:src="@drawable/phone_icon_selected" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/clientMobileLableTv"
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/textJobMobileLableTv" />
+
+                    <ImageView
+                        android:id="@+id/mobileIconIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/paddingTopOrangeButton"
+                        android:src="@drawable/mobile_call" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/jobMobileDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_alignLeft="@+id/clientMobileLableTv"
+                        android:layout_below="@+id/clientMobileLableTv"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas"
+                        android:layout_toLeftOf="@+id/mobileIconIv" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerClientEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/clientEmailLableTv"
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/textJobEmailLableTv" />
+
+                    <ImageView
+                        android:id="@+id/emailClientIconIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/paddingTopOrangeButton"
+                        android:src="@drawable/email_icon" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/clientEmailDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_alignLeft="@+id/clientEmailLableTv"
+                        android:layout_below="@+id/clientEmailLableTv"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas"
+                        android:layout_toLeftOf="@+id/emailClientIconIv" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/interventionLableTv"
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textJobNumberLableTv" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/jobNumberDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                </LinearLayout>
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/cloudInterventionIconIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/paddingTopOrangeButton"
+                    android:text="@string/fa_angle_right"
+                    android:textColor="@color/actionbarColor"
+                    android:textSize="@dimen/textSizeDataTvDiscriptionJobDetails" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerJobType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textJobTypeLable" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/jobTypeDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/containerReportsTemplate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                        android:text="@string/textJobReportLable" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/jobReportTemplateDataTv"
+                        style="@style/styleDatTextViewJobDiscriptionNew"
+                        android:layout_marginTop="@dimen/marginTopDiscriptionJobDetailDatas" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linManagerTechContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:background="@drawable/boxframe_textview_layout"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/containerTechnician"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                                android:text="@string/textJobTechnicianLableTv" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/jobTechnicianeDataTv"
+                                style="@style/styleDatTextViewJobDiscriptionNew" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="@dimen/paddingTrackinghoursofOperationDataTv"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/paddingParentClientListItem"
+                        android:paddingTop="@dimen/paddingParentClientListItem" >
+
+                        <View
+                            android:layout_width="0.5dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/line_color" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/containerManager"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/paddingMenusTitle"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                style="@style/styleHeadingsTextViewJobDiscriptionTxt"
+                                android:text="@string/text_others_lbl" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/jobManagerDataTv"
+                                style="@style/styleDatTextViewJobDiscriptionNew" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="invisible" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/paddingTopOrangeButton"
+                    android:src="@drawable/phone_icon_selected" />
+
+                <ImageView
+                    android:id="@+id/messageIconIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+                    android:src="@drawable/msg_icon_selected"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

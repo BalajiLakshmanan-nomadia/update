@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/semiTransparent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingLoginDomainDialogLinearLayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/backgoundBorderColor" />
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/yesBtn"
+            style="@style/styleConfirmButtonWipeAllDetailsText"
+            android:layout_weight="1"
+            android:background="@color/backYesTvWipeAllDetailDialog"
+            android:padding="@dimen/paddingLoginDomainDialogButton"
+            android:text="@string/textYesLable" />
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/noBtn"
+            style="@style/styleConfirmButtonWipeAllDetailsText"
+            android:layout_weight="1"
+            android:background="@color/backNoTvWipeAllDetailDialog"
+            android:padding="@dimen/paddingLoginDomainDialogButton"
+            android:text="@string/textNoLable" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/backgoundBorderColor" />
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        style="@style/styleDomainDialogHeaderLogin"
+        android:gravity="center"
+        android:padding="@dimen/paddingLoginDomainDialogTextView"
+        android:text="@string/textLableTitleBarWipeAllDetails"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        style="@style/styleDoaminDIalogText"
+        android:background="@color/backMessaeTvWipeAllDetailDialog"
+        android:padding="@dimen/paddingLoginDomainDialogTextView"
+        android:text="@string/txt_confirm"
+        android:textColor="@color/textMessageWipeAllDetailDialog"
+        fontify:font_name="@string/fontName_hevelicaLight" />
+
+</LinearLayout>

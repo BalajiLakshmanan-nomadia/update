@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/job_description_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linSearchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/job_description_text_color"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/paddingTopOrangeButton"
+            android:layout_weight="8"
+            android:background="@drawable/boxframe_parts_services_serachbox"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingTopOrangeButton">
+
+            <TextView
+                android:id="@+id/txtSearchIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/fa_search"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/custom_details_text_color"
+                android:textSize="@dimen/textSizeEditTextLoginSyncroTeam" />
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/edtInventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                android:layout_marginRight="@dimen/paddingMenusTitle"
+                android:layout_toEndOf="@+id/txtSearchIcon"
+                android:layout_toRightOf="@+id/txtSearchIcon"
+                android:background="@android:color/transparent"
+                android:hint="@string/txt_search_hint"
+                android:singleLine="true"
+                android:inputType="textNoSuggestions"
+                android:textColor="@color/custom_details_text_color"
+                android:textColorHint="@color/custom_details_text_color"
+                android:textSize="@dimen/textSizeEditTextLoginSyncroTeam"
+                android:visibility="visible"
+                android:layout_toLeftOf="@+id/progressBarSearch"
+                fontify:font_name="@string/fontName_avenir" />
+            <ProgressBar
+                android:id="@+id/progressBarSearch"
+                android:layout_width="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="20dp"
+                android:layout_marginRight="@dimen/paddingMenusTitle"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtBarcodeIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/fa_barcode"
+                android:textColor="@color/actionbarColor"
+                android:textSize="@dimen/textSizeEditTextLoginSyncroTeam" />
+
+            <TextView
+                android:id="@+id/txtFilterIcon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/fa_filter"
+                android:textColor="@color/actionbarColor"
+                android:textSize="@dimen/textSizeEditTextLoginSyncroTeam" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linSearchContainer"
+        android:layout_marginLeft="@dimen/paddingMenusTitle"
+        android:layout_marginBottom="@dimen/paddingMenusTitle"
+        android:background="@color/filter_bg"
+        android:clickable="true"
+        android:padding="@dimen/paddingMenusTitle"
+        android:paddingTop="@dimen/paddingMenusTitle"
+        android:visibility="gone">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/txt_filtered_by"
+            android:textColor="@color/invoice_label_color"
+            android:textSize="@dimen/textSizeCustomFieldValTextView"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_colon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_label"
+            android:text=":"
+            android:textColor="@color/invoice_label_color"
+            android:textSize="@dimen/textSizeCustomFieldValTextView"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:layout_toRightOf="@+id/txt_colon"
+            android:textColor="@color/invoice_text_color"
+            android:textSize="@dimen/textSizeCustomFieldValTextView"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_filter_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:layout_toLeftOf="@+id/txt_close_filter"
+            android:layout_toRightOf="@+id/txt_filter"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeCustomFieldValTextView"
+            android:textStyle="bold"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <TextView
+            android:id="@+id/txt_close_filter"
+            android:layout_width="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+            android:layout_height="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ring_close_button"
+            android:gravity="center"
+            android:text="@string/fa_close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeCalanderMonth" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listInventory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_filter"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"/>
+
+    <ProgressBar
+        android:id="@+id/progressBarInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

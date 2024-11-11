@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+     <string name="sunday">SUN</string>
+      <string name="monday">MON</string>
+       <string name="tuesday">TUE</string>
+        <string name="wednesday">WED</string>
+         <string name="thrusday">THU</string>
+          <string name="friday">FRI</string>
+           <string name="saturday">SAT</string>
+</resources>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/paddingGeneralMenusTitle"
+    android:paddingTop="@dimen/paddingGeneralMenusTitle">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/paddingTopOrangeButton"
+            android:background="@color/job_description_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/job_description_bg"
+            android:paddingLeft="@dimen/paddingMenusTitle"
+            android:paddingRight="@dimen/paddingMenusTitle">
+
+            <LinearLayout
+                android:id="@+id/linItemBg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boxframe_textview_layout">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_marginStart="@dimen/paddingMenusTitle"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:id="@+id/linCategoryContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/paddingMenusTitle"
+                        android:paddingTop="@dimen/paddingMenusTitle">
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txt_cat_label"
+                            style="@style/styleInvoiceQuotationLabel"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:text="@string/txt_cat_label"
+                            fontify:font_name="@string/fontName_avenir" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txt_cat_label_1"
+                            style="@style/styleInvoiceQuotationLabel"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/txt_cat_label"
+                            android:text=":"
+                            fontify:font_name="@string/fontName_avenir" />
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txt_category"
+                            style="@style/styleInvoiceQuotationText"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/paddingMenusTitle"
+                            android:layout_toLeftOf="@+id/linSerializableContainer"
+                            android:layout_toRightOf="@+id/txt_cat_label_1"
+                            android:ellipsize="end"
+                            android:text="Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint"
+                            fontify:font_name="@string/fontName_avenir" />
+
+                        <LinearLayout
+                            android:id="@+id/linSerializableContainer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/paddingMenusTitle">
+
+                            <TextView
+                                android:id="@+id/txtSerializableIcon"
+                                style="@style/styleInvoiceQuotationLabel"
+                                android:text="@string/fa_asterisk"
+                                android:textColor="@color/serializable_color" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txtSerializable"
+                                style="@style/styleInvoiceQuotationText"
+                                android:layout_marginLeft="@dimen/paddingGeneralMenusTitle"
+                                android:layout_marginStart="@dimen/paddingGeneralMenusTitle"
+                                android:singleLine="true"
+                                android:text="@string/txt_serializable"
+                                android:textColor="@color/serializable_color"
+                                fontify:font_name="@string/fontName_avenir" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/paddingMenusTitle"
+                        android:paddingTop="@dimen/paddingMenusTitle">
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                style="@style/styleInvoiceQuotationLabel"
+                                android:id="@+id/txt_parts_label"
+                                android:text="@string/txt_name_label"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                style="@style/styleInvoiceQuotationLabel"
+                                android:id="@+id/txt_parts_label_1"
+                                android:text=":"
+                                android:layout_toRightOf="@+id/txt_parts_label"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txt_parts_service"
+                                style="@style/styleInvoiceQuotationText"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:layout_toRightOf="@+id/txt_parts_label_1"
+                                android:layout_toLeftOf="@+id/lin_qty_container"
+                                android:ellipsize="end"
+                                android:text="Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                        <LinearLayout
+                            android:id="@+id/lin_qty_container"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/paddingMenusTitle">
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                style="@style/styleInvoiceQuotationLabel"
+                                android:text="@string/txt_qty_label"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                style="@style/styleInvoiceQuotationLabel"
+                                android:text=":"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txt_qty_piece"
+                                style="@style/styleInvoiceQuotationText"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:ellipsize="end"
+                                android:text="13"
+                                fontify:font_name="@string/fontName_avenir" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/paddingMenusTitle"
+                        android:paddingTop="@dimen/paddingMenusTitle">
+
+                        <LinearLayout
+                            android:id="@+id/linReferenceContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/txtItemCost">
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                style="@style/styleInvoiceQuotationLabel"
+                                android:text="@string/txt_ref_label"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                style="@style/styleInvoiceQuotationLabel"
+                                android:text=":"
+                                fontify:font_name="@string/fontName_avenir" />
+
+                            <com.synchroteam.TypefaceLibrary.TextView
+                                android:id="@+id/txt_reference"
+                                style="@style/styleInvoiceQuotationText"
+                                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                                android:ellipsize="end"
+                                android:text="Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint Paint"
+                                fontify:font_name="@string/fontName_avenir" />
+                        </LinearLayout>
+
+                        <com.synchroteam.TypefaceLibrary.TextView
+                            android:id="@+id/txtItemCost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/boxframe_invoice_quotation_total"
+                            android:paddingBottom="@dimen/paddingGeneralMenusTitle"
+                            android:paddingLeft="@dimen/activity_horizontal_margin"
+                            android:paddingRight="@dimen/paddingMenusTitle"
+                            android:paddingTop="@dimen/paddingGeneralMenusTitle"
+                            android:text="15,950"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSizeDaysTv"
+                            fontify:font_name="@string/fontName_avenir" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dialog_clock_in_out_width"
+        android:background="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="@dimen/strokeSizeCalander"
+                app:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="220dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/paddingDilogPhotoParent"
+                        android:layout_marginRight="@dimen/paddingDilogPhotoParent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/paddingReportsTextTabsReports">
+
+                        <com.synchroteam.TypefaceLibrary.TextViewHelveticaBold
+                            android:id="@+id/txt_job_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/paddingNewJobsTextView"
+                            android:scrollHorizontally="true"                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/textSizeReportsListOfValues"
+                            android:textStyle="bold" />
+
+                        <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                            android:id="@+id/txt_job_action_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:visibility="gone"
+                            android:padding="@dimen/paddingNewJobsTextView"
+                            android:singleLine="true"
+                            android:text="START"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/dialog_title_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <Chronometer
+                        android:id="@+id/timer_duration_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/marginAddAttachmentTableLayout"
+                        android:layout_marginTop="@dimen/marginAddAttachmentTableLayout"
+                        android:background="@color/pay_now_green"
+                        android:format="@string/timeFormatChronometer"
+                        android:gravity="center"
+                        android:padding="@dimen/paddingReportsTextTabsReports"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/startActivityTextSize"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/marginAddAttachmentTableLayout"
+                        android:layout_marginTop="@dimen/marginAddAttachmentTableLayout"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                            android:id="@+id/txt_ok"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/paddingDilogPhotoParent"
+                            android:layout_marginRight="@dimen/paddingDilogPhotoParent"
+                            android:background="@drawable/bg_clock_in_out_items"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:padding="@dimen/paddingReportsTextTabsReports"
+                            android:singleLine="true"
+                            android:text="@string/textStartLable"
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/startActivityTextSize"
+                            android:textStyle="bold" />
+
+                        <com.synchroteam.TypefaceLibrary.TextViewAvenirBlack
+                            android:id="@+id/txt_undo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/paddingDilogPhotoParent"
+                            android:layout_marginRight="@dimen/paddingDilogPhotoParent"
+                            android:background="@drawable/bg_clock_in_out_items"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:padding="@dimen/paddingReportsTextTabsReports"
+                            android:visibility="gone"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAllCaps="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/startActivityTextSize"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_close"
+            android:layout_width="@dimen/dialog_clock_in_out_cancel_height"
+            android:layout_height="@dimen/dialog_clock_in_out_cancel_height"
+            android:layout_gravity="right"
+            android:background="@drawable/bg_yellow_circle"
+            android:gravity="center">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/fa_close"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSizeReportsListOfValues"
+                android:textStyle="bold"
+                fontify:font_name="@string/fontName_fontAwesome" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

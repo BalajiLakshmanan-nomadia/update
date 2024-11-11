@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/statusImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingCalanderImagesContainer">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateOrTimeTv"
+            android:layout_below="@+id/dateOrTimeTv"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/suspended_btn"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/textSuspended"
+            android:textColor="@color/textColorOrange"
+            android:textSize="@dimen/textSizeTypeStatus"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateOrTimeTv"
+            android:layout_below="@+id/dateOrTimeTv"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/started_btn"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/textStarted"
+            android:textColor="@color/textColorGreen"
+            android:textSize="@dimen/textSizeTypeStatus"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateOrTimeTv"
+            android:layout_below="@+id/dateOrTimeTv"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/schedule_icon"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/textScheduled"
+            android:textColor="@color/textColorBlack"
+            android:textSize="@dimen/textSizeTypeStatus"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dateOrTimeTv"
+            android:layout_below="@+id/dateOrTimeTv"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/completed_job_ind"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:text="@string/textCompleted"
+            android:textColor="@color/textColorLightBlue"
+            android:textSize="@dimen/textSizeTypeStatus"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/calanderViewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/statusImageContainer"
+        android:clickable="true"
+        android:orientation="vertical">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

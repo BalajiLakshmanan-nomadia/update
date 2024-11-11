@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linParentLayout"
+        android:layout_width="match_parent"
+        android:minHeight="@dimen/heightSignatureIv"
+        android:paddingLeft="@dimen/paddingMenusTitle"
+        android:paddingRight="@dimen/paddingMenusTitle"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/paddingTopOrangeButton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/padding_normal"
+            android:paddingLeft="@dimen/paddingMenusTitle"
+            android:paddingTop="@dimen/paddingMenusTitle"
+            android:paddingBottom="@dimen/paddingMenusTitle">
+
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_tax_item"
+                style="@style/styleInvoiceQuotationText"
+                android:textColor="@color/invoice_text_color"
+                android:singleLine="false"
+                android:textSize="@dimen/textSizeDataTvDomainDialog"
+                android:padding="@dimen/paddingMenusTitle"
+                android:text="P1 "
+                android:maxLines="2"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_spinner"
+                android:padding="@dimen/paddingMenusTitle"
+                android:layout_marginTop="@dimen/paddingMenusTitle"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <com.synchroteam.smoothcheckbox.SmoothCheckBox
+                    android:id="@+id/chk_compound_tax"
+                    android:layout_width="@dimen/marginTopMessageDetailTv"
+                    android:layout_height="@dimen/marginTopMessageDetailTv"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    app:color_checked="@color/unavailability_start_icon_color"
+                    app:color_unchecked="@android:color/white"
+                    app:color_unchecked_stroke="@android:color/darker_gray" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_compound_tax"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_comp_tax_lbl"
+                    android:textColor="@color/invoice_hint_color"
+                    android:textSize="@dimen/textSizeTrackingSettingsLableTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/txtDeleteItem"
+        android:layout_width="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+        android:layout_height="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+        android:layout_gravity="top|end"
+        android:background="@drawable/ring_close_button"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeCalanderMonth" />
+
+</FrameLayout>

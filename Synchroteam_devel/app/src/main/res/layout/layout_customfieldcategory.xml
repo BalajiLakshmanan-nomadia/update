@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relCustomTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxframe_textview_layout" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/marginLeftCutomFiledvalcustom"
+            android:paddingLeft="@dimen/paddingMenusTitle"
+            android:paddingRight="@dimen/paddingMenusTitle"
+            android:paddingTop="@dimen/marginLeftCutomFiledvalcustom" >
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/nomtable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSizeItemAutoCompleteclientNameTv"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <ImageView
+                android:id="@+id/expandCollapseIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/paddingParentDataTypeDate"
+                android:src="@drawable/arrow_down" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/customDetailsDivider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/relCustomTitle"
+        android:background="@color/job_description_bg"
+        android:visibility="visible" />
+
+</RelativeLayout>

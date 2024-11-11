@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/actionbarColor"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/paddingMenusTitle"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/txtViewExit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/paddingMenusTitle"
+            android:text="@string/fa_close"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeMessageTitle" />
+
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/toolbar_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="9"
+            android:maxLines="1"
+            android:padding="@dimen/paddingMenusTitle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeMessageTitle"
+            fontify:font_name="@string/fontName_avenir" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:padding="@dimen/paddingMenusTitle">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSizeDilogPhotoEditText"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <com.synchroteam.TypefaceLibrary.EditText
+            android:id="@+id/ed_data"
+            style="@style/styleMultipleDataDialogDataNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_item_name"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="bottom"
+            android:maxHeight="@dimen/expanding_text"
+            android:maxLength="512"
+            android:minLines="2"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <com.synchroteam.TypefaceLibrary.Button
+            android:id="@+id/btnSave"
+            android:layout_width="@dimen/widhtReplanIfEnterrepHeurDeb"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:text="@string/modifier"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeJobNameTextView"
+            fontify:font_name="@string/fontName_avenir" />
+
+    </RelativeLayout>
+
+</LinearLayout>

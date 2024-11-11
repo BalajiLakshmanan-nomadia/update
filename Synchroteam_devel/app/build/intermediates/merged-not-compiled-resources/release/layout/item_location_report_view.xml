@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/paddingMenusTitle">
+
+    <com.synchroteam.TypefaceLibrary.TextView
+        android:id="@+id/txt_field_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grayTextColorReportsFieldLable"
+        android:textSize="@dimen/lableTextSize"
+        fontify:font_name="@string/fontName_avenir" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/txt_field_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:layout_toLeftOf="@+id/txt_map_pin_icon"
+            android:textColor="@color/invoice_text_color"
+            android:textSize="@dimen/textSizeLastSyncronizationLableTv"
+            android:textStyle="bold"
+            fontify:font_name="@string/fontName_avenir" />
+
+        <TextView
+            android:id="@+id/txt_map_pin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:layout_marginRight="@dimen/paddingTopOrangeButton"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="@dimen/paddingMenusTitle"
+            android:text="@string/fa_map_marker"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textSizeDateTv" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paddingTrackinghoursofOperationDataTv"
+        android:layout_marginBottom="@dimen/paddingTopOrangeButton"
+        android:layout_marginTop="@dimen/paddingTopOrangeButton"
+        android:background="@drawable/dotted_line" />
+</LinearLayout>

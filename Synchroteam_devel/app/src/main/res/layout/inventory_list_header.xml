@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/job_description_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/textSizeDateAndTimeUnavability">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linNameContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/linSerializableContainer"
+                android:orientation="vertical">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:singleLine="true"
+                    android:text="@string/txt_parts_service_label"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_parts_service"
+                    style="@style/styleInvoiceQuotationText"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Tracking &amp; Torsion Retofit with LM6&apos; Chain Rail and 345 1/3 Chain"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linSerializableContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/paddingMenusTitle">
+
+                <TextView
+                    android:id="@+id/txtSerializableIcon"
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text="@string/fa_asterisk"
+                    android:textColor="@color/serializable_color" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtSerializable"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_marginLeft="@dimen/paddingGeneralMenusTitle"
+                    android:layout_marginStart="@dimen/paddingGeneralMenusTitle"
+                    android:singleLine="true"
+                    android:text="@string/txt_serializable"
+                    android:textColor="@color/serializable_color"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linQtyContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/linSerializableContainer"
+                android:layout_marginTop="@dimen/paddingMenusTitle"
+                android:layout_marginBottom="@dimen/paddingMenusTitle"
+                android:layout_below="@+id/linSerializableContainer"
+                android:layout_marginRight="@dimen/paddingMenusTitle">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text="@string/txt_qty_label"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text=":"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_qty"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="3"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/paddingMenusTitle"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text="@string/txt_cat_label"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text=":"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_category"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="Mobile Warehouse"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text="@string/txt_ref_label"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    style="@style/styleInvoiceQuotationLabel"
+                    android:text=":"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txt_reference"
+                    style="@style/styleInvoiceQuotationText"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="B6C Switch"
+                    fontify:font_name="@string/fontName_avenir" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_price_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/paddingMenusTitle"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:background="@color/divider_color" />
+
+        <LinearLayout
+            android:id="@+id/lin_price_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                style="@style/styleInvoiceQuotationLabel"
+                android:singleLine="true"
+                android:text="@string/txt_price_label"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                style="@style/styleInvoiceQuotationLabel"
+                android:singleLine="true"
+                android:text=": "
+                fontify:font_name="@string/fontName_avenir" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_price"
+                style="@style/styleInvoiceQuotationText"
+                android:layout_marginLeft="@dimen/paddingMenusTitle"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="10,00,000"
+                fontify:font_name="@string/fontName_avenir" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linRestockContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/paddingMenusTitle"
+        android:background="@drawable/boxframe_textview_layout"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:layout_marginStart="@dimen/paddingMenusTitle"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingMenusTitle">
+
+            <TextView
+                android:id="@+id/txRestockIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/paddingMenusTitle"
+                android:text="@string/fa_shopping_cart"
+                android:textColor="@color/invoice_text_color"
+                android:textSize="@dimen/textSizeDaysTv" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txtRestockLabel"
+                style="@style/styleInvoiceQuotationText"
+                android:layout_alignBottom="@+id/txRestockIcon"
+                android:layout_alignTop="@+id/txRestockIcon"
+                android:layout_toEndOf="@+id/txRestockIcon"
+                android:layout_toRightOf="@+id/txRestockIcon"
+                android:text="@string/txt_restock_label"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <RadioGroup
+                android:id="@+id/rdoGrpAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <com.synchroteam.TypefaceLibrary.RadioButton
+                    android:id="@+id/rdoTransfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:layout_marginRight="@dimen/paddingMenusTitle"
+                    android:layout_toLeftOf="@+id/rdoRequest"
+                    android:checked="true"
+                    android:text="@string/txt_transfer"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.RadioButton
+                    android:id="@+id/rdoRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_request"
+                    android:textColor="@color/invoice_text_color"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/linContainer01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txRestockIcon"
+                android:gravity="bottom">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <com.synchroteam.TypefaceLibrary.EditText
+                        android:id="@+id/edtAddRestockQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/paddingMenusTitle"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/txt_qty_label"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:textColorHint="@color/invoice_hint_color"
+                        android:textSize="@dimen/textSizeDaysTv"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/edtAddRestockQty"
+                        android:layout_alignRight="@+id/edtAddRestockQty"
+                        android:layout_below="@+id/edtAddRestockQty"
+                        android:background="@color/divider_color" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:paddingRight="@dimen/paddingMenusTitle">
+
+                    <Spinner
+                        android:id="@+id/spinnerFrom"
+                        style="@style/styleInventorySpinner" />
+
+                    <TextView
+                        android:id="@+id/txtSpinnerDepotIcon"
+                        style="@style/styleSpinnerIcon" />
+
+                    <View style="@style/styleSpinnerDivider" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linContainer02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linContainer01">
+
+                <FrameLayout
+                    android:id="@+id/frameRestockSerialView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/paddingMenusTitle">
+
+                    <RelativeLayout
+                        android:id="@+id/relRestockSerialContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/paddingMenusTitle"
+                        android:paddingRight="@dimen/paddingMenusTitle"
+                        android:visibility="invisible"></RelativeLayout>
+
+                    <com.synchroteam.synchroteam.RestockSerialNumberDialog
+                        android:id="@+id/spinnerRestockSerial"
+                        style="@style/styleInventorySpinner"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_marginTop="@dimen/paddingMenusTitle"
+                        android:hint="@string/txt_serial_nos_label"
+                        android:maxHeight="0dp"
+                        android:minHeight="0dp"
+                        android:textColorHint="@color/invoice_hint_color"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <View style="@style/styleSpinnerDivider" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linContainer02"
+                android:layout_marginTop="@dimen/paddingMenusTitle"
+                android:paddingBottom="@dimen/paddingTopOrangeButton"
+                android:paddingTop="@dimen/paddingTopOrangeButton">
+
+                <com.synchroteam.TypefaceLibrary.CheckBox
+                    android:id="@+id/chkbx_fl_urgent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txt_urgent" android:visibility="gone"
+                    android:textColor="@color/text_urgent_checked"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtRestockSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txtRestockCancel"
+                    android:layout_alignTop="@+id/txtRestockCancel"
+                    android:layout_marginEnd="@dimen/paddingTopOrangeButton"
+                    android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                    android:layout_toLeftOf="@+id/txtRestockCancel"
+                    android:layout_toStartOf="@+id/txtRestockCancel"
+                    android:background="@drawable/boxframe_add_button"
+                    android:paddingBottom="@dimen/paddingMenusTitle"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:paddingTop="@dimen/paddingMenusTitle"
+                    android:text="@string/modifier"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtRestockCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/boxframe_cancel_button"
+                    android:paddingBottom="@dimen/paddingMenusTitle"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:paddingTop="@dimen/paddingMenusTitle"
+                    android:text="@string/textCancelLable"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linMovementContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/paddingMenusTitle"
+        android:background="@drawable/boxframe_textview_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/paddingMenusTitle"
+            android:layout_marginStart="@dimen/paddingMenusTitle"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingMenusTitle">
+
+            <TextView
+                android:id="@+id/txtReturnIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/paddingMenusTitle"
+                android:text="@string/fa_exchange"
+                android:textColor="@color/invoice_text_color"
+                android:textSize="@dimen/textSizeDaysTv" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txtMovementLabel"
+                style="@style/styleInvoiceQuotationText"
+                android:layout_alignBottom="@+id/txtReturnIcon"
+                android:layout_alignTop="@+id/txtReturnIcon"
+                android:layout_toEndOf="@+id/txtReturnIcon"
+                android:layout_toRightOf="@+id/txtReturnIcon"
+                android:text="@string/txt_return_label"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <LinearLayout
+                android:id="@+id/linContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtReturnIcon"
+                android:gravity="bottom">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <com.synchroteam.TypefaceLibrary.EditText
+                        android:id="@+id/edtReturnQty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/paddingMenusTitle"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/txt_qty_label"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="9"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:singleLine="true"
+                        android:textColorHint="@color/invoice_hint_color"
+                        android:textSize="@dimen/textSizeDaysTv"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignLeft="@+id/edtReturnQty"
+                        android:layout_alignRight="@+id/edtReturnQty"
+                        android:layout_below="@+id/edtReturnQty"
+                        android:background="@color/divider_color" />
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:paddingRight="@dimen/paddingMenusTitle">
+
+                    <Spinner
+                        android:id="@+id/spinnerSendTo"
+                        style="@style/styleInventorySpinner"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom" />
+
+                    <TextView
+                        android:id="@+id/txtSpinnerSendIcon"
+                        style="@style/styleSpinnerIcon" />
+
+                    <View style="@style/styleSpinnerDivider" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linContainer1"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/relReturnSerialContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/paddingMenusTitle"
+                        android:paddingRight="@dimen/paddingMenusTitle"
+                        android:visibility="invisible"></RelativeLayout>
+
+                    <com.synchroteam.synchroteam.ReturnSerialNumbersDialog
+                        android:id="@+id/spinnerReturnSerial"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                        android:layout_marginTop="@dimen/paddingMenusTitle"
+                        android:background="@android:color/transparent"
+                        android:gravity="left|bottom"
+                        android:hint="@string/txt_serial_nos_label"
+                        android:minHeight="0dp"
+                        android:minWidth="0dp"
+                        android:padding="@dimen/paddingMenusTitle"
+                        android:textColorHint="@color/invoice_hint_color"
+                        android:textSize="@dimen/textSizeDaysTv"
+                        fontify:font_name="@string/fontName_avenir" />
+                </FrameLayout>
+
+                <View style="@style/styleSpinnerDivider" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/linContainer2"
+                android:layout_marginTop="@dimen/paddingMenusTitle"
+                android:paddingBottom="@dimen/paddingTopOrangeButton"
+                android:paddingTop="@dimen/paddingTopOrangeButton">
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtReturnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txtReturnCancel"
+                    android:layout_alignTop="@+id/txtReturnCancel"
+                    android:layout_marginEnd="@dimen/paddingTopOrangeButton"
+                    android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                    android:layout_toLeftOf="@+id/txtReturnCancel"
+                    android:layout_toStartOf="@+id/txtReturnCancel"
+                    android:background="@drawable/boxframe_add_button"
+                    android:paddingBottom="@dimen/paddingMenusTitle"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:paddingTop="@dimen/paddingMenusTitle"
+                    android:text="@string/modifier"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+
+                <com.synchroteam.TypefaceLibrary.TextView
+                    android:id="@+id/txtReturnCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/boxframe_cancel_button"
+                    android:paddingBottom="@dimen/paddingMenusTitle"
+                    android:paddingLeft="@dimen/paddingTopOrangeButton"
+                    android:paddingRight="@dimen/paddingTopOrangeButton"
+                    android:paddingTop="@dimen/paddingMenusTitle"
+                    android:text="@string/textCancelLable"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textSizeDaysTv"
+                    fontify:font_name="@string/fontName_avenir" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/groupDividerLine"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/marginTopInformationTvLoginDomain"
+            android:layout_alignParentTop="true"
+            android:background="@color/job_description_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/groupDividerLine"
+            android:background="@color/job_description_bg"
+            android:paddingRight="@dimen/paddingTopOrangeButton">
+
+            <RelativeLayout
+                android:id="@+id/relGroupTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boxframe_textview_layout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/paddingMenusTitle"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/paddingReportsJobDetailRelativeLayout"
+                    android:paddingLeft="@dimen/paddingLeftReportsJobDetailRelativeLayout"
+                    android:paddingRight="@dimen/paddingReportsJobDetailRelativeLayout"
+                    android:paddingTop="@dimen/paddingReportsJobDetailRelativeLayout">
+
+                    <ImageView
+                        android:id="@+id/expandCollapseIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:padding="@dimen/paddingReportsJobDetailarrowButtonAttachIv"
+                        android:src="@drawable/arrow_down" />
+
+                    <ImageView
+                        android:id="@+id/iv_add_SB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/marginRIghtReportsJobDetailaddAttachmentIconIv"
+                        android:layout_toLeftOf="@+id/expandCollapseIcon"
+                        android:src="@drawable/add_icon" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/txt_sb_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/paddingTopOrangeButton"
+                        android:layout_toLeftOf="@+id/iv_add_SB"
+                        android:background="@drawable/blue_square"
+                        android:gravity="center"
+                        android:padding="@dimen/paddingTopOrangeButton"
+                        android:text="@string/textUnavabilitiesCount"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSizeJobsCount"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/titlecategoryTv"
+                        style="@style/styleHeadingsTextViewAttachmentTitle"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignTop="@+id/expandCollapseIcon"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:ellipsize="marquee"
+                        android:maxWidth="@dimen/widthReportsJobDetailcustomerSignatureDataTvNew"
+                        android:text="mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+                        fontify:font_name="@string/fontName_avenir" />
+
+                    <com.synchroteam.TypefaceLibrary.TextView
+                        android:id="@+id/issuesCounterTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/paddingMenusTitle"
+                        android:layout_toRightOf="@+id/titlecategoryTv"
+                        android:background="@drawable/circle_dark_red"
+                        android:gravity="center"
+                        android:padding="@dimen/drawablePaddingTextViewNavigatinDrawer"
+                        android:text="@string/textUnavabilitiesCount"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSizeJobsCount" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtDeleteItem"
+        android:layout_width="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+        android:layout_height="@dimen/marginRightDiscriptionJobDetailmessageIconIv"
+        android:layout_gravity="top|end"
+        android:background="@drawable/ring_close_button"
+        android:gravity="center"
+        android:text="X"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeCalanderMonth" />
+</FrameLayout>

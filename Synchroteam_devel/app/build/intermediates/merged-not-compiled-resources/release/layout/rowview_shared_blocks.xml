@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rel_serial_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/txt_shared_block"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/paddingTopOrangeButton"
+                android:layout_toLeftOf="@+id/txtItemSelect"
+                android:layout_weight="9"
+                android:ellipsize="marquee"
+                android:paddingTop="@dimen/paddingTopOrangeButton"
+                android:paddingBottom="@dimen/paddingTopOrangeButton"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/backGroundDividerLine"
+                android:textSize="@dimen/textSizeDaysTv"
+                fontify:font_name="@string/fontName_avenir" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginRight="@dimen/paddingMenusTitle"
+                android:layout_weight="1">
+
+                <com.synchroteam.smoothcheckbox.SmoothCheckBox
+                    android:id="@+id/scb_shared_block"
+                    android:layout_width="@dimen/marginTopMessageDetailTv"
+                    android:layout_height="@dimen/marginTopMessageDetailTv"
+                    app:color_checked="@color/unavailability_start_icon_color"
+                    app:color_unchecked="@android:color/white"
+                    app:color_unchecked_stroke="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_divider_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/paddingTrackinghoursofOperationDataTv"
+            android:layout_below="@+id/lin_item"
+            android:layout_marginTop="@dimen/paddingMenusTitle"
+            android:background="@color/divider_color" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backClientListNewJob"
+    android:orientation="vertical"
+    android:padding="@dimen/paddingParentClientListItem" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/clientNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            
+            android:textColor="@color/textLableTvClientList"
+            android:textSize="@dimen/textSizeLableClientList"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/containerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="2" >
+
+        <com.synchroteam.TypefaceLibrary.TextView
+            android:id="@+id/clientAddressTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.75"
+            android:textColor="@color/textDataTvClientList"
+            android:textSize="@dimen/textSizeLableClientList"
+            fontify:font_name="@string/fontName_hevelicaLight" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:orientation="vertical" >
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/distanceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textDataTvClientList"
+                android:textSize="@dimen/textSizeLableClientList"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/clientDistanceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textDataTvClientList"
+                android:textSize="@dimen/textSizeLableClientList"
+                fontify:font_name="@string/fontName_hevelicaLight" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

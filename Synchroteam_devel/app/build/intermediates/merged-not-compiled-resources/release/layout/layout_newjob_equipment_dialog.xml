@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fontify="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:descendantFocusability="beforeDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/backClientListNewJob" >
+
+        <LinearLayout
+            android:id="@+id/searchContanerEquipmentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/backSearchClientList"
+            android:gravity="center_vertical"
+            android:padding="@dimen/paddingNewJobClientDialogsearchContanerClientList" >
+
+            <com.synchroteam.TypefaceLibrary.EditText
+                android:id="@+id/searchViewEt"
+                style="@style/styleClientListSearchEtNewJob"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/paddingNewJobClientDialogsearchsearchViewEt" />
+
+            <com.synchroteam.TypefaceLibrary.TextView
+                android:id="@+id/cancelTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeftNewJobClientDialogCancelTv"
+                android:text="@string/textCancelLable"
+                android:textColor="@color/textCancelTvClientList"
+                android:textSize="@dimen/textSizeCancelTvClientList" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/equipmentListLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchContanerEquipmentList"
+            android:divider="@drawable/celldivider" >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>
